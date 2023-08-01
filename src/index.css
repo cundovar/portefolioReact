@@ -2,10 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 .cardPortfolio {
-  width: 100px;
+  width: 30%;
   height: 300px;
   background-color: yellow;
   border: 1px solid red;
+}
+.cardPortfolio .contain-img-text {
+  height: 250px;
+}
+.cardPortfolio .containImg {
+  width: 100%;
+  height: 250px;
+  opacity: 1;
+  background-color: rgb(126, 68, 68);
+}
+.cardPortfolio img {
+  margin: 0.5rem;
+  height: 250px;
+}
+.cardPortfolio .hovver {
+  background-color: aquamarine;
+  width: 100%;
+  height: 250px;
+  opacity: 0;
+}
+.cardPortfolio .hovver:hover {
+  opacity: 1;
+}
+
+.ulVoir {
+  justify-content: space-around;
+  margin-top: 0.5rem;
 }
 
 .home {

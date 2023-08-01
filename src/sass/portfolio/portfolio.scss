@@ -1,7 +1,48 @@
 .cardPortfolio{
 
-    width: 100px;
+      width: 30%;
     height: 300px;
     background-color: yellow;
     border: 1px solid red;
+  
+.contain-img-text{
+    height: 250px;
+}
+    .containImg{
+        width: 100%;
+        height: 250px;
+        opacity: 1;
+        background-color: rgb(126, 68, 68);
+  
+        
+    }
+    
+    
+    img{
+        margin: .5rem;
+        height: 250px;
+       
+    
+    }
+    .hovver{
+        background-color: aquamarine;
+        width: 100%;
+       height: 250px;
+   
+       
+        opacity: 0;
+        &:hover{
+            opacity: 1;
+        }
+    
+       
+    
+    }
+}
+
+
+
+.ulVoir{
+    justify-content: space-around;
+   margin-top: .5rem ;
 }

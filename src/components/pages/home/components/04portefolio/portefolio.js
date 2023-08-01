@@ -7,6 +7,7 @@ const Portefolio=()=>{
       return(
 
         <>
+        <h2>portfolio</h2>
           <CardPortfolio/>
         </>
       )
