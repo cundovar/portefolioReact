@@ -8,8 +8,13 @@ const Navbar=()=>{
 
     return(
         <div className="navbar flex">
+
+            <div className=" navbar-contain flex w-5/6 justify-between bg-purple-400">
+
             <Titre/>
             <Menu/>
+
+            </div>
 
 
         </div>

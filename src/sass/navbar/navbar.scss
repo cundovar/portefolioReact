@@ -10,6 +10,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+  
+}
+
+.navbar-menu{
+    display: flex;
+
+    
 }
 
 .menu li  {
@@ -30,10 +38,18 @@
         width: 100%;
         text-align: center;
     }
+
+    // *******
+
+   
+
     .navbar{
         position: relative;
    
 
+    }
+    .navbar-contain{
+        width: 100%;
     }
     .navbar-menu{
         position: absolute;
