@@ -6,13 +6,17 @@
 
 
 @import './portfolio/portfolio.scss';
+@import './portfolio/checkbox.scss';
+@import './navbar/navbar.scss';
+@import './competance/competance.scss';
 
 
+*{box-sizing: border-box}
 .home{
 
     background-color: rgb(201, 199, 196);
     width: 100%;
     height: 100%;
-    color: red;
+  
   
 }

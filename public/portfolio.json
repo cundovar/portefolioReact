@@ -1,5 +1,6 @@
 {
     "Etang": {
+      "type":"[wordpress,php]",
       "titre": "Projet wordpress",
       "tekno": "php",
       "lien": "https://duboutdesetangs.com/",
@@ -8,11 +9,39 @@
       "imageSrc":"/images/etang.PNG"
     },
     "peinture": {
-      "titre": "Projet wordpress",
+      "type":"[symfony, php, twig]",
+      "titre": "Projet symfony",
       "tekno": "php",
-      "lien": "https://duboutdesetangs.com/",
+      "lien": "https://varascundo.com/",
       "lienCode": "https://github.com/cundovar/peintureFacundo",
-      "description": "projet pour un site internet pour une association d'artistes avec WordPress",
+      "description": "projet pour examen pour le diplôme de developpeur we je me suis concentré essentiellement sur le back-end ",
       "imageSrc":"/images/peinture.PNG"
-    }
+    },
+    "space": {
+      "type":"[react]",
+      "titre": "Mini-projet space-tourism",
+      "tekno": "javascript/react",
+      "lien": "https://espace.varascundo.com/" ,
+      "lienCode": "https://github.com/cundovar/tourism-spacial",
+      "description": "Projet react.Sources  issues d'un fichier json. maquettes figma",
+      "imageSrc":"/images/espace.PNG"
+    },
+    "dashboard": {
+      "type":"[react]",
+      "titre": "Tableau de bord",
+      "tekno": "javascript/react",
+      "lien": "https://espace.varascundo.com/" ,
+      "lienCode": "https://github.com/cundovar/tourism-spacial",
+      "description": " Tableau de bord avec bobliothèque js CHARTJS, style en SASS, javascript REACT.",
+      "imageSrc":"/images/dashboard.PNG"
+    },
+    "magicieuse": {
+        "type":"[wordpress]",
+        "titre": "maison edition",
+        "tekno": "php",
+        "lien": "https://la-magicieuse.varascundo.com/" ,
+        "lienCode": "",
+        "description": "refonte site wordpress de la maison edition la magicieuse",
+        "imageSrc":"/images/magicieuse.PNG"
+      }
   }

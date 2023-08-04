@@ -5,7 +5,7 @@ const Menu=()=>{
     return(
 
         <>
-          <ul className="flex space-x-4 items-center justify-center">
+          <ul className="flex space-x-4 items-center justify-end">
             <li><a href="#">présentation</a></li>
             <li><a href="#">compétences</a></li>
             <li><a href="#">Portfolio</a></li>

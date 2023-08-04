@@ -1,0 +1,42 @@
+// checkbox**********************************
+
+.cardCheck{
+    width: .8rem;
+    height: .8rem;
+    background-color: white;
+    border-radius: 50%;
+    
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+  transform: translateX(-50%);
+    
+}
+    
+
+    .cardCheck:checked{
+        background-color: rgb(206, 112, 112);
+    }
+    .totalCheck{
+        padding: .5rem;
+        // border: 1px solid black;/:
+        border-radius: 15px;
+        width: 100px;
+        &:hover{
+            background-color: aqua;
+        }
+     
+        img{
+            max-height: 45px;
+            margin-top: .5rem;
+            width: 100%;
+        }
+    }
+
+    #reactColor{
+        color: white;
+    }
