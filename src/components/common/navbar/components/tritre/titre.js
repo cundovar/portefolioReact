@@ -5,7 +5,7 @@ import React from "react";
 const Titre=()=>{
 
     return(
-<div className="w-3/5 flex flex-col items-center justify-center">
+<div className=" total-titre w-3/5 flex flex-col items-center justify-center">
     <div >
         <a href="#">
 

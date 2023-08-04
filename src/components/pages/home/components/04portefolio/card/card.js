@@ -105,7 +105,7 @@ const CardPortfolio = () => {
 
         <div>
           <div className="text-center  border-y border-slate-600 border-solid mt-2">
-            <h2>{projet.titre}</h2>
+            <h4>{projet.titre}</h4>
             <p>{projet.tekno} </p>
           </div>
           <ul className="flex items-center justify-center ulVoir">
