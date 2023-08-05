@@ -1,28 +1,68 @@
 .navbar{
 
     height: 100px;
-    background-color: rgb(223, 194, 155);
+    background-image: url(/public/images/header/terre.jpg);
+    color: aliceblue;
 }
 .button-circle{
     display: none;
 }
-.navbar-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.navbar-menu-2{
+  padding: 3px;
+   
   
 }
 
 .navbar-menu{
     display: flex;
+    padding-top: 5px;
 
     
 }
 
-.menu li  {
+.menu   {
 
-    margin: 0 .5rem 0 0;
+    li{
+        color:bisque;
+        margin: 0 .5rem 0 0;
+        background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #54b3d6 50%,
+        #cd9898 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+      &::before{
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+    
+      }
+      &:hover{
+        background-position: 0;
+        &::before{
+          width: 100%;
+        }
+      }
+
+
+    }
+ 
+
+}
+
+.text-contact-fin{
+    margin: auto;
+   
 }
 
 
@@ -63,7 +103,7 @@
                 border-radius: 30px;
                 height: 100px;
                 width: 60px;
-                background-color: rgb(0, 255, 170);
+             
                 z-index: 100;
                 position: absolute;
                 top:30%;
@@ -80,7 +120,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        background-color: rgb(32, 187, 187);
+       
         padding: 2rem;
         padding-left:0.5rem ;
         width: 150px;

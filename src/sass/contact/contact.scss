@@ -1,0 +1,36 @@
+
+
+textarea{
+    padding-left: 22px;
+    padding-right: 10px;
+}
+.contact-identifiant{
+    p{
+        input{
+            padding-left: 22px;
+        }
+    }
+}
+
+@media  screen and (max-width:800px) {
+
+    .total-contact{
+        flex-direction: column;
+        width: 100%;
+        .contact-form{
+            margin: auto;
+         
+            form {
+               display: flex;
+               flex-direction: column;
+               width: 100%;
+           }
+        }
+
+        .contact-identifiant,.contact-text{
+            width: 100%;
+          
+        }
+    }
+    
+}

@@ -1,25 +1,32 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Menu=()=>{
+const Menu = () => {
+  return (
+    <div className="navbar-menu  flex  items-start ">
+      <div className="navbar-menu-2 flex items-end justify-end backdrop-blur-sm backdrop-blur-sm bg-white/10 ">
+        <ul className=" menu flex  items-start justify-end">
+          <NavLink to="/">
 
-    return(
+          <li>
+            Accueil
+          </li>
+          </NavLink>
+          <li>
+          compétences
+          </li>
+          <li>
+            Portfolio
+          </li>
+          <NavLink to="/contact">
+            <li>Contact</li>
+          </NavLink>
+        </ul>
 
-        <div className="navbar-menu  flex items-end justify-end">
-          <div className="navbar-menu-2 flex items-end justify-end ">
-          <ul className=" menu flex  items-start justify-end">
-            <li><a href="#">présentation</a></li>
-            <li><a href="#">compétences</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-           
-          </ul>
-       
-          <div className="button-circle"></div>
+        <div className="button-circle"></div>
+      </div>
+    </div>
+  );
+};
 
-          </div>
-        
-        </div>
-    )
-}
-
-export default Menu
+export default Menu;

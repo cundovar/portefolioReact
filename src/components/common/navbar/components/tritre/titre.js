@@ -1,22 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-
-
-const Titre=()=>{
-
-    return(
-<div className=" total-titre w-3/5 flex flex-col items-center justify-center">
-    <div >
-        <a href="#">
-
-     <h1>Développeur front-end</h1>
-     <h3>Intégrateur web</h3>
-        </a>
+const Titre = () => {
+  return (
+    <div className=" total-titre w-3/5 flex flex-col items-center justify-center">
+      <div>
+        <NavLink to="/">
+          <h1>Développeur front-end</h1>
+          <h3>Intégrateur web</h3>
+        </NavLink>
+      </div>
     </div>
+  );
+};
 
-</div>
-
-    )
-}
-
-export default Titre
+export default Titre;
