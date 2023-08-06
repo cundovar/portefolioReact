@@ -83,8 +83,9 @@ const Contact = () => {
               <textarea
                 id="message"
                 type="text"
-                rows="5"
+                rows="15"
                 cols="60"
+             
                 className="bg-gray-400 "
                 placeholder="Votre message *"
               ></textarea>

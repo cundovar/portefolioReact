@@ -1,5 +1,6 @@
 import React from "react";
 import CardPortfolio from "./card/card";
+import Present from "./presentation/present";
 
 
 const Portefolio=()=>{
@@ -8,6 +9,7 @@ const Portefolio=()=>{
 
         <>
         <h2>portfolio</h2>
+        <Present/>
           <CardPortfolio/>
         </>
       )

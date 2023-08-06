@@ -10,6 +10,7 @@
 @import './navbar/navbar.scss';
 @import './competance/competance.scss';
 @import './contact/contact.scss';
+@import './footer/footer.scss';
 
 
 h1{
@@ -47,7 +48,9 @@ h5{
     }
 }
 
-*{box-sizing: border-box}
+*{box-sizing: border-box;
+    font-size: 13px;
+}
 .home{
 
     background-color: rgb(201, 199, 196);

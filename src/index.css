@@ -209,6 +209,31 @@ textarea {
     width: 100%;
   }
 }
+.footer {
+  background-image: url("/public/images/header/terre.jpg");
+  color: aliceblue;
+  padding: 1rem;
+}
+
+.footer-text-social {
+  margin-bottom: 5rem;
+}
+
+.footer-text, .footer-social {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.footer-menu {
+  margin: 0 1rem 0rem 1rem;
+  margin-right: 1rem;
+}
+
+.social-icon {
+  border-left: solid 1px wheat;
+  padding-left: 1rem;
+}
+
 h1 {
   font-size: 35px;
 }
@@ -248,6 +273,7 @@ h5 {
 }
 * {
   box-sizing: border-box;
+  font-size: 13px;
 }
 
 .home {
