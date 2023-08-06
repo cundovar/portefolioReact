@@ -1,14 +1,21 @@
 import React from "react";
+import Animation from "./animation/animation";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faGlobe, faMessage, faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-  return (
+  return (<div className="bg-stone-300">
+  
+  
+  
+       <div className="w-full border-b mb-8 ">
+        <h3>Contact</h3>
+       </div>
     <div className="total-contact w-full flex ">
       <div className="contact-form w-3/4 flex">
         <form className="w-full flex" action="" method="post">
-          <div className="contact-identifiant w-1/3 bg-gray-500 flex flex-col items-center justify-center ">
+          <div className="contact-identifiant w-1/3  flex flex-col items-end justify-center ">
             <div className="w-3/4 space-y-5">
 
            
@@ -64,21 +71,23 @@ const Contact = () => {
               <FontAwesomeIcon icon= {faBuilding }/>
               </span>
             </p>
+            <p className="text-justify parag">* Les champs marqués d'une étoile sont obligatoires.</p>
 
-            <div className="text-contact-fin">
+            <div className="text-contact-fin ">
 
-            <p className="text-justify">Les champs marqués d'une étoile sont obligatoires.</p>
-            <p>Pour me contacter vous pouvez également utiliser l'adresse : varas.cundo@gmail.com</p>
+            <p className="parag text-justify">Pour me contacter vous pouvez également utiliser l'adresse : varas.cundo@gmail.com</p>
             </div>
             </div>
 
 
           </div>
 
-          <div className="contact-text w-2/3 bg-gray-600">
+          <div className="contact-text w-2/3 ">
             <div className="flex flex-col ">
               <h3 className="space-y-5">ecrivez</h3>
-              <p className="relative mx-8">
+              <div className="flex flex-col items-center justify-center">
+
+              <p className="relative mx-8 ">
 
               <textarea
                 id="message"
@@ -96,13 +105,17 @@ const Contact = () => {
               </p>
               
               <button>envoyez</button>
+              </div>
             </div>
           </div>
         </form>
       </div>
 
-      <div className="contact-animation w-1/4 bg-gray-300"></div>
-    </div> // fin total-contact
+      <div className="contact-animation w-1/4 bg-gray-300 relative">
+        <Animation/>
+      </div>
+    </div> 
+  </div>
   );
 };
 

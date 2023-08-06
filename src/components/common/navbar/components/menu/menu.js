@@ -12,12 +12,13 @@ const Menu = () => {
             Accueil
           </li>
           </NavLink>
-          <li>
-          compétences
-          </li>
+      
+          <NavLink to="/portfolio">
+
           <li>
             Portfolio
           </li>
+          </NavLink>
           <NavLink to="/contact">
             <li>Contact</li>
           </NavLink>

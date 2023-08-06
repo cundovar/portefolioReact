@@ -5,9 +5,9 @@ const Footer = () => {
     <div className=" footer w-full">
       <div className="w-5/6 flex justify-around footer-text-social">
         <div className="w-1/2">
-            <div className="w-1/2 flex justify-center itmes-center footer-text">
+            <div className="w-1/3 flex justify-center itmes-center footer-text">
           <p>
-            Portfolio en ligne de Facundo Varas, artisant du web curieus et
+            Portfolio en ligne de Facundo Varas, artisant du web curieux et
             passionné
           </p>
 

@@ -11,7 +11,7 @@ const Home =()=>{
         
 
         <div className="home flex flex-col items-center justify-center space-y-5 ">
-            <div className="w-full flex flex-col items-center justify-center ">  <Presentation/></div>
+          
             <div className="w-full flex flex-col items-center justify-center"> <Competance/></div>
             <div className="w-full flex flex-col items-center justify-center "><Portefolio/></div>
           

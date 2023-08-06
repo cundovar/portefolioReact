@@ -4,12 +4,21 @@ textarea{
     padding-left: 22px;
     padding-right: 10px;
 }
+
 .contact-identifiant{
+   
     p{
         input{
             padding-left: 22px;
+            width: 80%;
         }
     }
+}
+.parag{
+    width: 80%;
+}
+.contact-animation{
+    border: 1px solid green;
 }
 
 @media  screen and (max-width:800px) {
