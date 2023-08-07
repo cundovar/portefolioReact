@@ -258,7 +258,17 @@ textarea {
 .imgPortfolio {
   width: 250px;
   height: 200px;
-  background-color: black;
+  overflow: hidden;
+}
+
+.trois-boutons {
+  margin-top: 1rem;
+}
+.trois-boutons .boutons {
+  padding: 1rem;
+  border-radius: 50%;
+  color: antiquewhite;
+  background-color: rgb(74, 71, 71);
 }
 
 .main {

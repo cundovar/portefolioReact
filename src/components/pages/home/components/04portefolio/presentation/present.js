@@ -1,6 +1,5 @@
 import React from "react";
-import Realisation from "./components/realisation";
-
+import Realisation from "./realisation";
 
 const Present=()=>{
 
@@ -33,6 +32,17 @@ const Present=()=>{
                 <div className="w-full space-y-3">
                     <Realisation/>
                 </div>
+                <div className="trois-boutons">
+
+                    <ul className="flex space-x-5 items-center justify-center">
+
+                        <li className="boutons">1</li>
+                        <li className="boutons">2</li>
+                        <li className="boutons">3</li>
+
+                    </ul>
+                </div>
+
             </div>
         </div>
     )
