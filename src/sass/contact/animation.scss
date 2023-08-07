@@ -1,55 +1,104 @@
-.scene {
-    position: relative; 
-    width: 200px; 
-    height: 200px; 
-    transform-style: preserve-3d;
-    border: 3px solid rgb(229, 116, 135);
+.main{
+    height:100%;
+    width:100%;  
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border: 1px solid green;
+  }
+  .main h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 4rem;
+  }
+.main h1 h3{
+    font-size: 4rem;
+    text-align: center;
+    color: #7489a5;
+  }
+  .roller{
+    height:100%;
+    border: 3px pink solid;
+    line-height: 8rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #1D3557;
   }
   
-  .banner {
-    display: flex;
-    transform-style: preserve-3d;
-    animation: rotate 24s infinite linear;
+  
+  #spare-time{
+    font-size: 5rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
     
   }
   
-  @keyframes rotate {
-    to { transform: rotateY(-360deg); }
-  }
-  
-  $width: 50px;
-  .panel {
+  .roller #rolltext {
     position: absolute;
-    transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px); 
-    width: $width;
-    height: 120px;
-    // border: 1px solid white;
-    // background-color: #fff4;
-    overflow: hidden;
+    top: 0;
+    animation: slide 7s infinite;  
+    left: 1rem;
   }
   
-  .panel::before {
-    position: absolute;
-    left: var(--left);
-    content: "Hello World,ght ttyye yeyy yyyy y it's a nice day!";
-    font-size: 96px;
-    width: max-content;
-    color: hsl(var(--hue), 75%, 75%);
-  }
-  
-  
-  @for $i from 0 to 24 {
-    .panel:nth-child(#{$i + 1}) {
-      --left: #{$width * $i * -1};
-      --hue: #{360 / 24 * $i};
-      --angle: #{360deg / 24 * $i};
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -8rem;    
+    }
+    50%{
+      top: -15rem;
+    }
+    72.5%{
+      top: -30rem;
     }
   }
   
-  .screen {
-    position: absolute;
-    // width: 400px; height: 400px;
-    // background-color: #000a;
-    background-image: linear-gradient(90deg, #000a, #0004, #000a);
-    transform: translate(-50%, -50%);
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 2.6rem; 
+    line-height: 2.125rem;  
+    }
+    
+    #spare-time {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
   }

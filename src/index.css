@@ -210,7 +210,7 @@ textarea {
 }
 
 .contact-animation {
-  border: 1px solid green;
+  background-color: rgb(156, 163, 175);
 }
 
 @media screen and (max-width: 800px) {
@@ -261,192 +261,105 @@ textarea {
   background-color: black;
 }
 
-.scene {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  border: 3px solid rgb(229, 116, 135);
-}
-
-.banner {
+.main {
+  height: 100%;
+  width: 100%;
   display: flex;
-  transform-style: preserve-3d;
-  animation: rotate 24s infinite linear;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid green;
 }
 
-@keyframes rotate {
-  to {
-    transform: rotateY(-360deg);
+.main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #F1FAEE;
+  font-size: 4rem;
+}
+
+.main h1 h3 {
+  font-size: 4rem;
+  text-align: center;
+  color: #7489a5;
+}
+
+.roller {
+  height: 100%;
+  border: 3px pink solid;
+  line-height: 8rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1D3557;
+}
+
+#spare-time {
+  font-size: 5rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #A8DADC;
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 7s infinite;
+  left: 1rem;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -8rem;
+  }
+  50% {
+    top: -15rem;
+  }
+  72.5% {
+    top: -30rem;
   }
 }
-.panel {
-  position: absolute;
-  transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
-  width: 50px;
-  height: 120px;
-  overflow: hidden;
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F1FAEE;
+    font-size: 2.125rem;
+  }
+  .roller {
+    height: 2.6rem;
+    line-height: 2.125rem;
+  }
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+  @keyframes slide-mob {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -2.125rem;
+    }
+    50% {
+      top: -4.25rem;
+    }
+    72.5% {
+      top: -6.375rem;
+    }
+  }
 }
-
-.panel::before {
-  position: absolute;
-  left: var(--left);
-  content: "Hello World,ght ttyye yeyy yyyy y it's a nice day!";
-  font-size: 96px;
-  width: max-content;
-  color: hsl(var(--hue), 75%, 75%);
-}
-
-.panel:nth-child(1) {
-  --left: 0px;
-  --hue: 0;
-  --angle: 0deg;
-}
-
-.panel:nth-child(2) {
-  --left: -50px;
-  --hue: 15;
-  --angle: 15deg;
-}
-
-.panel:nth-child(3) {
-  --left: -100px;
-  --hue: 30;
-  --angle: 30deg;
-}
-
-.panel:nth-child(4) {
-  --left: -150px;
-  --hue: 45;
-  --angle: 45deg;
-}
-
-.panel:nth-child(5) {
-  --left: -200px;
-  --hue: 60;
-  --angle: 60deg;
-}
-
-.panel:nth-child(6) {
-  --left: -250px;
-  --hue: 75;
-  --angle: 75deg;
-}
-
-.panel:nth-child(7) {
-  --left: -300px;
-  --hue: 90;
-  --angle: 90deg;
-}
-
-.panel:nth-child(8) {
-  --left: -350px;
-  --hue: 105;
-  --angle: 105deg;
-}
-
-.panel:nth-child(9) {
-  --left: -400px;
-  --hue: 120;
-  --angle: 120deg;
-}
-
-.panel:nth-child(10) {
-  --left: -450px;
-  --hue: 135;
-  --angle: 135deg;
-}
-
-.panel:nth-child(11) {
-  --left: -500px;
-  --hue: 150;
-  --angle: 150deg;
-}
-
-.panel:nth-child(12) {
-  --left: -550px;
-  --hue: 165;
-  --angle: 165deg;
-}
-
-.panel:nth-child(13) {
-  --left: -600px;
-  --hue: 180;
-  --angle: 180deg;
-}
-
-.panel:nth-child(14) {
-  --left: -650px;
-  --hue: 195;
-  --angle: 195deg;
-}
-
-.panel:nth-child(15) {
-  --left: -700px;
-  --hue: 210;
-  --angle: 210deg;
-}
-
-.panel:nth-child(16) {
-  --left: -750px;
-  --hue: 225;
-  --angle: 225deg;
-}
-
-.panel:nth-child(17) {
-  --left: -800px;
-  --hue: 240;
-  --angle: 240deg;
-}
-
-.panel:nth-child(18) {
-  --left: -850px;
-  --hue: 255;
-  --angle: 255deg;
-}
-
-.panel:nth-child(19) {
-  --left: -900px;
-  --hue: 270;
-  --angle: 270deg;
-}
-
-.panel:nth-child(20) {
-  --left: -950px;
-  --hue: 285;
-  --angle: 285deg;
-}
-
-.panel:nth-child(21) {
-  --left: -1000px;
-  --hue: 300;
-  --angle: 300deg;
-}
-
-.panel:nth-child(22) {
-  --left: -1050px;
-  --hue: 315;
-  --angle: 315deg;
-}
-
-.panel:nth-child(23) {
-  --left: -1100px;
-  --hue: 330;
-  --angle: 330deg;
-}
-
-.panel:nth-child(24) {
-  --left: -1150px;
-  --hue: 345;
-  --angle: 345deg;
-}
-
-.screen {
-  position: absolute;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6666666667), rgba(0, 0, 0, 0.2666666667), rgba(0, 0, 0, 0.6666666667));
-  transform: translate(-50%, -50%);
-}
-
 .home {
   padding: 1rem 2rem 0 2rem;
 }

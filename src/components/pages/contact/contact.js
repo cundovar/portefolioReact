@@ -110,9 +110,12 @@ const Contact = () => {
           </div>
         </form>
       </div>
-
-      <div className="contact-animation w-1/4 bg-gray-300 relative">
+       
+      <div className="contact-animation  w-1/4 bg-gray-300 ">
+     
         <Animation/>
+
+      
       </div>
     </div> 
   </div>
