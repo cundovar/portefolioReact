@@ -4,7 +4,7 @@ import Pages from "./components/pages/pages";
 function App() {
   return (
     <>
-      <div >
+      <div className="bg-neutral-200" >
         <Pages/>
       </div>
     </>

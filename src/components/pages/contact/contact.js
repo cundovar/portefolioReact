@@ -9,10 +9,10 @@ const Contact = () => {
   
   
   
-       <div className="w-full border-b mb-8 ">
+       <div className="w-full border-b mb-8 px-10 ">
         <h3>Contact</h3>
        </div>
-    <div className="total-contact w-full flex ">
+    <div className="total-contact w-full flex px-10 ">
       <div className="contact-form w-3/4 flex">
         <form className="w-full flex" action="" method="post">
           <div className="contact-identifiant w-1/3  flex flex-col items-end justify-center ">
@@ -84,7 +84,7 @@ const Contact = () => {
 
           <div className="contact-text w-2/3 ">
             <div className="flex flex-col ">
-              <h3 className="space-y-5">ecrivez</h3>
+              <h4 className="space-y-5">écrivez votre message : </h4>
               <div className="flex flex-col items-center justify-center">
 
               <p className="relative mx-8 ">

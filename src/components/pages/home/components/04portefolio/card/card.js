@@ -1,23 +1,20 @@
 import React, { useEffect, useState } from "react";
+import UseFetch from "../../../../../hooks/useFetch";
 
 const CardPortfolio = () => {
-  const [projetData, setProjetData] = useState([]);
+ 
+  const { data, error } = UseFetch('/portfolio.json');
   const [selectedType, setSelectedType] = useState(""); // Ajouter l'état pour stocker le type sélectionné
-
-  useEffect(() => {
-    fetch("/portfolio.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setProjetData(Object.values(data));
-      })
-      .catch((error) => console.error("erreur chargement des données"));
-  }, []);
+  if (error) {
+    return <div>Une erreur est survenue lors du chargement des données.</div>;
+  }
+  
 
   // Filtrer les projets en fonction du type sélectionné
   const filteredProjets =
     selectedType === ""
-      ? projetData // Si rien n'est sélectionné, afficher tous les projets
-      : projetData.filter((projet) => projet.type.includes(selectedType));
+      ? data // Si rien n'est sélectionné, afficher tous les projets
+      : data.filter((projet) => projet.type.includes(selectedType));
 
   return (
     <>
