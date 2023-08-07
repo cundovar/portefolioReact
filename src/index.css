@@ -96,6 +96,10 @@
   padding-top: 5px;
 }
 
+.name {
+  font-size: 17px;
+}
+
 .menu li {
   color: bisque;
   margin: 0 0.5rem 0 0;
@@ -183,8 +187,11 @@
   margin-left: 1rem;
 }
 
-.fa-brands {
+.fa-brands, .ff {
   font-size: 20px;
+}
+.fa-brands:hover, .ff:hover {
+  border: 1px solid rgb(236, 105, 195);
 }
 
 @media screen and (max-width: 800px) {
@@ -265,10 +272,53 @@ textarea {
   margin-top: 1rem;
 }
 .trois-boutons .boutons {
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0.5rem;
+  padding: 0.5rem;
   border-radius: 50%;
   color: antiquewhite;
   background-color: rgb(74, 71, 71);
+}
+
+.imgPortfolio img {
+  z-index: 50;
+  width: 100%;
+}
+.imgPortfolio button {
+  color: aliceblue;
+  z-index: 99;
+}
+.imgPortfolio .nextPre {
+  font-size: 3rem;
+}
+.imgPortfolio #preview {
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  border: 1px solid white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgPortfolio #next {
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  border: 1px solid white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {

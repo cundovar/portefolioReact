@@ -10,8 +10,11 @@
     margin-left: 1rem;
 }
 
-.fa-brands{
+.fa-brands, .ff{
     font-size: 20px;
+    &:hover{
+        border: 1px solid rgb(236, 105, 195);
+    }
 }
 
 @media screen and (max-width:800px){

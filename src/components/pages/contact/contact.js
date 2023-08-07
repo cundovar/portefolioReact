@@ -1,6 +1,6 @@
 import React from "react";
 import Animation from "./animation/animation";
-
+import Typewriter from "../../hooks/typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faGlobe, faMessage, faBuilding } from "@fortawesome/free-solid-svg-icons";
 
@@ -84,7 +84,7 @@ const Contact = () => {
 
           <div className="contact-text w-2/3 ">
             <div className="flex flex-col ">
-              <h4 className="space-y-5">écrivez votre message : </h4>
+              <h4 className="space-y-5"> <Typewriter  text="écrivez votre message :" delay={100}/>  </h4>
               <div className="flex flex-col items-center justify-center">
 
               <p className="relative mx-8 ">
