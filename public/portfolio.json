@@ -1,6 +1,6 @@
 {
     "Etang": {
-      "type":"[wordpress,php]",
+      "type":["wordpress","php"],
       "titre": "Projet wordpress",
       "tekno": "php",
       "lien": "https://duboutdesetangs.com/",
@@ -9,7 +9,7 @@
       "imageSrc":"/images/etang.PNG"
     },
     "peinture": {
-      "type":"[symfony, php, twig]",
+      "type":["symfony","php", "twig","javascrip"],
       "titre": "Projet symfony",
       "tekno": "php",
       "lien": "https://varascundo.com/",
@@ -18,7 +18,7 @@
       "imageSrc":"/images/peinture.PNG"
     },
     "space": {
-      "type":"[react]",
+      "type":["react","scss"],
       "titre": "Mini-projet space-tourism",
       "tekno": "javascript/react",
       "lien": "https://espace.varascundo.com/" ,
@@ -27,7 +27,7 @@
       "imageSrc":"/images/espace.PNG"
     },
     "dashboard": {
-      "type":"[react]",
+      "type":["react","scss"],
       "titre": "Tableau de bord",
       "tekno": "javascript/react",
       "lien": "https://espace.varascundo.com/" ,
@@ -36,7 +36,7 @@
       "imageSrc":"/images/dashboard.PNG"
     },
     "magicieuse": {
-        "type":"[wordpress]",
+        "type":["wordpress","php"],
         "titre": "maison edition",
         "tekno": "php",
         "lien": "https://la-magicieuse.varascundo.com/" ,

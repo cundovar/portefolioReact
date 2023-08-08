@@ -49,3 +49,5 @@ const ChoiceTekno=()=>{
 }
 
 export default ChoiceTekno
+
+

@@ -24,7 +24,6 @@
   object-fit: cover;
 }
 .cardPortfolio .hovver {
-  background-color: rgb(146, 249, 215);
   width: 100%;
   height: 200px;
   text-align: center;
@@ -32,7 +31,7 @@
   opacity: 0;
 }
 .cardPortfolio .hovver:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .ulVoir {
