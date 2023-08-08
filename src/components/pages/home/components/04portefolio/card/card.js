@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import UseFetch from "../../../../../hooks/useFetch";
+import ChoiceTekno from "../../../../portfolio-page/components/choice-tekno";
 
 const CardPortfolio = () => {
  
@@ -18,6 +19,7 @@ const CardPortfolio = () => {
 
   return (
     <>
+    <ChoiceTekno/>
       <div className="check w-full flex items-center justify-center space-x-3">
         {/* Ajouter les checkboxes pour les types */}
 

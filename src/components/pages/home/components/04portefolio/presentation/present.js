@@ -1,5 +1,8 @@
 import React from "react";
 import Realisation from "./realisation";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
 const Present = () => {
@@ -39,11 +42,24 @@ const Present = () => {
         </div>
       </div>
       <div className="w-3/5">
-        <div className="w-full border-b mb-8">
-          <h3>Quelques réalisations</h3>
+        <div className="w-full border-b mb-8 flex items-end">
+          <h3>Quelques réalisations</h3> 
+        
         </div>
-        <div className="w-full space-y-3">
+        <div className="w-full space-y-3 flex flex-col">
           <Realisation />
+          <div className="self-end mr-10 w-2/3">
+
+            <NavLink to="/portfolio">
+              <div className="w-5/6 text-end  ">
+               <button className="voir-portfolio  bg-neutral-300">voir le portfolio
+               <span><FontAwesomeIcon className="ml-3" icon={faArrowRight} /> </span>
+               </button>
+              </div>
+            </NavLink>
+            
+         
+          </div>
         </div>
       </div>
     </div>

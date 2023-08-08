@@ -1,0 +1,46 @@
+{
+
+    "react":{
+        "name":"react",
+        "background":"rgb(224, 213, 206)",
+        "color":"white"
+    },
+    "wordpress":{
+        "name":"wordpress",
+        "background":"rgb(247, 247, 247)",
+        "color":"black"
+
+    },
+    "php":{
+        "name":"php",
+        "background":"rgb(224, 213, 206)",
+        "color":"white"
+
+    },
+    "scss":{
+        "name":"scss",
+        "background":"rgb(247, 247, 247)",
+        "color":"black"
+
+    },
+    "tailwind":{
+        "name":"tailwind",
+        "background":"rgb(224, 213, 206)",
+        "color":"black"
+
+    },
+    "bootstrap":{
+        "name":"bootstrap",
+        "background":"rgb(247, 247, 247)",
+        "color":"black"
+
+    },
+    "symfony":{
+        "name":"symfony",
+        "background":"rgb(224, 213, 206)",
+        "color":"black"
+
+    }
+
+
+}

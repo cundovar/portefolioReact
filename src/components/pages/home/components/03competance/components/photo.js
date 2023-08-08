@@ -14,8 +14,12 @@ const Photo = () => {
           </a>
       
         </div>
-        <div className="w-2/3 flex items-center justify-center ">
+        <div className="w-2/3 flex items-center justify-center relative ">
           <img src="/images/moi.jpg" />
+          <p></p>
+          <p></p>
+          <p></p>
+
         </div>
       </div>
     </div>
