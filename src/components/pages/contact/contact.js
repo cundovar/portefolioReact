@@ -13,9 +13,9 @@ const Contact = () => {
         <h3>Contact</h3>
        </div>
     <div className="total-contact w-full flex px-10 ">
-      <div className="contact-form w-3/4 flex">
-        <form className="w-full flex" action="" method="post">
-          <div className="contact-identifiant w-1/3  flex flex-col items-end justify-center ">
+      <div className="contact-form w-full flex ">
+        <form className="w-full flex  items-center justify-center" action="" method="post">
+          <div className="contact-identifiant w-1/3  flex flex-col items-center justify-center ">
             <div className="w-3/4 space-y-5">
 
            
@@ -82,7 +82,7 @@ const Contact = () => {
 
           </div>
 
-          <div className="contact-text w-2/3 ">
+          <div className="contact-text w-1/3 ">
             <div className="flex flex-col ">
               <div className="mb-3">
 
@@ -114,12 +114,7 @@ const Contact = () => {
         </form>
       </div>
        
-      <div className="contact-animation  w-1/4 bg-gray-300 ">
-     
-        <Animation/>
-
-      
-      </div>
+    
     </div> 
   </div>
   );

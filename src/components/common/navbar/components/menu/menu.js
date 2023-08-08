@@ -4,23 +4,35 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   return (
     <div className="navbar-menu  flex  items-start ">
-      <div className="navbar-menu-2 flex items-end justify-end backdrop-blur-sm backdrop-blur-sm bg-white/10 ">
-        <ul className=" menu flex  items-start justify-end">
+      <div className="navbar-menu-2 flex items-end justify-end ">
+        <ul className=" menu flex  items-start justify-end space-x-3">
           <NavLink to="/">
 
           <li>
+            <h5>
+
             Accueil
+            </h5>
           </li>
           </NavLink>
       
           <NavLink to="/portfolio">
 
           <li>
+            <h5>
+
             Portfolio
+            </h5>
           </li>
           </NavLink>
           <NavLink to="/contact">
-            <li>Contact</li>
+            
+            <li>
+              <h5>
+
+              Contact
+              </h5>
+              </li>
           </NavLink>
         </ul>
 

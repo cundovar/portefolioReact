@@ -6,8 +6,9 @@
   padding-top: 0;
   width: 300px;
   height: 300px;
-  background-color: rgb(239, 239, 172);
   margin: 0.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 10px 9px 11px 6px gray;
 }
 .cardPortfolio .contain-img-text {
   height: 200px;
@@ -17,6 +18,14 @@
   height: 200px;
   opacity: 1;
   overflow: hidden;
+}
+.cardPortfolio .buttonCard {
+  background-color: #c4b6b6;
+  border-radius: 10px;
+}
+.cardPortfolio .buttonCard:hover {
+  background-color: #5b5959;
+  color: #b5bfd9;
 }
 .cardPortfolio img {
   width: 100%;
@@ -176,7 +185,6 @@
 }
 
 .navbar {
-  height: 100px;
   background-image: url(/public/images/header/terre.jpg);
   color: aliceblue;
 }
@@ -198,38 +206,31 @@
   font-size: 17px;
 }
 
-.menu li {
-  color: bisque;
-  margin: 0 0.5rem 0 0;
-  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #cd9898 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-.menu li::before {
-  content: "";
-  background: #54b3d6;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-}
-.menu li:hover {
-  background-position: 0;
-}
-.menu li:hover::before {
-  width: 100%;
-}
-
 .text-contact-fin {
   margin: auto;
 }
 
 @media screen and (max-width: 800px) {
+  .navbar {
+    padding: 3rem;
+  }
+  .navbar-menu {
+    width: 100%;
+  }
+  .navbar-menu-2 {
+    width: 100%;
+  }
+  .menu {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar-contain {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .total-titre {
     width: 100%;
     text-align: center;
@@ -239,37 +240,6 @@
   }
   .navbar-contain {
     width: 100%;
-  }
-  .navbar-menu {
-    position: absolute;
-    left: -150px;
-  }
-  .navbar-menu .navbar-menu-2 {
-    position: relative;
-  }
-  .navbar-menu .navbar-menu-2 .button-circle {
-    display: block;
-    border-radius: 30px;
-    height: 100px;
-    width: 60px;
-    z-index: 100;
-    position: absolute;
-    top: 30%;
-    right: -15px;
-  }
-  .navbar-menu .active {
-    left: 0;
-  }
-  .menu {
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    padding: 2rem;
-    padding-left: 0.5rem;
-    width: 150px;
-    position: relative;
-    height: 100vh;
-    z-index: 99;
   }
 }
 .competance {
@@ -359,11 +329,34 @@ textarea {
   margin-right: 1rem;
 }
 
+.foot {
+  margin-bottom: 1rem;
+}
+
 .social-icon {
   border-left: solid 1px wheat;
   padding-left: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+  .footer {
+    margin: auto;
+  }
+  .footer-text-social {
+    width: 100%;
+  }
+  .footer-text {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .footer-text p {
+    text-align: start;
+    width: 100%;
+  }
+  .social-icon ul li {
+    margin-bottom: 3rem;
+  }
+}
 .imgPortfolio {
   width: 250px;
   height: 200px;
@@ -427,6 +420,61 @@ textarea {
   padding: 0.5rem;
 }
 
+@media screen and (max-width: 800px) {
+  .total-1 {
+    flex-direction: column;
+  }
+  .carousel-item {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .responsiService {
+    width: 100%;
+  }
+  .responsi3boutons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .trois-boutons ul {
+    flex-direction: row;
+  }
+  .responsiText-service {
+    width: 100%;
+    margin: auto;
+    margin-left: 0;
+    padding-left: 0;
+    padding: 1rem;
+    text-align: start;
+  }
+  .responsiTitreDescrip {
+    width: 100%;
+  }
+  .divRealisation {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .competance {
+    width: 100%;
+  }
+  .text_competence {
+    width: 100%;
+  }
+  .text_competence p {
+    width: 100%;
+  }
+  .text_competence div {
+    width: 100%;
+  }
+}
 .main {
   height: 100%;
   width: 100%;
@@ -548,6 +596,10 @@ h4 {
 
 h5 {
   font-size: 18px;
+}
+
+h6 {
+  font-size: 15px;
 }
 
 @media screen and (max-width: 800px) {

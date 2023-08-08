@@ -35,7 +35,7 @@ const Realisation = () => {
             <FontAwesomeIcon icon={faAngleRight} className="nextPre" style={{color: "#ec69c3",}} />
             </button>
             </div>
-            <div className="bg-neutral-300 p-5 w-2/6">
+            <div className="bg-neutral-300 responsiTitreDescrip p-5 w-2/6">
               <div className="">
                 <h4>{data[currentItem].titre01}</h4>
                 <h5></h5>

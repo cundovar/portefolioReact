@@ -15,7 +15,10 @@
       "lien": "https://varascundo.com/",
       "lienCode": "https://github.com/cundovar/peintureFacundo",
       "description": "projet pour examen pour le diplôme de developpeur we je me suis concentré essentiellement sur le back-end ",
-      "imageSrc":"/images/peinture.PNG"
+      "imageSrc":"/images/peinture.PNG",
+      "test1":"travail sur test 1 2 travail sur",
+      "test2":"travail sur test 1 2 travail sur test 1 ",
+      "test3":"travail sur test 1 2 travail sur test 1 "
     },
     "space": {
       "type":["react","scss"],

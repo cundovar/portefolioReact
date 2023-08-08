@@ -13,10 +13,36 @@
 }
 .footer-menu{
     margin: 0 1rem 0rem 1rem;
-    margin-right: 1rem;
+    margin-right: 1rem;   
    
+}
+.foot{
+    margin-bottom: 1rem;
+    
 }
 .social-icon{
     border-left:solid 1px wheat ;
     padding-left:1rem ;
+}
+@media screen and (max-width:800px) {
+.footer{
+    
+margin: auto;
+}
+
+.footer-text-social{
+    width: 100%;
+}
+.footer-text{
+    width: 100%;
+    padding: .5rem;
+    p{
+        text-align: start;
+        width: 100%;
+    }
+  
+}
+.social-icon ul li{
+    margin-bottom: 3rem;
+}
 }

@@ -1,6 +1,5 @@
 .navbar{
 
-    height: 100px;
     background-image: url(/public/images/header/terre.jpg);
     color: aliceblue;
 }
@@ -23,45 +22,7 @@
     font-size:17px;
 }
 
-.menu   {
 
-    li{
-        color:bisque;
-        margin: 0 .5rem 0 0;
-        background-image: linear-gradient(
-        to right,
-        #54b3d6,
-        #54b3d6 50%,
-        #cd9898 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.3s ease-in-out;
-      &::before{
-        content: '';
-        background: #54b3d6;
-        display: block;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 0;
-        height: 3px;
-    
-      }
-      &:hover{
-        background-position: 0;
-        &::before{
-          width: 100%;
-        }
-      }
-
-
-    }
- 
-
-}
 
 .text-contact-fin{
     margin: auto;
@@ -74,7 +35,28 @@
 
 @media screen and (max-width:800px) {
 
+ .navbar{
+    padding: 3rem;
+}
+.navbar-menu{
+    width: 100%;
+}
+.navbar-menu-2{
+    width: 100%;
+}
+.menu{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.navbar-contain{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
 
+ }
 
     // titre***********
     .total-titre{
@@ -94,46 +76,14 @@
     .navbar-contain{
         width: 100%;
     }
-    .navbar-menu{
-        position: absolute;
-        left:-150px;
-        
+   
 
-        .navbar-menu-2{
-            position: relative;
-            .button-circle{
-                display: block;
-                border-radius: 30px;
-                height: 100px;
-                width: 60px;
-             
-                z-index: 100;
-                position: absolute;
-                top:30%;
-                right: -15px;
-            }
-        }
-    }
-    .navbar-menu .active{
-        left:0;
-    }
+       
     
 
-    .menu{
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-       
-        padding: 2rem;
-        padding-left:0.5rem ;
-        width: 150px;
-        position: relative;
-        height: 100vh;
-        z-index: 99;
-
+   
         
     
     }
    
     
-}

@@ -66,3 +66,64 @@
 .voir-portfolio{
     padding: .5rem;
 }
+
+// carousel div
+
+@media screen and (max-width:800px) {
+    // carousel service
+    .total-1{
+        flex-direction: column;
+    }
+    .carousel-item{
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .responsiService{
+        width: 100%;
+    }
+    .responsi3boutons{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .trois-boutons ul{
+        flex-direction: row;
+    }
+    .responsiText-service{
+        width: 100%;
+        margin: auto;
+        margin-left: 0;
+        padding-left: 0;
+        padding: 1rem;
+        text-align: start;
+    }
+
+    .responsiTitreDescrip{
+        width: 100%;
+    }
+    .divRealisation{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .competance{
+        width: 100%;
+    }
+    .text_competence{
+        width: 100%;
+        p{
+            width: 100%;
+        }
+        div{
+            width: 100%;
+        }
+     
+    }
+}
