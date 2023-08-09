@@ -9,7 +9,7 @@ const Menu = () => {
           <NavLink to="/">
 
           <li>
-            <h5>
+            <h5 className="move-line">
 
             Accueil
             </h5>
@@ -19,7 +19,7 @@ const Menu = () => {
           <NavLink to="/portfolio">
 
           <li>
-            <h5>
+            <h5 className="move-line">
 
             Portfolio
             </h5>
@@ -28,7 +28,7 @@ const Menu = () => {
           <NavLink to="/contact">
             
             <li>
-              <h5>
+              <h5 className="move-line">
 
               Contact
               </h5>

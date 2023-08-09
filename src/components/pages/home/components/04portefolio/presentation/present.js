@@ -52,7 +52,7 @@ const Present = () => {
 
             <NavLink to="/portfolio">
               <div className="w-5/6 text-end  ">
-               <button className="voir-portfolio  bg-neutral-300">voir le portfolio
+               <button className="voir-portfolio  text-white bg-gradient-to-r from-neutral-400 via-neutral-500 to-neutral-600 hover:bg-gradient-to-br focus:ring-6 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">voir le portfolio
                <span><FontAwesomeIcon className="ml-3" icon={faArrowRight} /> </span>
                </button>
               </div>

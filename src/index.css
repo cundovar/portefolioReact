@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.rt-Flex a {
+  margin: auto;
+}
+
 .cardPortfolio {
   padding: 0.5rem;
   padding-top: 0;
@@ -18,14 +22,6 @@
   height: 200px;
   opacity: 1;
   overflow: hidden;
-}
-.cardPortfolio .buttonCard {
-  background-color: #c4b6b6;
-  border-radius: 10px;
-}
-.cardPortfolio .buttonCard:hover {
-  background-color: #5b5959;
-  color: #b5bfd9;
 }
 .cardPortfolio img {
   width: 100%;
@@ -45,7 +41,7 @@
 
 .ulVoir {
   justify-content: space-around;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .choice-tekno {
@@ -574,6 +570,29 @@ textarea {
     }
   }
 }
+.move-line {
+  border: none;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.move-line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.move-line:hover::before {
+  width: 100%;
+  background-color: red;
+}
+
 .home {
   padding: 1rem 2rem 0 2rem;
 }

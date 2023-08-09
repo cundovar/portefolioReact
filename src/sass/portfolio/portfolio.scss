@@ -1,3 +1,11 @@
+
+
+.rt-Flex a{
+	// TITRE CARD PORTFOLIO
+	margin: auto;
+
+}
+
 .cardPortfolio{
     padding: .5rem;
     padding-top:0 ;
@@ -23,14 +31,6 @@
         overflow: hidden;      
     }
 
-    .buttonCard{
-		background-color: #c4b6b6;
-		border-radius: 10px;
-		&:hover{
-			background-color: #5b5959;
-			color: #b5bfd9;
-		}
-	}
     
     img{
         width: 100%;
@@ -62,7 +62,7 @@
 
 .ulVoir{
     justify-content: space-around;
-   margin-top: .5rem ;
+   margin-top: 1rem ;
 }
 
 // *********input choice tekno************

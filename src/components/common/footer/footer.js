@@ -17,7 +17,7 @@ const Footer = () => {
           <p>Présence virtuel</p>
           <div className="social-icon ">
             <ul className="space-y-3">
-              <li>Github </li>
+              <li> <a href=""></a> Github </li>
               <li>linkedin</li>
             </ul>
           </div>
@@ -29,9 +29,17 @@ const Footer = () => {
         </div>
         <div className="flex w-full justify-end  footer-menu">
           <ul className=" flex space-x-3 ">
-            <li>accueil</li>
-            <li>Portfolio</li>
-            <li>contact</li>
+
+            <NavLink to="/">
+              <li className="move-line">accueil</li>
+            </NavLink>
+            <NavLink to="/portfolio">
+              <li className="move-line">Portfolio</li>
+            </NavLink>
+            <NavLink to="/contact">
+              <li className="move-line">contact</li>
+            </NavLink>
+
           </ul>
         </div>
       </div>
