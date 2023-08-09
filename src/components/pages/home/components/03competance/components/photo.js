@@ -6,10 +6,10 @@ const Photo = () => {
    
       <div className="flex space-x-5 foto">
         <div className="space-y-3 W-1/3 flex flex-col items-center justify-center realtive">
-          <a href="https://github.com/cundovar" className="relative" >
+          <a href="https://github.com/cundovar" target="_blank" className="relative" >
             <i className="fa-brands fa-github absolute top-0 right-0"></i>
           </a>
-          <a href="https://www.linkedin.com/in/facundo-varas/ " className="relative">
+          <a href="https://www.linkedin.com/in/facundo-varas/ " target="_blank" className="relative">
             <i className="fa-brands fa-linkedin absolute top-5 right-0"></i>
           </a>
       

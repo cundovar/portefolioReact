@@ -17,8 +17,8 @@ const Footer = () => {
           <p>Présence virtuel</p>
           <div className="social-icon ">
             <ul className="space-y-3">
-              <li> <a href=""></a> Github </li>
-              <li>linkedin</li>
+              <li> <a href="https://github.com/cundovar" className="move-line" target="_blank">Github</a>  </li>
+              <li><a href="https://www.linkedin.com/in/facundo-varas/" className="move-line" target="_blank">linkedin</a> </li>
             </ul>
           </div>
         </div>

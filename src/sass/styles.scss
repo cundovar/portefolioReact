@@ -13,12 +13,16 @@
 @import './footer/footer.scss';
 @import './portfolio/realisation/realisation.scss';
 @import './contact/animation.scss';
+
+.light-text{
+    color:rgb(129, 137, 153);
+}
 .move-line {
     border: none;
     padding: 10px 20px;
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    
     cursor: pointer;
   
     &::before {
@@ -28,13 +32,13 @@
       left: 0;
       width: 0;
       height: 2px;
-      background-color: blue; // Couleur de la bordure au départ
+      background-color: rgb(8, 4, 7); // Couleur de la bordure au départ
       transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; // Transition de largeur et couleur
     }
   
     &:hover::before {
       width: 100%; // Largeur de la bordure au survol
-      background-color: red; // Couleur de la bordure au survol
+      background-color: rgb(224, 112, 178); // Couleur de la bordure au survol
     }
   }
   

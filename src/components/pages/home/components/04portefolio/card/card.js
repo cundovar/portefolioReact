@@ -76,17 +76,17 @@ const CardPortfolio = () => {
         ))}
       </div>
 
-      <div className="w-full flex flex-wrap items-center justify-center">
+      <div className="w-full flex flex-wrap items-center justify-center ">
         {filteredProjects.map((projet, index) => (
-          <div className="cardPortfolio transition" key={index}>
+          <div className="cardPortfolio shadow-md  shadow-neutral-500/50 space-y-5" key={index}>
             <div className="relative contain-img-text">
-              <div className="containImg absolute">
+              <div className="containImg absolute shadow-xl shadow-inner shadow-neutral-500/50">
                 {isLoading ? (
                   <div className="icon">
                     <i className="fas fa-spinner fa-pulse"></i>
                   </div>
                 ) : (
-                  <img src={projet.imageSrc} alt={projet.titre} />
+                  <img src={projet.imageSrc} alt={projet.titre} className="" />
                 )}
               </div>
               <div className="hovver text-center absolute transition flex justify-center items-center hover:bg-pink-400">

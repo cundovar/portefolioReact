@@ -3,11 +3,11 @@ import Realisation from "./realisation";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import CustomBoutonn from "../../../../../common/button";
 
 const Present = () => {
   return (
-    <div className="w-full flex flex-row-reverse total-1">
+    <div className="w-full flex flex-row-reverse total-1 pb-5">
       <div className="w-2/5 responsiService ">
         <div className="w-full border-b mb-8 ">
           <h3>Service et prestation</h3>
@@ -33,7 +33,7 @@ const Present = () => {
               contrôlée sur les différents supports (mobile, tablette, desktop).
             </p>
           </div>
-          <div className="w-1/2 space-y-1">
+          <div className="w-1/2 space-y-1 light-text p-3 bg-neutral-300 ">
             <p>-Technologies : HTML5, CSS3</p>
             <p>-Approche modulaire, travail en composants CSS </p>
             <p>- Pre-Processors : SASS</p>
@@ -43,24 +43,18 @@ const Present = () => {
       </div>
       <div className="w-3/5 divRealisation">
         <div className="w-full border-b mb-8 flex items-end">
-          <h3>Quelques réalisations</h3> 
-        
+          <h3>Quelques réalisations</h3>
         </div>
         <div className="w-full space-y-3 flex flex-col total-carousel">
           <Realisation />
-          <div className="self-end mr-10 w-2/3">
-
-            <NavLink to="/portfolio">
-              <div className="w-5/6 text-end  ">
-               <button className="voir-portfolio  text-white bg-gradient-to-r from-neutral-400 via-neutral-500 to-neutral-600 hover:bg-gradient-to-br focus:ring-6 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">voir le portfolio
-               <span><FontAwesomeIcon className="ml-3" icon={faArrowRight} /> </span>
-               </button>
-              </div>
-            </NavLink>
-            
-         
-          </div>
         </div>
+      
+          <NavLink to="/portfolio">
+            <div className=" text-center mt-5 ">
+              <CustomBoutonn text="voir le portfolio" icon={faArrowRight} />
+            </div>
+          </NavLink>
+      
       </div>
     </div>
   );

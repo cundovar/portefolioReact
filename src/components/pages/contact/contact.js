@@ -77,7 +77,7 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faBuilding} />
                   </span>
                 </p>
-                <p className="text-justify parag">
+                <p className="text-justify parag light-text">
                   * Les champs marqués d'une étoile sont obligatoires.
                 </p>
 
@@ -97,27 +97,23 @@ const Contact = () => {
                     <Typewriter text="Votre message :" delay={100} />
                   </h4>
                 </div>
-                <div className="flex flex-col items-center justify-center">
-                  <p className="relative mx-8  " style={{width:'100%'}}  >
+                <div className="flex flex-col items-center justify-center space-y-3 pb-5">
+                  <p className="relative mx-8  " style={{ width: "100%" }}>
                     <textarea
-                      placeholder="écrivez un message" 
+                      placeholder="écrivez un message"
                       id="message"
                       type="text"
                       rows="15"
                       cols="60"
-                      className="bg-neutral-300 shadow-lg  shadow-pink-500/50  "
-                      style={{width:'100%'}}
+                      className="bg-neutral-300 shadow-lg  shadow-neutral-500/50  "
+                      style={{ width: "100%" }}
                     ></textarea>
                     <span className="absolute left-1">
                       <FontAwesomeIcon icon={faMessage} />
                     </span>
                   </p>
 
-                  <CustomBoutonn text='envoyer'
-                          className="self-start" 
-                  />
-
-               
+                  <CustomBoutonn text="envoyer" className="self-start" />
                 </div>
               </div>
             </div>
