@@ -30,7 +30,7 @@ const Realisation = () => {
             <button id="preview" className="absolute backdrop-blur-xl" onClick={handlePrev} disabled={currentItem === 0}>
             <FontAwesomeIcon className="nextPre" icon={faAngleRight} rotation={180} style={{color: "#ec69c3",}} />
             </button>
-              <img src={data[currentItem].imageSrc} alt={data[currentItem].titre01} />
+              <img src={data[currentItem].imageSrc} alt={data[currentItem].titre01} className="carouselImg" />
             <button id="next" className="absolute backdrop-blur-xl" onClick={handleNext} disabled={currentItem === data.length - 1}>
             <FontAwesomeIcon icon={faAngleRight} className="nextPre" style={{color: "#ec69c3",}} />
             </button>

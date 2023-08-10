@@ -245,20 +245,26 @@
   text-align: justify;
 }
 
-.foto {
-  margin: auto;
-  margin-left: 1rem;
+.iconGit {
+  left: -25px;
+  top: 35%;
+}
+
+.iconLinke {
+  bottom: 35%;
+  left: -25px;
 }
 
 .ima {
-  z-index: 1;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 250px;
+  max-height: 250px;
+  margin: auto;
 }
 
-.fa-brands, .ff {
-  font-size: 20px;
-}
-.fa-brands:hover, .ff:hover {
-  border: 1px solid rgb(236, 105, 195);
+.fa-linkedin:hover, .fa-github:hover {
+  color: rgb(94, 89, 89);
 }
 
 @media screen and (max-width: 800px) {
@@ -311,6 +317,7 @@ textarea {
 }
 
 .footer-text-social {
+  margin: auto;
   margin-bottom: 5rem;
 }
 
@@ -383,7 +390,7 @@ textarea {
   z-index: 99;
 }
 .imgPortfolio .nextPre {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 .imgPortfolio #preview {
   top: 50%;
@@ -391,8 +398,8 @@ textarea {
   transform: translateY(-50%);
   padding: 0.5rem;
   border: 1px solid white;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,8 +411,8 @@ textarea {
   transform: translateY(-50%);
   padding: 0.5rem;
   border: 1px solid white;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,6 +420,12 @@ textarea {
 
 .voir-portfolio {
   padding: 0.5rem;
+}
+
+.carouselImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 800px) {

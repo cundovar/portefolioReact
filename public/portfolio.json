@@ -1,24 +1,31 @@
 {
     "Etang": {
       "type":["wordpress","php"],
-      "titre": "Projet wordpress",
+      "titre": "Asso d'artistes",
       "tekno": "php",
       "lien": "https://duboutdesetangs.com/",
       "lienCode": "https://github.com/cundovar/peintureFacundo",
       "description": "projet pour un site internet pour une association d'artistes avec WordPress",
-      "imageSrc":"/images/etang.PNG"
+      "imageSrc":"/images/etang.PNG",
+      "titreHover":"",
+      "text1":"travail basé sur WordPress",
+      "text2":"Refonte du site de l'association ",
+      "text3":"Nouveau thème, ajout de plugin, SEO",
+      "text4":""
     },
     "peinture": {
       "type":["symfony","php", "twig","javascrip"],
-      "titre": "Projet symfony",
+      "titre": "Site de peintures",
       "tekno": "php",
       "lien": "https://varascundo.com/",
       "lienCode": "https://github.com/cundovar/peintureFacundo",
       "description": "projet pour examen pour le diplôme de developpeur we je me suis concentré essentiellement sur le back-end ",
       "imageSrc":"/images/peinture.PNG",
-      "test1":"travail sur test 1 2 travail sur",
-      "test2":"travail sur test 1 2 travail sur test 1 ",
-      "test3":"travail sur test 1 2 travail sur test 1 "
+      "titreHover":"",
+      "text1":"travail basé sur le framework symfony",
+      "text2":"CRUD des oeuvres, inscription ",
+      "text3":"Gestion de la base de donnée, gestion des stocks",
+      "text4":"Creation d'un panier"
     },
     "space": {
       "type":["react","scss"],
@@ -27,7 +34,12 @@
       "lien": "https://espace.varascundo.com/" ,
       "lienCode": "https://github.com/cundovar/tourism-spacial",
       "description": "Projet react.Sources  issues d'un fichier json. maquettes figma",
-      "imageSrc":"/images/espace.PNG"
+      "imageSrc":"/images/espace.PNG",
+      "titreHover":"",
+      "text1":"travail basé sur React",
+      "text2":"gestion des différentes page ",
+      "text3":" ",
+      "text4":""
     },
     "dashboard": {
       "type":["react","scss"],
@@ -36,7 +48,12 @@
       "lien": "https://espace.varascundo.com/" ,
       "lienCode": "https://github.com/cundovar/tourism-spacial",
       "description": " Tableau de bord avec bobliothèque js CHARTJS, style en SASS, javascript REACT.",
-      "imageSrc":"/images/dashboard.PNG"
+      "imageSrc":"/images/dashboard.PNG",
+      "titreHover":"",
+      "text1":"travail basé sur React",
+      "text2":"Appel à la bibliothèque js.CHARTS sous React",
+      "text3":"Creation de fichier Json pour les données des graphiques ",
+      "text4":"Utilisation du pre-processeur SASS"
     },
     "magicieuse": {
         "type":["wordpress","php"],
@@ -45,6 +62,11 @@
         "lien": "https://la-magicieuse.varascundo.com/" ,
         "lienCode": "",
         "description": "refonte site wordpress de la maison edition la magicieuse",
-        "imageSrc":"/images/magicieuse.PNG"
+        "imageSrc":"/images/magicieuse.PNG",
+        "titreHover":"",
+        "text1":"travail basé sur WordPress",
+        "text2":"Refonte du site, changement de thème",
+        "text3":"Personalisation du thème, création de thème enfant, changement du code PHP de WordPress",
+        "text4":"Gestion de Woocommerce, ajout de code javascript"
       }
   }

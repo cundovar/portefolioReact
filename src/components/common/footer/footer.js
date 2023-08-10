@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div className=" footer w-full">
-      <div className="w-5/6 flex justify-around footer-text-social">
+      <div className="w-5/6 flex justify-center items-center footer-text-social">
         <div className=" exp w-1/2">
           <div className="w-1/3 flex justify-center itmes-center footer-text ">
             <p className="text-justify ">
@@ -23,8 +23,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full foot footer-menu">
-        <div className="flex ">
+      <div className="flex w-full foot footer-menu pb-5">
+        <div className="flex items-end justify-center pt-3 ">
           <p>copyrirgth@2023</p>
         </div>
         <div className="flex w-full justify-end  footer-menu">

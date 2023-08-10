@@ -9,7 +9,7 @@ const Navbar=()=>{
     return(
         <div className="navbar flex items-center justify-center">
 
-            <div className=" navbar-contain flex w-5/6 justify-between  ">
+            <div className=" navbar-contain flex w-5/6 justify-between pb-10 pt-5  ">
 
             <Titre/>
             <Menu/>

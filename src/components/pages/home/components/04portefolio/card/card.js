@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCode } from "@fortawesome/free-solid-svg-icons";
 import CustomBoutonn from "../../../../../common/button";
 import {
+  Avatar,
+  Box,
   Flex,
   HoverCard,
   HoverCardTrigger,
@@ -80,13 +82,13 @@ const CardPortfolio = () => {
         {filteredProjects.map((projet, index) => (
           <div className="cardPortfolio shadow-md  shadow-neutral-500/50 space-y-5" key={index}>
             <div className="relative contain-img-text">
-              <div className="containImg absolute shadow-xl shadow-inner shadow-neutral-500/50">
+              <div className="containImg absolute shadow-xl  shadow-neutral-500/50">
                 {isLoading ? (
                   <div className="icon">
                     <i className="fas fa-spinner fa-pulse"></i>
                   </div>
                 ) : (
-                  <img src={projet.imageSrc} alt={projet.titre} className="" />
+                  <img src={projet.imageSrc} alt={projet.titre}  />
                 )}
               </div>
               <div className="hovver text-center absolute transition flex justify-center items-center hover:bg-pink-400">
@@ -95,16 +97,36 @@ const CardPortfolio = () => {
             </div>
 
             <div className="flex flex-col justify-between cursor-pointer items-center ">
-              <div className=" w-5/6 mt-2 text-center bg-neutral-200 p-1">
+              <div className=" w-5/6 mt-2 text-center p-1">
                 <Flex gap="4">
                   <HoverCard.Root>
                     <HoverCard.Trigger >
                       <Link href="#" > {projet.titre} </Link>
                     </HoverCard.Trigger>
                     <HoverCard.Content size="1">
-                      <Text as="div" size="1" style={{ maxWidth: 325 }}>
-                        <Strong>Typography</Strong> {projet.test1}{projet.test2}
-                      </Text>
+                      <Flex gap="3" size="1" style={{ maxWidth: 325 }}>
+                        <Avatar size="2"
+                                radius="full"
+                                fallback="R"
+                                src={projet.imageSrc}/>
+                        <Box>
+                          <Text> 
+                        <Strong>{projet.titreHover} </Strong> 
+                          </Text>
+                          <Text as="div" color="gray">
+                          {projet.text1}         
+                          </Text>
+                          <Text as="div" mt="3" >
+                          {projet.text2}
+                          </Text>
+                          <Text as="div"  >
+                          {projet.text3}
+                          </Text>
+                          <Text as="div"  >
+                          {projet.text4}
+                          </Text>
+                        </Box>
+                      </Flex>
                     </HoverCard.Content>
                   </HoverCard.Root>
                 </Flex>
