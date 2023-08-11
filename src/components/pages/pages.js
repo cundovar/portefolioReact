@@ -5,6 +5,7 @@ import Footer from "../common/footer/footer";
 import Home from "./home/Home";
 import Contact from "./contact/contact";
 import PortefolioPage from "./portfolio-page/portfolio-page";
+import Design from "./design/design";
 
 
 
@@ -21,6 +22,7 @@ const Pages=()=> {
                 <Route path="/" element={<Home />}/>
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="/portfolio" element={<PortefolioPage />}/>
+                <Route path="/creation" element={<Design />}/>
                
              </Routes>
              <Footer/>

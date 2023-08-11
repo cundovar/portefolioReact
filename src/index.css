@@ -582,6 +582,10 @@ textarea {
     }
   }
 }
+.total-crea {
+  margin: auto;
+}
+
 .light-text {
   color: rgb(129, 137, 153);
 }

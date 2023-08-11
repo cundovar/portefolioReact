@@ -1,5 +1,4 @@
 import React from "react";
-import Animation from "./animation/animation";
 import Typewriter from "../../hooks/typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -113,7 +112,7 @@ const Contact = () => {
                     </span>
                   </p>
 
-                  <CustomBoutonn text="envoyer" className="self-start" />
+                  <CustomBoutonn type="submit" text="envoyer" className="self-start" />
                 </div>
               </div>
             </div>

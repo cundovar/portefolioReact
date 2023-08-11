@@ -3,8 +3,8 @@ import React from "react";
 
 const Photo = () => {
   return (
-    <div className="text_competence w-1/3 flex items-center justify-center ">
-      <div className="flex    items-center justify-center  ">
+    <div className="text_competence w-1/3 flex items-center justify-cente  ">
+      <div className="flex    items-center justify-center ">
         <div className="w-2/3 flex ima relative shadow-lg shadow-neutral-600 ">
           <a  
             href="https://github.com/cundovar"
