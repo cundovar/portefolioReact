@@ -14,6 +14,7 @@ import {
   Text,
 } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
+import Design from "../../../../design/design";
 
 const CardPortfolio = () => {
   const { data: portfolioData, error: portfolioError } =
@@ -109,7 +110,8 @@ const CardPortfolio = () => {
                         <Avatar size="2"
                                 radius="full"
                                 fallback="R"
-                                src={projet.imageSrc}/>
+                                src={projet.imageSrc}
+                                />
                         <Box>
                           <Text> 
                         <Strong>{projet.titreHover} </Strong> 
@@ -155,6 +157,9 @@ const CardPortfolio = () => {
         ))}
         
       </div>
+
+
+      <Design/>
 
     
     </>

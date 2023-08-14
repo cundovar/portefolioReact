@@ -5,7 +5,7 @@ import { Theme } from '@radix-ui/themes';
 function App() {
   return (
     <Theme>
-      <div className="bg-neutral-200" >
+      <div className="bg-neutral-200 font" >
         <Pages/>
       </div>
       </Theme>
