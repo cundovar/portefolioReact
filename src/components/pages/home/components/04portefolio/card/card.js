@@ -159,7 +159,7 @@ const CardPortfolio = () => {
       </div>
 
 
-      <Design/>
+     
 
     
     </>

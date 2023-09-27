@@ -7,12 +7,12 @@ import CustomBoutonn from "../../../../../common/button";
 
 const Present = () => {
   return (
-    <div className="w-full flex flex-row-reverse total-1 pb-5">
-      <div className="w-2/5 responsiService ">
+    <div className="w-full flex flex-row-reverse total-1 pb-5 ">
+      <div className="w-1/2 responsiService ">
         <div className="w-full border-b mb-8 ">
           <h3>Service et prestation</h3>
         </div>
-        <div className="w-6/6 space-x-6 responsi3boutons  flex">
+        <div className="w-4/6 space-x-6 responsi3boutons  flex">
           <div className="trois-boutons">
             <ul className="flex  flex-col items-center justify-center">
               <li className="boutons">1</li>
@@ -41,7 +41,7 @@ const Present = () => {
           </div>
         </div>
       </div>
-      <div className="w-3/5 divRealisation">
+      <div className="w-1/2 divRealisation">
         <div className="w-full border-b mb-8 flex items-end">
           <h3>Quelques réalisations</h3>
         </div>

@@ -41,15 +41,26 @@ const Menu = () => {
                              src="./images/magicieuse.PNG"/>
 
                     <NavLink to="/portfolio">
-                      <h5 >Projets</h5>
+                      <h6 >Projets</h6>
                     </NavLink>
                     </Flex>
                   </DropdownMenu.Item>
+
+
+
+
                   <DropdownMenu.Separator />
+
                   <DropdownMenu.Item>
+                    <Flex gap="3">
+                     <Avatar size="1"
+                             radius="full"
+                             fallback="R"
+                             src="./images/dashboard.PNG"/>
                     <NavLink to="/creation">
-                      <h5>Gabarits</h5>{" "}
+                      <h6 >Gabarits</h6>
                     </NavLink>
+                    </Flex>
                   </DropdownMenu.Item>
 
                 </Text>

@@ -6,7 +6,7 @@ import Crea1 from "./crea1/crea1";
 const Design=()=>{
 
     return(
-        <section className="border w-full border-black sectionDesign">
+        <section className="border w-full border-black  sectionDesign">
 
                   <div className="bg-white flex items-center justify-center space-x-3">
                     <button>preview</button>

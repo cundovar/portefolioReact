@@ -313,7 +313,11 @@ textarea {
 .footer {
   background-image: url("/public/images/header/terre.jpg");
   color: aliceblue;
-  padding: 1rem;
+  position: absolute;
+  justify-self: end;
+  align-self: flex-end;
+  bottom: 0;
+  height: 20rem;
 }
 
 .footer-text-social {
@@ -660,8 +664,59 @@ textarea {
   color: #9f989c;
 }
 
+html, body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-color: aqua;
+  flex-grow: 1;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .font {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "Jost", sans-serif;
+  flex-grow: 1;
+  position: relative;
+  height: calc(100% - 60px);
+}
+
+.radix-themes {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.font2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1;
+  height: calc(100% - 60px);
+  position: relative;
+}
+
+.interieur {
+  padding-bottom: 21rem;
 }
 
 .light-text {

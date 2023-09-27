@@ -15,16 +15,19 @@ const Pages=()=> {
 
         <>
         <Router>
-             <div  className="space-y-5">
+             <div  className="space-y-5 h-full flex flex-col   font2">
 
              <Navbar/>
+                <div className="interieur">
              <Routes>
+
                 <Route path="/" element={<Home />}/>
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="/portfolio" element={<PortefolioPage />}/>
                 <Route path="/creation" element={<Design />}/>
                
              </Routes>
+                </div>
              <Footer/>
              </div>
 

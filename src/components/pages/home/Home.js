@@ -10,10 +10,10 @@ const Home =()=>{
         
         
 
-        <div className="home flex flex-col items-center justify-center space-y-5 ">
+        <div className="home relative flex flex-col items-center justify-center space-y-5 mb-20 ">
           
-            <div className="w-full flex flex-col items-center justify-center"> <Competance/></div>
-            <div className="w-full flex flex-col items-center justify-center "><Portefolio/></div>
+            <div className="w-5/6 flex flex-col items-center justify-center"> <Competance/></div>
+            <div className="w-5/6 flex flex-col items-center justify-center "><Portefolio/></div>
           
            
             

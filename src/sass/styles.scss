@@ -15,9 +15,76 @@
 @import './contact/animation.scss';
 @import './design/design.scss';
 @import './design/crea1.scss';
+
+html, body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+   
+  }
+  body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+   border-color: aqua;
+   flex-grow: 1;
+  }
+  #root{
+ 
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+   
+  
+  }
 .font{
+   
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: 'Jost', sans-serif;
+    flex-grow: 1;
+    position: relative;
+    height: calc(100% - 60px);
+  
+   
 }
+.radix-themes{
+    
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+   
+    position: relative;
+   
+}
+.font2{
+    display: flex;
+    flex-direction: column;
+   position: relative;
+    flex-grow: 1;
+
+    height: calc(100% - 60px);
+    position: relative;
+
+  
+}
+
+
+.interieur{
+    
+   
+    padding-bottom: 21rem;
+}
+
 .light-text{
     color:rgb(129, 137, 153);
 }
@@ -48,6 +115,7 @@
   
 .home{
     padding: 1rem 2rem 0 2rem;
+ 
 }
 
 h1{

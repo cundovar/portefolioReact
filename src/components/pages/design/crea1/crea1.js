@@ -28,11 +28,11 @@ const Crea1 = () => {
           </div>
         </div>
 
-        <div className="flex border border-lime-950 relative ">
-          <div className="w-1/3   border border-red-600">
-            <p className=" border mt-24 pl-2 ">édition 01</p>
+        <div className="flex  relative ">
+          <div className="w-1/3   ">
+            <p className="  mt-24 pl-2 ">édition 01</p>
 
-            <div className="h-1/2   absolute  tot border ">
+            <div className="h-1/2   absolute  tot ">
               <h1 className="lg:text-7xl sm:text-5xl md:text-6xl font-titre-fond-g">
                 Innovation
               </h1>
@@ -42,7 +42,7 @@ const Crea1 = () => {
             </div>
           </div>
 
-          <div className="w-2/3flex justify-end border h-96 border-black ">
+          <div className="w-2/3flex justify-end  h-96  ">
             <img
               src="/images/crea/house.jpg"
               alt=""
@@ -90,7 +90,7 @@ const Crea1 = () => {
           <Box>
             <Text as="div">
               <div
-                className="w-full relative flex bg-slate-200 border  "
+                className="w-full relative flex bg-slate-200   "
                 style={{ height: "30rem" }}
               >
                 <div
@@ -119,7 +119,7 @@ const Crea1 = () => {
                   <h1>01.</h1>
                 </div>
 
-                <div className="w-1/2 bg-red-500">
+                <div className="w-1/2">
                   <img
                     className="object-cover w-full h-full"
                     src="./images/crea/maison.jpg"
@@ -189,7 +189,7 @@ const Crea1 = () => {
                     </div>
                   </div>
                   <div className="w-5/6 flex z-10  ">
-                    <div className="w-1/2 bg-orange-400 h-32 ">
+                    <div className="w-1/2 ">
                       <img
                         className="object-cover w-full h-full"
                         src="./images/crea/ville.jpg"
@@ -204,7 +204,7 @@ const Crea1 = () => {
                     </div>
                   </div>
                   <div className="w-5/6 flex mt-3  ">
-                    <div className="w-1/2 bg-orange-400 h-32 ">
+                    <div className="w-1/2 h-32 ">
                       <img
                         className="object-cover w-full h-full"
                         src="./images/crea/nat.jpg"
