@@ -280,6 +280,19 @@ textarea {
   padding-right: 10px;
 }
 
+.boutonss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: antiquewhite;
+  background-color: rgb(74, 71, 71);
+}
+
 .contact-identifiant p input {
   padding-left: 22px;
   width: 80%;
@@ -383,6 +396,10 @@ textarea {
   border-radius: 50%;
   color: antiquewhite;
   background-color: rgb(74, 71, 71);
+}
+
+.tabb {
+  display: flex;
 }
 
 .imgPortfolio img {

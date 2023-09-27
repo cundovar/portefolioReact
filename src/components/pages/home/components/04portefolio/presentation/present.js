@@ -4,23 +4,27 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import CustomBoutonn from "../../../../../common/button";
-
+import { Tab,Tabs } from "./tabs";
 const Present = () => {
   return (
+
+
     <div className="w-full flex flex-row-reverse total-1 pb-5 ">
+ 
       <div className="w-1/2 responsiService ">
         <div className="w-full border-b mb-8 ">
           <h3>Service et prestation</h3>
         </div>
+
         <div className="w-4/6 space-x-6 responsi3boutons  flex">
-          <div className="trois-boutons">
-            <ul className="flex  flex-col items-center justify-center">
-              <li className="boutons">1</li>
-              <li className="boutons">2</li>
-              <li className="boutons">3</li>
-            </ul>
-          </div>
-          <div className="w-1/2  responsiText-service text-justify space-y-3">
+
+
+        <Tabs>
+    <Tab title="1" key={1} selected >
+
+  <div className="flex">
+
+    <div className="w-1/2  responsiText-service text-justify space-y-3">
             <p>
               Les gabarits livrés sont conformes aux normes W3C. Le code mis en
               place est sémantique, indenté et commenté. Les pages sont
@@ -39,7 +43,17 @@ const Present = () => {
             <p>- Pre-Processors : SASS</p>
             <p></p>
           </div>
+
+  </div>
+
+    </Tab>
+    <Tab title='2'>aa</Tab>
+  </Tabs>
+         
         </div>
+
+
+
       </div>
       <div className="w-1/2 divRealisation">
         <div className="w-full border-b mb-8 flex items-end">
