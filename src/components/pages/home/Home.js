@@ -7,13 +7,14 @@ const Home =()=>{
 
 
     return (
-        
-        
+        <>
+      
 
-        <div className="home relative flex flex-col items-center justify-center space-y-5 mb-20 ">
+        <div className="home relative flex flex-col items-center justify-center space-y-5  max-lg:w-full max-lg:p-0 ">
+
           
-            <div className="w-5/6 flex flex-col items-center justify-center"> <Competance/></div>
-            <div className="w-5/6 flex flex-col items-center justify-center "><Portefolio/></div>
+            <div className="w-5/6  flex flex-col items-center justify-center space-y-30"> <Competance/></div>
+            <div className="w-5/6 max-lg:6/6 flex flex-col items-center justify-center "><Portefolio/></div>
           
            
             
@@ -23,6 +24,7 @@ const Home =()=>{
 
 
         </div>
+        </>
 
 
         

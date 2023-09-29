@@ -205,10 +205,12 @@
   margin: auto;
 }
 
-@media screen and (max-width: 800px) {
-  .navbar {
-    padding: 3rem;
+@media screen and (min-width: 1024px) {
+  .navbar-menu {
+    margin-right: 15rem;
   }
+}
+@media screen and (max-width: 800px) {
   .navbar-menu {
     width: 100%;
   }
@@ -246,13 +248,13 @@
 }
 
 .iconGit {
-  left: -25px;
+  left: -35px;
   top: 35%;
 }
 
 .iconLinke {
   bottom: 35%;
-  left: -25px;
+  left: -35px;
 }
 
 .ima {
@@ -278,19 +280,6 @@
 textarea {
   padding-left: 22px;
   padding-right: 10px;
-}
-
-.boutonss {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 50%;
-  color: antiquewhite;
-  background-color: rgb(74, 71, 71);
 }
 
 .contact-identifiant p input {
@@ -330,12 +319,12 @@ textarea {
   justify-self: end;
   align-self: flex-end;
   bottom: 0;
-  height: 20rem;
+  height: 17rem;
 }
 
 .footer-text-social {
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .footer-text, .footer-social {
@@ -344,7 +333,7 @@ textarea {
 }
 
 .footer-menu {
-  margin: 0 1rem 0rem 1rem;
+  margin: auto;
   margin-right: 1rem;
 }
 
@@ -360,16 +349,22 @@ textarea {
 @media screen and (max-width: 800px) {
   .footer {
     margin: auto;
+    height: 30rem;
   }
   .footer-text-social {
     width: 100%;
+    flex-direction: column;
   }
   .footer-text {
     width: 100%;
     padding: 0.5rem;
+    border: 1px solid rgb(140, 133, 133);
   }
   .footer-text p {
     text-align: start;
+    width: 100%;
+  }
+  .footer-social {
     width: 100%;
   }
   .social-icon ul li {
@@ -396,6 +391,21 @@ textarea {
   border-radius: 50%;
   color: antiquewhite;
   background-color: rgb(74, 71, 71);
+}
+
+.boutonss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: antiquewhite;
+  background-color: rgb(74, 71, 71);
+  margin-right: 1rem;
 }
 
 .tabb {
@@ -447,6 +457,10 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.total-1 {
+  margin-top: 5rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -670,7 +684,7 @@ textarea {
 }
 
 .font-titre-fond-g {
-  color: rgb(135, 128, 88) !important;
+  color: white !important;
 }
 
 .scrollBar-rigth {
@@ -679,6 +693,62 @@ textarea {
 
 .projet {
   color: #9f989c;
+}
+
+.pageLoader {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(187, 176, 176);
+  position: absolute;
+  z-index: 100;
+}
+.pageLoader .rond {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
+.pageLoader .carre {
+  height: 0px;
+  width: 200px;
+  background-color: rgb(191, 217, 217);
+  z-index: 50;
+  bottom: 50%;
+  left: 40%;
+  overflow: hidden;
+}
+.pageLoader .rectangle {
+  width: auto;
+  height: 0;
+  bottom: 50%;
+  left: 30%;
+  background-color: rgb(186, 120, 172);
+  z-index: 99;
+  overflow: hidden;
+}
+.pageLoader .rectangle h1 {
+  transform: translateY(100px);
+}
+.pageLoader .rectangle2 {
+  overflow: hidden;
+  height: 0px;
+  width: 100px;
+  left: 60%;
+  bottom: 50%;
+  z-index: 90;
+  background-color: rgb(64, 62, 62);
+}
+.pageLoader .fenetre {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(106, 198, 198);
+  margin: 0.2rem;
+}
+.pageLoader .fenetre2 {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(121, 140, 74);
+  margin: 3px;
+  padding: 0.1rem;
 }
 
 html, body {
@@ -733,7 +803,7 @@ body {
 }
 
 .interieur {
-  padding-bottom: 21rem;
+  padding-bottom: 19rem;
 }
 
 .light-text {
@@ -806,16 +876,25 @@ h6 {
   h5 {
     font-size: 16px;
   }
+  p {
+    font-size: 16px;
+  }
 }
 * {
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .home {
   background-color: rgb(201, 199, 196);
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .interieur {
+    padding-bottom: 30rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

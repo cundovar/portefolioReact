@@ -25,9 +25,9 @@ const Realisation = () => {
     <>
       {data.length > 0 && (
         <div className="carousel-container w-full  ">
-          <div className="carousel-item flex space-x-2 justify-center w-full">
+          <div className="carousel-item flex lg:space-x-2 justify-center w-full max-lg:flex-col max-lg:space-y-2">
 
-            <div className="imgPortfolio w-4/6 flex relative">
+            <div className="imgPortfolio w-4/6 max-lg:w-full  flex relative">
             <button id="preview"
                     className="absolute backdrop-blur-xl" 
                     onClick={handlePrev}
@@ -48,7 +48,7 @@ const Realisation = () => {
             </div>
 
 
-            <div className="bg-neutral-300 responsiTitreDescrip p-5 w-2/6">
+            <div className="bg-neutral-300 responsiTitreDescrip p-2 lg:w-3/6 2xl:w-2/6 max-lg:w-full ">
               <div className="">
                 <h4>{data[currentItem].titre01}</h4>
                 <h5></h5>

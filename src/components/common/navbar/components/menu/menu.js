@@ -7,7 +7,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 const Menu = () => {
   return (
     <div className="navbar-menu  flex  items-start ">
-      <div className="navbar-menu-2 flex items-end justify-end ">
+      <div className="navbar-menu-2 flex  justify-end ">
         <ul className=" menu flex  items-start justify-end space-x-3">
           <NavLink to="/">
             <li>
@@ -20,6 +20,8 @@ const Menu = () => {
               <DropdownMenu.Root>
                 <DropdownMenu.Trigger >
                   <Flex align="center" className="move-line"
+
+                  
                   
                   
                   

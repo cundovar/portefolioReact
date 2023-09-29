@@ -14,8 +14,8 @@ export function Tabs ({children}){
    
  
     return (
-    <div className="flex">
-        <nav >
+    <div className="flex max-lg:flex-col justify-center align-center">
+        <nav className="max-lg:flex max-lg:justify-center " >
             {childArray.map(child=>(
                 < li className="boutonss" onClick={()=>setCurrent(child.key)} key={child.key}>{child.props.title} </li>
             ) )}

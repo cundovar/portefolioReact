@@ -9,7 +9,7 @@ const Crea1 = () => {
           <div className="w-1/3">
             <h3 className="custom-font-title ">Innov</h3>
           </div>
-          <div className="w-1/3 flex h-full items-center justify-center">
+          <div className="w-1/3 flex h-full items-center justify-center max-sm:w-2/3">
             <ul className="flex h-full items-center justify-center space-x-3">
               <li>
                 <a href="#">Accueil</a>
@@ -28,11 +28,11 @@ const Crea1 = () => {
           </div>
         </div>
 
-        <div className="flex  relative ">
+        <div className="flex  relative max-lg:flex-col ">
           <div className="w-1/3   ">
             <p className="  mt-24 pl-2 ">édition 01</p>
 
-            <div className="h-1/2   absolute  tot ">
+            <div className="h-1/2   absolute  tot max-lg:ml-0 max-sm:top-25 max-sm:-left-20 max-sm:w-full">
               <h1 className="lg:text-7xl sm:text-5xl md:text-6xl font-titre-fond-g">
                 Innovation
               </h1>

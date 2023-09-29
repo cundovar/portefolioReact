@@ -22,6 +22,22 @@
         background-color: rgb(74, 71, 71);
     }
 }
+.boutonss{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0.5rem;
+    padding:0.5rem;
+    border-radius:50% ;
+    color: antiquewhite;
+    background-color: rgb(74, 71, 71);
+    margin-right: 1rem;
+
+}
 .tabb{
     display: flex;
 }
@@ -76,6 +92,9 @@
     height: 100%;
     object-fit: cover;
 
+}
+.total-1{
+    margin-top: 5rem;
 }
 
 @media screen and (max-width:800px) {

@@ -15,7 +15,7 @@
 .navbar-menu{
     display: flex;
     padding-top: 5px;
-
+    
     
 }
 .name {
@@ -26,18 +26,23 @@
 
 .text-contact-fin{
     margin: auto;
-   
+    
 }
 
 
 
+@media screen and (min-width:1024px) {
+    .navbar-menu{
+        margin-right: 15rem;
+        
+}
+
+}
 
 
 @media screen and (max-width:800px) {
 
- .navbar{
-    padding: 3rem;
-}
+
 .navbar-menu{
     width: 100%;
 }

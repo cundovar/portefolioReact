@@ -6,13 +6,15 @@
     justify-self: end;
     align-self: flex-end;
     bottom: 0;
-    height: 20rem;
+    height: 17rem;
     
 
 }
+
 .footer-text-social{
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+   
  
 }
 .footer-text,.footer-social{
@@ -20,7 +22,7 @@
     margin-top: 2rem;
 }
 .footer-menu{
-    margin: 0 1rem 0rem 1rem;
+  margin: auto;
     margin-right: 1rem;   
    
 }
@@ -33,23 +35,32 @@
     padding-left:1rem ;
 }
 @media screen and (max-width:800px) {
+
 .footer{
     
 margin: auto;
+height: 30rem;
 }
 
 .footer-text-social{
     width: 100%;
+    flex-direction: column;
+    
     
 }
 .footer-text{
     width: 100%;
     padding: .5rem;
+    border: 1px solid rgb(140, 133, 133);
     p{
         text-align: start;
         width: 100%;
     }
+
   
+}
+.footer-social{
+    width: 100%;
 }
 .social-icon ul li{
     margin-bottom: 3rem;

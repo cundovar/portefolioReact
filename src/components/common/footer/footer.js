@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" footer w-full">
+    <div className=" footer w-full sm:">
       <div className="w-5/6 flex justify-center items-center footer-text-social">
         <div className=" exp w-1/2">
           <div className="w-1/3 flex justify-center itmes-center footer-text ">
@@ -23,12 +23,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full foot footer-menu pb-5">
+      <div className="flex  foot footer-menu pb-5 flex-col-reverse m-auto">
         <div className="flex items-end justify-center pt-3 ">
           <p>copyrirgth@2023</p>
         </div>
-        <div className="flex w-full justify-end  footer-menu">
-          <ul className=" flex space-x-3 ">
+        <div className="flex w-full justify-end  footer-menu m-auto">
+          <ul className=" flex space-x-3 m-auto ">
 
             <NavLink to="/">
               <li className="move-line">accueil</li>

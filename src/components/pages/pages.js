@@ -18,7 +18,7 @@ const Pages=()=> {
              <div  className="space-y-5 h-full flex flex-col   font2">
 
              <Navbar/>
-                <div className="interieur">
+                <div className="interieur flex flex-col justify-center ">
              <Routes>
 
                 <Route path="/" element={<Home />}/>

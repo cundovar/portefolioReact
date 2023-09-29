@@ -33,7 +33,7 @@ const ChoiceTekno=()=>{
              />
 			<span className="checkbox-tile">
 				
-				<span className="checkbox-label">{items.name} </span>
+				<span className="checkbox-label ">{items.name} </span>
 			</span>
 		</label>
              

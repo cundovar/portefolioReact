@@ -12,7 +12,7 @@ import CustomBoutonn from "../../common/button";
 
 const Contact = () => {
   return (
-    <div className="bg-stone-300">
+    <div className="bg-stone-300 mt-5">
       <div className="w-full border-b mb-8 px-10 ">
         <h3>Contact</h3>
       </div>
