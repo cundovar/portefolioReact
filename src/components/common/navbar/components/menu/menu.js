@@ -1,10 +1,14 @@
-import { Avatar, DropdownMenu, Flex,Text } from "@radix-ui/themes";
-import React from "react";
+import { Avatar, DropdownMenu, Flex, Text } from "@radix-ui/themes";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const Menu = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(!open);
+  };
   return (
     <div className="navbar-menu  flex  items-start ">
       <div className="navbar-menu-2 flex  justify-end ">
@@ -15,59 +19,30 @@ const Menu = () => {
             </li>
           </NavLink>
 
-          <NavLink to="/portfolio">
-            <li>
-              <DropdownMenu.Root>
-                <DropdownMenu.Trigger >
-                  <Flex align="center" className="move-line"
+          <NavLink to="/portfolio " className="relative">
+            <li >
+              <div className="flex dropdown  ">
+                <button onClick={handleOpen} className="flex" style={{ marginRight: "0", paddingRight: "5px",marginTop:".7rem" }}>
+                  <h5 >
+                    Portfolio
+                  </h5>
+                  <FontAwesomeIcon
+                    icon={faCaretDown}
+                    style={{ color: "#e2e5e9", marginTop: ".4rem",marginLeft:"10px" }}
+                  />
+                </button>
+              </div>
+              {open ? (
+                <div className="menu absolute ">
+                  <NavLink to="/portfolio">
+                    <h6 onClick={} style={{marginBottom:"10px"}}>Projets</h6>
+                  </NavLink>
 
-                  
-                  
-                  
-                  
-                  >
-                  <h5  style={{marginRight:"0",paddingRight:"5px"}} >Portfolio</h5>
-                  <FontAwesomeIcon icon={faCaretDown} style={{color: "#e2e5e9", margin:"0"}} />
-
-                  </Flex>
-                  
-                </DropdownMenu.Trigger>
-                <DropdownMenu.Content >
-                <Text as="div" className="bg-gray-300">
-
-                  <DropdownMenu.Item  >
-                    <Flex gap="3">
-                     <Avatar size="1"
-                             radius="full"
-                             fallback="R"
-                             src="./images/magicieuse.PNG"/>
-
-                    <NavLink to="/portfolio">
-                      <h6 >Projets</h6>
-                    </NavLink>
-                    </Flex>
-                  </DropdownMenu.Item>
-
-
-
-
-                  <DropdownMenu.Separator />
-
-                  <DropdownMenu.Item>
-                    <Flex gap="3">
-                     <Avatar size="1"
-                             radius="full"
-                             fallback="R"
-                             src="./images/dashboard.PNG"/>
-                    <NavLink to="/creation">
-                      <h6 >Gabarits</h6>
-                    </NavLink>
-                    </Flex>
-                  </DropdownMenu.Item>
-
-                </Text>
-                </DropdownMenu.Content>
-              </DropdownMenu.Root>
+                  <NavLink to="/creation">
+                    <h6>Gabarits</h6>
+                  </NavLink>
+                </div>
+              ) : null}
             </li>
           </NavLink>
           <NavLink to="/contact">

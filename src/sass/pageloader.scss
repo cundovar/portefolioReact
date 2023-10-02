@@ -1,9 +1,10 @@
 .pageLoader{
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     background-color: rgb(187, 176, 176);
     position: absolute;
     z-index: 100;
+    overflow: hidden;
 
     .rond{
         height: 500px;

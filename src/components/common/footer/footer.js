@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex  foot footer-menu pb-5 flex-col-reverse m-auto">
+      <div className="flex  foot footer-menu pb-5 max-lg:flex-col-reverse items-center justify-center m-auto">
         <div className="flex items-end justify-center pt-3 ">
           <p>copyrirgth@2023</p>
         </div>
@@ -42,6 +42,9 @@ const Footer = () => {
 
           </ul>
         </div>
+      </div>
+      <div>
+        <selectlist></selectlist>
       </div>
     </div>
   );
