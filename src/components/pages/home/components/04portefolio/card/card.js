@@ -9,12 +9,11 @@ import {
   Box,
   Flex,
   HoverCard,
-  HoverCardTrigger,
   Strong,
   Text,
 } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
-import Design from "../../../../design/design";
+
 
 const CardPortfolio = () => {
   const { data: portfolioData, error: portfolioError } =
@@ -90,7 +89,7 @@ const CardPortfolio = () => {
                     <i className="fas fa-spinner fa-pulse"></i>
                   </div>
                 ) : (
-                  <img src={projet.imageSrc} alt={projet.titre}  />
+                  <img src={projet.imageSrc} alt={projet.alt}  />
                 )}
               </div>
               <div className="hovver text-center absolute transition flex justify-center items-center hover:bg-pink-400">

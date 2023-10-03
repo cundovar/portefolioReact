@@ -23,10 +23,7 @@ const Present = () => {
                 <div className="flex justify-center items-center">
                   <div className="w-2/3 max-lg:w-full  responsiText-service text-justify space-y-3">
                     <p className="text-justify">
-                      Les gabarits livrés sont conformes aux normes W3C. Le code
-                      mis en place est sémantique, indenté et commenté. Les
-                      pages sont accessibles, optimisées pour le référencement
-                      et leur performance est considérée avec attention.
+                      Les gabarits livrés sont conformes aux normes W3C.
                     </p>
                     <p className="text-justify">
                       Les pages intégrées sont responsives. Leur compatibilité
@@ -44,6 +41,7 @@ const Present = () => {
                   <p>-Technologies : HTML5, CSS3</p>
                   <p>-Approche modulaire, travail en composants CSS </p>
                   <p>- Pre-Processors : SASS</p>
+                  <p>- Pre-Processors : taiwlind</p>
                   <p></p>
                 </div>
               </div>

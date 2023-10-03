@@ -179,3 +179,33 @@ h6{
        
     }
         }
+        @keyframes sticky-parallax-header-move-and-size {
+            from {
+                background-position: 50% 0;
+                height: 100vh;
+                font-size: calc(4vw + 1em);
+                background-image: url(/public/images/header/terre.jpg);
+                background-size: cover;
+            }
+            to {
+                background-position: 50% 100%;
+                background-image: url(/public/images/header/terre.jpg);
+                background-size: cover;
+                height: 10vh;
+                font-size: 2em;
+               
+            }
+        }
+        
+        #sticky-parallax-header {
+            position: fixed;
+            top: 0;
+            z-index: 97;
+            animation: sticky-parallax-header-move-and-size linear forwards;
+            animation-timeline: scroll();
+            animation-range: 0vh 90vh;
+        }
+        
+        body {
+            padding-top: 100vh;
+        }   

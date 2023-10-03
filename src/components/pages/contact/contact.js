@@ -9,8 +9,26 @@ import {
   faBuilding,
 } from "@fortawesome/free-solid-svg-icons";
 import CustomBoutonn from "../../common/button";
+import { Helmet } from "react-helmet";
+
 
 const Contact = () => {
+
+  const Meta=()=>{
+    return(
+      <div>
+      <Helmet>
+          <title> Page de contact - Mon portfolio dévéloppeur web</title>
+          <meta
+          name=" ici vous pourrez remplir le formulaire de contact et de mander mes services"
+          content="Bienvenue sur mon site Web. Découvrez mes services et réalisations.Ici vous pourrez remplir le formulaire de contact et de mander mes services"/>
+      </Helmet>
+  </div>
+
+    )
+  }
+
+
   return (
     <div className="bg-stone-300 mt-5">
       <div className="w-full border-b mb-8 px-10 ">

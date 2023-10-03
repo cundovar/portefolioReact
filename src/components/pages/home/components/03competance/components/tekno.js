@@ -10,8 +10,14 @@ const Tekno=()=>{
 
              <div className="2xl:w-2/3 xl:w-full">
 
-            <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. 
+            <p>Les technos que j'utilise la plupart du temps sont : 
             </p>
+            <ul>
+                <li>Javascript</li>
+                <li>taiwlind</li>
+                <li>php</li>
+                <li>twig</li>
+            </ul>
 
              </div>
         </div>

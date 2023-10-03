@@ -10,12 +10,16 @@ const Savoir=()=>{
 
             <h5>Passion</h5>
             <div className="2xl:w-2/3 xl:w-full">
+            <p>Je suis <strong>intégrateur web/ dévéloppeur web front-end</strong> 
 
-            <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. 
+            </p>
+            <p>
+             Je travails essentiellement sur React et WordPress.
+
             </p>
 
             </div>
-dd
+
         </div>
     )
 }

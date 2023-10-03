@@ -9,19 +9,22 @@ const Menu = () => {
   const handleOpen = () => {
     setOpen(!open);
   };
+  const handleButtonMenu=()=>{
+    setOpen(false)
+  }
   return (
     <div className="navbar-menu  flex  items-start ">
       <div className="navbar-menu-2 flex  justify-end ">
         <ul className=" menu flex  items-start justify-end space-x-3">
           <NavLink to="/">
             <li>
-              <h5 className="move-line">Accueil</h5>
+              <h5 className="move-line" onClick={handleButtonMenu}>Accueil</h5>
             </li>
           </NavLink>
 
-          <NavLink to="/portfolio " className="relative">
+  
             <li >
-              <div className="flex dropdown  ">
+              <div className="flex  dropdown  ">
                 <button onClick={handleOpen} className="flex" style={{ marginRight: "0", paddingRight: "5px",marginTop:".7rem" }}>
                   <h5 >
                     Portfolio
@@ -33,21 +36,27 @@ const Menu = () => {
                 </button>
               </div>
               {open ? (
-                <div className="menu absolute ">
+                <div className="menu absolute flex flex-col ">
                   <NavLink to="/portfolio">
-                    <h6 onClick={} style={{marginBottom:"10px"}}>Projets</h6>
+                    <button onClick={handleButtonMenu}>
+                    <h6  style={{marginBottom:"10px"}}>Projets</h6>
+
+                    </button>
                   </NavLink>
 
                   <NavLink to="/creation">
+                    <button onClick={handleButtonMenu}>
+
                     <h6>Gabarits</h6>
+                    </button>
                   </NavLink>
                 </div>
               ) : null}
             </li>
-          </NavLink>
+      
           <NavLink to="/contact">
             <li>
-              <h5 className="move-line">Contact</h5>
+              <h5 className="move-line" onClick={handleButtonMenu}>Contact</h5>
             </li>
           </NavLink>
         </ul>

@@ -11,7 +11,8 @@
       "text1":"travail basé sur WordPress",
       "text2":"Refonte du site de l'association ",
       "text3":"Nouveau thème, ajout de plugin, SEO",
-      "text4":""
+      "text4":"",
+      "alt":"image projet bout des étangs wordpress"
     },
     "peinture": {
       "type":["symfony","php", "twig","javascrip"],
@@ -25,7 +26,8 @@
       "text1":"travail basé sur le framework symfony",
       "text2":"CRUD des oeuvres, inscription ",
       "text3":"Gestion de la base de donnée, gestion des stocks",
-      "text4":"Creation d'un panier"
+      "text4":"Creation d'un panier",
+      "alt":"image site de peinture php"
     },
     "space": {
       "type":["react","scss"],
@@ -39,7 +41,8 @@
       "text1":"travail basé sur React",
       "text2":"gestion des différentes page ",
       "text3":" ",
-      "text4":""
+      "text4":"",
+      "alt":"image projet space react"
     },
     "dashboard": {
       "type":["react","scss"],
@@ -53,7 +56,8 @@
       "text1":"travail basé sur React",
       "text2":"Appel à la bibliothèque js.CHARTS sous React",
       "text3":"Creation de fichier Json pour les données des graphiques ",
-      "text4":"Utilisation du pre-processeur SASS"
+      "text4":"Utilisation du pre-processeur SASS",
+      "alt":"image dashboard en reactjs"
     },
     "magicieuse": {
         "type":["wordpress","php"],
@@ -67,6 +71,7 @@
         "text1":"travail basé sur WordPress",
         "text2":"Refonte du site, changement de thème",
         "text3":"Personalisation du thème, création de thème enfant, changement du code PHP de WordPress",
-        "text4":"Gestion de Woocommerce, ajout de code javascript"
+        "text4":"Gestion de Woocommerce, ajout de code javascript",
+        "alt":"image maison édition wordpress"
       }
   }
