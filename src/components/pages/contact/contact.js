@@ -30,6 +30,8 @@ const Contact = () => {
 
 
   return (
+    <>
+    <Meta/>
     <div className="bg-stone-300 mt-5">
       <div className="w-full border-b mb-8 px-10 ">
         <h3>Contact</h3>
@@ -44,6 +46,7 @@ const Contact = () => {
             <div className="contact-identifiant w-1/3  flex flex-col items-center justify-center ">
               <div className="w-3/4 space-y-5">
                 <p className="relative">
+                  <label htmlFor="nom">le nom</label>
                   <input
                     id="chp_nom"
                     name="chp_author"
@@ -53,7 +56,7 @@ const Contact = () => {
                     placeholder="Votre nom*"
                   />
                   <span className="absolute left-1">
-                    <FontAwesomeIcon icon={faUser} />{" "}
+                    <FontAwesomeIcon icon={faUser} alt="icon name" />{" "}
                   </span>
                 </p>
                 <p className="relative">
@@ -65,7 +68,7 @@ const Contact = () => {
                     placeholder="Votre mail*"
                   />
                   <span className="absolute left-1">
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FontAwesomeIcon icon={faEnvelope} alt="icon mail"  />
                   </span>
                 </p>
 
@@ -78,7 +81,7 @@ const Contact = () => {
                     placeholder="Votre site internet"
                   />
                   <span className="absolute left-1">
-                    <FontAwesomeIcon icon={faGlobe} />
+                    <FontAwesomeIcon icon={faGlobe} alt="icon contact" />
                   </span>
                 </p>
 
@@ -91,7 +94,7 @@ const Contact = () => {
                     placeholder="Votre société"
                   />
                   <span className="absolute left-1">
-                    <FontAwesomeIcon icon={faBuilding} />
+                    <FontAwesomeIcon icon={faBuilding} alt="icon entreprise"/>
                   </span>
                 </p>
                 <p className="text-justify parag light-text">
@@ -116,6 +119,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-3 pb-5">
                   <p className="relative mx-8  " style={{ width: "100%" }}>
+                  <label htmlFor="message">Votre message *</label>
                     <textarea
                       placeholder="écrivez un message"
                       id="message"
@@ -126,7 +130,7 @@ const Contact = () => {
                       style={{ width: "100%" }}
                     ></textarea>
                     <span className="absolute left-1">
-                      <FontAwesomeIcon icon={faMessage} />
+                      <FontAwesomeIcon icon={faMessage} alt="icon message" />
                     </span>
                   </p>
 
@@ -138,6 +142,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

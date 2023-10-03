@@ -73,5 +73,22 @@
         "text3":"Personalisation du thème, création de thème enfant, changement du code PHP de WordPress",
         "text4":"Gestion de Woocommerce, ajout de code javascript",
         "alt":"image maison édition wordpress"
+      },
+
+      "portfolio2": {
+        "type":["React","tailwind","scss"],
+        "titre": "mon portfolio",
+        "tekno": "React",
+        "lien": "http://3001/" ,
+        "lienCode": "https://github.com/cundovar/portefolioReact",
+        "description": "",
+        "imageSrc":"/images/portfolio2.PNG",
+        "titreHover":"",
+        "text1":"travail basé sur React",
+        "text2":"travail essentiellement sur tailwind",
+        "text3":"accéssibilité du code",
+        "text4":"Gestion de Woocommerce, ajout de code javascript",
+        "alt":"image portofolio2"
       }
+
   }

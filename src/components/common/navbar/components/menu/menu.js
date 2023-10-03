@@ -36,7 +36,7 @@ const Menu = () => {
                 </button>
               </div>
               {open ? (
-                <div className="menu absolute flex flex-col ">
+                <div className="menu absolute flex flex-col  bg-pink-400 rounded py-3 px-5 text-slate-900">
                   <NavLink to="/portfolio">
                     <button onClick={handleButtonMenu}>
                     <h6  style={{marginBottom:"10px"}}>Projets</h6>

@@ -1,7 +1,6 @@
 import React from "react";
 import Realisation from "./realisation";
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import CustomBoutonn from "../../../../../common/button";
 import { Tab, Tabs } from "./tabs";
@@ -9,17 +8,15 @@ const Present = () => {
   return (
     <div className="w-full flex flex-row-reverse total-1 pb-5 ">
       <div className="w-1/2 responsiService ">
-        <div className="w-full border-b mb-8 ">
+        <nav className="w-full border-b mb-8 ">
           <h3>Service et prestation</h3>
-        </div>
+        </nav>
 
-        <div className="2xl:w-5/6 lg:w-full space-x-6 responsi3boutons  flex max-lg:flex-col max-lg:ml-10 max-md:ml-0">
+        <main className="2xl:w-5/6 lg:w-full space-x-6 responsi3boutons  flex max-lg:flex-col max-lg:ml-10 max-md:ml-0">
           <Tabs>
             <Tab title="1" key={1} selected>
               <div
-                className="flex max-lg:flex-col lg:flex-row
-  4  lg:space-x-10"
-              >
+                className="flex max-lg:flex-col lg:flex-row  lg:space-x-10">
                 <div className="flex justify-center items-center">
                   <div className="w-2/3 max-lg:w-full  responsiText-service text-justify space-y-3">
                     <p className="text-justify">
@@ -47,7 +44,7 @@ const Present = () => {
               </div>
             </Tab>
           </Tabs>
-        </div>
+        </main>
       </div>
       <div className="w-1/2 divRealisation">
         <div className="w-full border-b mb-8 flex items-end">
@@ -58,9 +55,9 @@ const Present = () => {
         </div>
 
         <NavLink to="/portfolio">
-          <div className=" text-center mt-5 ">
-            <CustomBoutonn text="voir le portfolio" icon={faArrowRight} />
-          </div>
+          <button className=" text-center mt-5 ">
+            <CustomBoutonn text="voir le portfolio" icon={faArrowRight} alt="icon button"/>
+          </button>
         </NavLink>
       </div>
     </div>

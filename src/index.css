@@ -239,6 +239,10 @@
     width: 100%;
   }
 }
+.image_selected {
+  border: 1px solid orangered;
+}
+
 .competance {
   margin: auto;
 }
