@@ -6,7 +6,7 @@ import Home from "./home/Home";
 import Contact from "./contact/contact";
 import PortefolioPage from "./portfolio-page/portfolio-page";
 import Design from "./design/design";
-import Crea2 from "./design/crea2/crea2";
+import Crea3 from "./design/crea3/crea3";
 
 
 
@@ -26,7 +26,7 @@ const Pages=()=> {
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="/portfolio" element={<PortefolioPage />}/>
                 <Route path="/creation" element={<Design />}/>
-                <Route path="/creation2" element={<Crea2/>}/>
+                <Route path="/creation3" element={<Crea3/>}/>
                
              </Routes>
                 </div>

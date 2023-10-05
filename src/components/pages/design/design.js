@@ -1,6 +1,7 @@
 import React from "react";
 
 import Crea1 from "./crea1/crea1";
+import Crea3 from "./crea3/crea3";
 
 
 const Design=()=>{
@@ -15,6 +16,7 @@ const Design=()=>{
                   <div className="flex items-center justify-center">
 
            <Crea1/>
+       
             
                   </div>
         </section>

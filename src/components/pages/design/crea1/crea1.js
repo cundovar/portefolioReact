@@ -1,11 +1,13 @@
 import { Flex, ScrollArea, Box, Text } from "@radix-ui/themes";
 import React from "react";
 import Crea2 from "../crea2/crea2";
+import Crea3 from "../crea3/crea3";
 const Crea1 = () => {
   return (
 
     <div className="fond-crea  bb  lg:flex flex-wrap   items-center justify-around p-6 custom-font ">
       <Crea2/>
+     
       <div className="lg:w-3/6 md:w-full bg-neutral-300   ">
         <div className="flex items-center justify-center mb-5 p-2">
           <div className="w-1/3">
