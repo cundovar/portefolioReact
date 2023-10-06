@@ -31,7 +31,7 @@ const Crea2 = () => {
   return (
     <>
       <div className="max-sm:w-full">
-        <section className="bg-stone-100 max-sm:pb-10 p-10  w-full  max-sm:w-full  flex items-center space-x-5  justify-center mb-96 max-sm:flex-col">
+        <section className="bg-stone-100 max-sm:pb-10 p-10  w-full  max-sm:w-full  flex items-center space-x-5  justify-center  max-sm:flex-col">
           <div className="left w-1/2 max-sm:w-full    flex flex-col   justify-center items-center">
             <div className="image h-2/3 w-2/3  max-sm:w-full space-y-5 flex flex-col  items-center justify-center">
               <div className="w-full cursor-pointer">

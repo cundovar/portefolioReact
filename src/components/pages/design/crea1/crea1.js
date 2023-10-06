@@ -6,7 +6,9 @@ const Crea1 = () => {
   return (
 
     <div className="fond-crea  bb  lg:flex flex-wrap   items-center justify-around p-6 custom-font ">
-      <Crea2/>
+      
+      
+     
      
       <div className="lg:w-3/6 md:w-full bg-neutral-300   ">
         <div className="flex items-center justify-center mb-5 p-2">
