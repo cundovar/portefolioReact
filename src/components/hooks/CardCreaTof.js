@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 
-class CardCrea extends Component {
+class CardCreaTof extends Component {
   constructor(props) {
     super(props);
 
@@ -54,11 +54,11 @@ class CardCrea extends Component {
 
     const cardStyle = {
         
-      transform: `rotateY(${mouseX / width * 55}deg) rotateX(${mouseY / height * 3}deg)`,
+      transform: `rotateY(${mouseX / width * 55}deg) rotateX(${mouseY / height * 10}deg)`,
     };
 
     const cardBgTransform = {
-      transform: `translateX(${mouseX / width * -40}px) translateY(${mouseY / height *100}px)`,
+      transform: `translateX(${mouseX / width * -40}px) translateY(${mouseY / height *-40}px)`,
     };
 
     const cardBgImage = {
@@ -84,6 +84,6 @@ class CardCrea extends Component {
   }
 }
 
-export default CardCrea;
+export default CardCreaTof;
 
 
