@@ -46,7 +46,7 @@ const Contact = () => {
             <div className="contact-identifiant w-1/3  flex flex-col items-center justify-center ">
               <div className="w-3/4 space-y-5">
                 <p className="relative">
-                  <label htmlFor="nom">le nom</label>
+       
                   <input
                     id="chp_nom"
                     name="chp_author"
@@ -119,7 +119,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-3 pb-5">
                   <p className="relative mx-8  " style={{ width: "100%" }}>
-                  <label htmlFor="message">Votre message *</label>
+        
                     <textarea
                       placeholder="écrivez un message"
                       id="message"

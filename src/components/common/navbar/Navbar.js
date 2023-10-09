@@ -9,7 +9,8 @@ const Navbar=()=>{
     return(
         <div className="navbar flex items-center justify-center  ">
 
-            <div className=" navbar-contain flex w-full justify-between pb-10 pt-5   " id="sticky-parallax-header" >
+            <div className=" navbar-contain flex w-full justify-between pb-10 pt-5   " >
+                {/*  id="sticky-parallax-header" */}
 
             <Titre/>
             <Menu/>

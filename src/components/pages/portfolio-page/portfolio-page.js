@@ -1,6 +1,7 @@
 import React from "react";
 import CardPortfolio from "../home/components/04portefolio/card/card";
 import { Helmet } from "react-helmet";
+import Design from "../design/design";
 
 const PortefolioPage=()=>{
 
@@ -27,7 +28,7 @@ const PortefolioPage=()=>{
             <CardPortfolio/>
 
         </div>
-        
+        <Design/>
         </>
     
     )

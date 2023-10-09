@@ -9,6 +9,7 @@ const Crea3 = () => {
   const jsonUrl = "/creatrois.json";
   const { data: crea3Data, error: creaError } = UseFetch(jsonUrl);
 
+
   const settings = {
     dots: false,
     infinite: true,
@@ -28,8 +29,8 @@ const Crea3 = () => {
   };
 
   return (
-    <section className="w-10/12 relative">
-      <div className=" relative ">
+    <section className="w-full pl-3 pr-3 mr-10 relative">
+      <div className=" relative   ">
         <Slider {...settings} ref={sliderRef}>
           {crea3Data.map((item, index) => (
             <div key={index}>
@@ -104,12 +105,12 @@ const Crea3 = () => {
         </Slider>
       </div>
 
-      <div className="mb-10 flex max-sm:flex-col">
+      <div className="mb-10 flex max-sm:flex-col w-12/12">
         <div className="w-3/12 max-sm:w-full ">
           <img src="/images/crea3/dark.jpg" className="w-full" alt="" />
         </div>
-        <div className="w-6/12  max-sm:w-full flex flex-col justify-center text-justify  items-center xl:p-10 space-y-5 ">
-          <div className="w-full">
+        <div className="w-6/12  max-sm:w-full flex flex-col justify-center text-justify  items-center 2xl:p-10 xl:pr-4 xl:pl-4 space-y-5 ">
+          <div className="w-full flex flex-col jusfy-center items-center">
             <h2 className="font-bold">About our furniture</h2>
           </div>
           <div>
@@ -124,8 +125,8 @@ const Crea3 = () => {
             </p>
           </div>
         </div>
-        <div className="w-3/12  max-sm:w-full ">
-          <img src="/images/crea3/light.jpg" className="w-full" alt="" />
+        <div className="w-3/12  max-sm:w-full overflow-hidden ">
+          <img src="/images/crea3/light.jpg" className="w-full h-full"  alt="" />
         </div>
       </div>
     </section>

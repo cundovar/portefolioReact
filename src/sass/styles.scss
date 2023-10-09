@@ -16,6 +16,7 @@
 @import './design/design.scss';
 @import './design/crea1.scss';
 @import './pageloader.scss';
+@import './design/cardCrea.scss';
 
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
@@ -209,6 +210,4 @@ h6{
             animation-range: 0vh 90vh;
         }
         
-        body {
-            padding-top: 100vh;
-        }   
+       

@@ -7,6 +7,8 @@ import Contact from "./contact/contact";
 import PortefolioPage from "./portfolio-page/portfolio-page";
 import Design from "./design/design";
 import Crea3 from "./design/crea3/crea3";
+import Crea1 from "./design/crea1/crea1";
+import Crea2 from "./design/crea2/crea2";
 
 
 
@@ -27,6 +29,8 @@ const Pages=()=> {
                 <Route path="/portfolio" element={<PortefolioPage />}/>
                 <Route path="/creation" element={<Design />}/>
                 <Route path="/creation3" element={<Crea3/>}/>
+                <Route path="/creation1" element={<Crea1/>}/>
+                <Route path="/creation2" element={<Crea2/>}/>
                
              </Routes>
                 </div>
