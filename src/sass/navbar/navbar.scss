@@ -10,9 +10,9 @@
 
 
 .navbar{
-
-    background-image: url(/public/images/header/terre.jpg);
-    color: aliceblue;
+width: 20%;
+  position: fixed;
+  z-index: 1000;
 }
 .button-circle{
     display: none;

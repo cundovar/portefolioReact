@@ -13,7 +13,7 @@ const Menu = () => {
     setOpen(false)
   }
   return (
-    <div className="navbar-menu  flex  items-start ">
+    <div className="navbar-menu  flex flex-col items-start ">
       <div className="navbar-menu-2 flex  justify-end ">
         <ul className=" menu flex  items-start justify-end space-x-3">
           <NavLink to="/">
@@ -36,7 +36,7 @@ const Menu = () => {
                 </button>
               </div>
               {open ? (
-                <div className="menu absolute  max-sm:-bottom-2 z-50 flex flex-col max-sm:w-5/12 rounded max-sm:px-0  text-slate-300">
+                <div className="menu absolute  max-sm:-bottom-2 z-50 flex flex-col max-sm:w-5/12 rounded max-sm:px-0  ">
                   <NavLink to="/portfolio">
                     <button onClick={handleButtonMenu} className="max-sm:ml-3 ">
                     <h6  style={{marginBottom:"10px"}} className="move-line">Projets</h6>

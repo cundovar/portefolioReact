@@ -37,7 +37,7 @@ const Contact = () => {
         <h3>Contact</h3>
       </div>
       <div className="total-contact w-full flex px-10 ">
-        <div className="contact-form w-full flex ">
+        <div className="contact-form w-full flex  ">
           <form
             className="w-full flex  items-center justify-center"
             action=""

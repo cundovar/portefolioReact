@@ -21,14 +21,15 @@ const PortefolioPage=()=>{
     return(
         <>
         <Meta/>
-        <div className="w-full bg-stone-300 px-10">
+        <div className="w-full bg-stone-300 px-20 mt-52">
             <div className="w-full border-b ">
                 <h3>Portfolio</h3>
             </div>
             <CardPortfolio/>
 
         </div>
-        <Design/>
+    
+
         </>
     
     )

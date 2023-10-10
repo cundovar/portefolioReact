@@ -10,6 +10,8 @@ import Crea3 from "./design/crea3/crea3";
 import Crea1 from "./design/crea1/crea1";
 import Crea2 from "./design/crea2/crea2";
 
+import { Element,scroller } from "react-scroll";
+
 
 
 const Pages=()=> {
@@ -18,10 +20,11 @@ const Pages=()=> {
 
         <>
         <Router>
-             <div  className="space-y-5 h-full flex flex-col   font2">
+             <div  className="  h-full flex flex-col   font2">
 
              <Navbar/>
-                <div className="interieur flex flex-col justify-center ">
+                <div className="interieur border border-orange-900 flex overflow-auto flex-col justify-center items-center w-full    ">
+                  <div className="interieur2 bg-stone-300  w-full   ">
              <Routes>
 
                 <Route path="/" element={<Home />}/>
@@ -33,8 +36,9 @@ const Pages=()=> {
                 <Route path="/creation2" element={<Crea2/>}/>
                
              </Routes>
+                  </div>
                 </div>
-             <Footer/>
+             {/* <Footer/> */}
              </div>
 
         </Router>

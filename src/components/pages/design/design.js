@@ -25,7 +25,7 @@ const Design = () => {
   return (
     <>
       <Meta />
-      <section className="border w-full border-black  sectionDesign">
+      <section className="border w-full h-full border-black  sectionDesign">
   
           <h1 className="title">Hoverrr over the cards</h1>
         <div className=" ">
