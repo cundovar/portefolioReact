@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import UseFetch from "../../../../../hooks/useFetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Slider from "react-slick";
+import { useRef } from "react";
 
 
 const Realisation = () => {
@@ -9,21 +11,34 @@ const Realisation = () => {
   const [currentItem, setCurrentItem] = useState(0);
 
   if (error) {
-    console.log("Error fetching data");
+    console.log("Error fetch data");
   }
 
+  const settings={
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    
+  }
+  const sliderRef = useRef();
+
   const handleNext = () => {
-    setCurrentItem((prevItem) => (prevItem + 1) % data.length);
+    sliderRef.current.slickNext();
   };
 
   const handlePrev = () => {
-    setCurrentItem((prevItem) => (prevItem - 1 + data.length) % data.length);
+    sliderRef.current.slickPrev();
 
   };
 
   return (
     <>
-      {data.length > 0 && (
+        <Slider {...settings} ref={sliderRef}>
+        {data.map((item, index) => (
+            <div key={index}>
         <div className="carousel-container w-full  ">
           <div className="carousel-item flex lg:space-x-2 justify-center w-full max-lg:flex-col max-lg:space-y-2">
 
@@ -36,12 +51,12 @@ const Realisation = () => {
               <FontAwesomeIcon className="nextPre" icon={faAngleRight} rotation={180} style={{color: "#ec69c3",}} />
             </button>
 
-              <img src={data[currentItem].imageSrc} alt={data[currentItem].titre01} className="carouselImg" />
+              <img src={item.imageSrc} alt={item.titre01} className="carouselImg" />
 
             <button id="next"
                     className="absolute backdrop-blur-xl"
                     onClick={handleNext}
-                    disabled={currentItem === data.length - 1}>
+                   >
                       
                <FontAwesomeIcon icon={faAngleRight} className="nextPre" style={{color: "#ec69c3",}} />
             </button>
@@ -50,12 +65,12 @@ const Realisation = () => {
 
             <div className="bg-neutral-300 responsiTitreDescrip p-2 lg:w-3/6 2xl:w-2/6 max-lg:w-full ">
               <div className="">
-                <h4>{data[currentItem].titre01}</h4>
+                <h4>{item.titre01}</h4>
                 <h5></h5>
               </div>
               <div className="">
-                <p className="text-justify mt-1 px-1"> {data[currentItem].description01}</p>
-                <p className="text-justify mt-1 px-1">{data[currentItem].description02}</p>
+                <p className="text-justify mt-1 px-1"> {data.description01}</p>
+                <p className="text-justify mt-1 px-1">{data.description02}</p>
               </div>
             </div>
           </div>
@@ -64,7 +79,9 @@ const Realisation = () => {
            
           </div>
         </div>
-      )}
+        </div>
+           ))}
+        </Slider>
     </>
   );
 };

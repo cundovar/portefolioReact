@@ -24,7 +24,7 @@ const Menu = () => {
 
   
             <li >
-              <div className="flex  dropdown  ">
+              <div className="flex  dropdown relative  ">
                 <button onClick={handleOpen} className="flex" style={{ marginRight: "0", paddingRight: "5px",marginTop:".7rem" }}>
                   <h5 >
                     Portfolio
@@ -36,18 +36,18 @@ const Menu = () => {
                 </button>
               </div>
               {open ? (
-                <div className="menu absolute flex flex-col  bg-pink-400 rounded py-3 px-5 text-slate-900">
+                <div className="menu absolute  max-sm:-bottom-2 z-50 flex flex-col max-sm:w-5/12 rounded max-sm:px-0  text-slate-300">
                   <NavLink to="/portfolio">
-                    <button onClick={handleButtonMenu}>
-                    <h6  style={{marginBottom:"10px"}}>Projets</h6>
+                    <button onClick={handleButtonMenu} className="max-sm:ml-3 ">
+                    <h6  style={{marginBottom:"10px"}} className="move-line">Projets</h6>
 
                     </button>
                   </NavLink>
 
                   <NavLink to="/creation">
-                    <button onClick={handleButtonMenu}>
+                    <button onClick={handleButtonMenu} className="max-sm:ml-2 ">
 
-                    <h6>Gabarits</h6>
+                    <h6 className="move-line">Gabarits</h6>
                     </button>
                   </NavLink>
                 </div>
