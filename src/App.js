@@ -34,7 +34,8 @@ function App() {
   }
   return (
     <Theme>
-      <div className="pageLoader flex items-center  justify-center absolute  ">
+      <div className="pageLoader flex items-center fixed justify-center 
+        ">
         <div className="rond relative">
 
 

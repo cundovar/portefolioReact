@@ -9,6 +9,7 @@ import Design from "./design/design";
 import Crea3 from "./design/crea3/crea3";
 import Crea1 from "./design/crea1/crea1";
 import Crea2 from "./design/crea2/crea2";
+import Crea4 from "./portfolio-page/components/Crea4";
 
 import { Element,scroller } from "react-scroll";
 
@@ -22,8 +23,8 @@ const Pages=()=> {
         <Router>
              <div  className="  h-full flex flex-col   font2">
 
-             <Navbar/>
-                <div className="interieur border border-orange-900 flex overflow-auto flex-col justify-center items-center w-full    ">
+             {/* <Navbar/> */}
+                <div className="interieur border border-orange-300 flex  flex-col justify-center items-center w-full    ">
                   <div className="interieur2 bg-stone-300  w-full   ">
              <Routes>
 
@@ -34,6 +35,7 @@ const Pages=()=> {
                 <Route path="/creation3" element={<Crea3/>}/>
                 <Route path="/creation1" element={<Crea1/>}/>
                 <Route path="/creation2" element={<Crea2/>}/>
+                <Route path="/crea4" element={<Crea4/>}/>
                
              </Routes>
                   </div>

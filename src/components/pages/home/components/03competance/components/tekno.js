@@ -6,8 +6,11 @@ const Tekno=()=>{
     return(
 
         <div className="text_competence  w-1/3 ">
-             <h5>tekno</h5>
+            <div className=" flex h-full bg-sky-700 rounded-3xl">
+             <h5 className="self-end">tekno</h5>
 
+            </div>
+{/* 
              <div className="2xl:w-2/3 xl:w-full">
 
             <p>Les technos que j'utilise la plupart du temps sont : 
@@ -19,7 +22,7 @@ const Tekno=()=>{
                 <li>twig</li>
             </ul>
 
-             </div>
+             </div> */}
         </div>
     )
 }
