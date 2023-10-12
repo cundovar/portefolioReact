@@ -11,7 +11,7 @@ const Competance=()=>{
         <div className="border-b w-full">
           <h3>savoir faire</h3>
         </div>
-        <div className="competance flex flex-wrap w-5/6 pt-4">
+        <div className="competance flex flex-wrap 2xl:w-5/6 xl:w-full pt-4">
           
           <Savoir className="w-1/3"/>
           <Tekno className="w-1/3"/>

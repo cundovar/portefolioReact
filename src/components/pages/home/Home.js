@@ -28,11 +28,11 @@ const Home =()=>{
         <>
       <Meta/>
      
-        <div className="home bg-stone-300 mt-96 relative  flex flex-col items-center justify-center space-y-5  max-lg:w-full max-lg:p-0 ">
+        <div className="home bg-stone-300 border border-stone-950 relative  flex flex-col items-center justify-center space-y-5  max-lg:w-full max-lg:p-0 ">
 
           
-            <div className="w-5/6  flex flex-col items-center justify-center space-y-30 pt-48"> <Competance/></div>
-            <div className="w-5/6 max-lg:6/6 flex flex-col items-center justify-center "><Portefolio/></div>
+            <div className="w-full 2xl:w-5/6  flex flex-col items-center justify-center space-y-30 "> <Competance/></div>
+            <div className="w-full 2xl:w-5/6 max-lg:6/6 flex flex-col items-center justify-center "><Portefolio/></div>
           
            
             

@@ -32,25 +32,36 @@ const Realisation = () => {
   const handlePrev = () => {
     sliderRef.current.slickPrev();
   };
+
+
   gsap.registerPlugin(ScrollTrigger);
-  gsap.to(".triggerss", {
-    x: 1020,
-    scrollTrigger: {
-      duration: 0.5,
-      trigger: ".scroll", // L'élément qui déclenchera l'animation
-     end:"center center",
-      start: "top 80%",
-    
-    },
+
+  useEffect(()=>{
+   
+    gsap.to(".ff", {
+      x: "200%",
+      scrollTrigger: {
+        duration: 0.8,
+        trigger: ".ff", // L'élément qui déclenchera l'animation
+  
+       start:"center bottom",
+       end:"center center",
+        markers: true,
+        scrub: false,
+        triggerOnce: true,
+      },
+  })
+ 
   });
+ 
 
   return (
     <div className="scroll">
       <Slider {...settings} ref={sliderRef}>
         {data.map((item, index) => (
           <div key={index}>
-            <div className="carousel-container relative   ">
-              <div className="carousel-item  lg:space-x-2 justify-center w-full max-lg:flex-col max-lg:space-y-2 ">
+            <div className="carousel-container relative h-96   " >
+              <div className="carousel-item flex  lg:space-x-2  w-full max-lg:flex-col max-lg:space-y-2 ">
                 <div className="imgPortfolio absolute xl:w-2/3 2xl:h-full    max-lg:w-full  flex  rounded-2xl ">
                   <button
                     id="preview"
@@ -85,9 +96,9 @@ const Realisation = () => {
                   </button>
                 </div>
 
-                <div className="bg-neutral-400 triggerss responsiTitreDescrip xl:w-1/3 p-2 lg:w-3/6  max-lg:w-full 2xl:flex ">
+                <div className="bg-neutral-400 triggerss ff h-96 responsiTitreDescrip xl:w-1/3 p-2 lg:w-3/6  max-lg:w-full 2xl:flex  " >
                   <div className=" 2xl:w-2/3 2xl:border-r">
-                    <div>
+                    <div >
                       <h4>{item.titre01}</h4>
                       <h5></h5>
                     </div>
