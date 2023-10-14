@@ -17,6 +17,8 @@ import { Element,scroller } from "react-scroll";
 
 const Pages=()=> {
 
+  
+
     return(
 
         <>

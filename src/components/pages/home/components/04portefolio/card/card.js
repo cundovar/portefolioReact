@@ -3,19 +3,30 @@ import UseFetch from "../../../../../hooks/useFetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCode } from "@fortawesome/free-solid-svg-icons";
 import CustomBoutonn from "../../../../../common/button";
-
-import {
-  Avatar,
-  Box,
-  Flex,
-  HoverCard,
-  Strong,
-  Text,
-} from "@radix-ui/themes";
+import { gsap } from "gsap";
+import { Avatar, Box, Flex, HoverCard, Strong, Text } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
 
-
 const CardPortfolio = () => {
+
+
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  // Fonction pour gérer le "flip" de l'élément
+  const flipElement = () => {
+    gsap.to(".checkbox-wrapper", {
+      scaleX: isFlipped ? 1 : -1, // Retournez l'élément horizontalement
+      duration: 0.5,
+      onComplete: () => {
+        setIsFlipped(!isFlipped); // Inversez l'état du "flip" après l'animation
+      },
+    });
+  };
+
+
+
+
+
   const { data: portfolioData, error: portfolioError } =
     UseFetch("/portfolio.json");
   const { data: choiceInputData, error: choiceInputError } = UseFetch(
@@ -52,7 +63,6 @@ const CardPortfolio = () => {
 
   return (
     <>
-  
       <div className="flex w-2/3 choice-tekno flex-wrap ">
         {choiceInputData.map((items, index) => (
           <div
@@ -70,9 +80,12 @@ const CardPortfolio = () => {
                   color: items.color,
                   backgroundColor: items.background,
                 }}
+                onClick={flipElement}
               />
               <span className="checkbox-tile">
-                <span className="checkbox-label max-sm:text-xl">{items.name} </span>
+                <span className="checkbox-label max-sm:text-xl">
+                  {items.name}{" "}
+                </span>
               </span>
             </label>
           </div>
@@ -81,7 +94,13 @@ const CardPortfolio = () => {
 
       <div className="w-full flex flex-wrap items-center justify-center ">
         {filteredProjects.map((projet, index) => (
-          <div className="cardPortfolio shadow-md  shadow-neutral-500/50 space-y-5" key={index}>
+          
+          <div
+            className={`cardPortfolio shadow-md shadow-neutral-500/50 space-y-5 ${
+              isFlipped ? "flipped" : ""
+            }`}
+            key={index}
+          >
             <div className="relative contain-img-text">
               <div className="containImg absolute shadow-xl  shadow-neutral-500/50">
                 {isLoading ? (
@@ -89,7 +108,7 @@ const CardPortfolio = () => {
                     <i className="fas fa-spinner fa-pulse"></i>
                   </div>
                 ) : (
-                  <img src={projet.imageSrc} alt={projet.alt}  />
+                  <img src={projet.imageSrc} alt={projet.alt} />
                 )}
               </div>
               <div className="hovver text-center absolute transition flex justify-center items-center hover:bg-pink-400">
@@ -101,32 +120,29 @@ const CardPortfolio = () => {
               <div className=" w-5/6 mt-2 text-center p-1">
                 <Flex gap="4">
                   <HoverCard.Root>
-                    <HoverCard.Trigger >
-                      <Link href="#" > {projet.titre} </Link>
+                    <HoverCard.Trigger>
+                      <Link href="#"> {projet.titre} </Link>
                     </HoverCard.Trigger>
                     <HoverCard.Content size="1">
                       <Flex gap="3" size="1" style={{ maxWidth: 325 }}>
-                        <Avatar size="2"
-                                radius="full"
-                                fallback="R"
-                                src={projet.imageSrc}
-                                />
+                        <Avatar
+                          size="2"
+                          radius="full"
+                          fallback="R"
+                          src={projet.imageSrc}
+                        />
                         <Box>
-                          <Text> 
-                        <Strong>{projet.titreHover} </Strong> 
+                          <Text>
+                            <Strong>{projet.titreHover} </Strong>
                           </Text>
                           <Text as="div" color="gray">
-                          {projet.text1}         
+                            {projet.text1}
                           </Text>
-                          <Text as="div" mt="3" >
-                          {projet.text2}
+                          <Text as="div" mt="3">
+                            {projet.text2}
                           </Text>
-                          <Text as="div"  >
-                          {projet.text3}
-                          </Text>
-                          <Text as="div"  >
-                          {projet.text4}
-                          </Text>
+                          <Text as="div">{projet.text3}</Text>
+                          <Text as="div">{projet.text4}</Text>
                         </Box>
                       </Flex>
                     </HoverCard.Content>
@@ -154,13 +170,7 @@ const CardPortfolio = () => {
             </div>
           </div>
         ))}
-        
       </div>
-
-
-     
-
-    
     </>
   );
 };

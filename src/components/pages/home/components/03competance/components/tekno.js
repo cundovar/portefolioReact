@@ -6,8 +6,8 @@ const Tekno=()=>{
     return(
 
         <div className="text_competence  w-1/3 ">
-            <div className=" flex h-full bg-sky-700 rounded-3xl">
-             <h5 className="self-end">tekno</h5>
+            <div className=" flex h-full bg-sky-700 rounded-3xl ">
+             <h5 className="self-end text-6xl">tekno</h5>
 
             </div>
 {/* 

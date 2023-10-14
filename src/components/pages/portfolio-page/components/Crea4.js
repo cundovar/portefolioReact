@@ -1,46 +1,49 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Crea5 from "../../../crea5";
 
 const Crea4 = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  const triggerssRef = useRef(null);
-  useEffect(()=>{
-    const element = triggerssRef.current;
-    gsap.to(element, {
-      x: 700,
-      scrollTrigger: {
-        duration: 0.5,
-        trigger: element, // L'élément qui déclenchera l'animation
+  const items = document.querySelectorAll(".item");
+  gsap.defaults({duration:0.3});
   
-        start:"top bottom",
-     end:"top top",
-        markers: true,
-        scrub: true,
-        triggerOnce: true,
-      },
+  items.forEach(function(item,index){
+    const tween = gsap
+  .timeline({paused:true})
+  .to(item.querySelector('.text'), {color:'white', x:5, scale:1.3, transformOrigin:'left center'})
+ 
+  
+  item.addEventListener('mouseenter', function () {
+    tween.play();
   })
-  },[]);
+  
+  item.addEventListener('mouseleave', function () {
+    tween.reverse();
+  })
+  })
+  
+
 
   return (
-    <div className="h-full ">
-      <div className="bg-stone-500  h-96"></div>
-      <div className="bg-stone-500  h-96"></div>
-      <div className="bg-stone-500  h-96"></div>
+    <>
+     <div className="  bg-pink-500 overflow-hidden" >
+      <div className="item">
 
-      <div className=" scrolyl flex w-11/12 bg-yellow-300 h-96 relative ">
-        <div className="bg-stone-500  h-96"></div>
+      <h3 className="text">passion</h3>
       </div>
-      <div className="bg-stone-500  h-96"></div>
-      <div className="bg-stone-500  h-96"></div>
-      <div className="bg-stone-500 flex h-96">
-        <div className="self-end">
-          <div className="h-24 w-24 bg-slate-950 absolute"ref={triggerssRef} ></div>
-          <div className="h-24 w-24 triggerss bg-slate-300 "></div>
-        </div>
+      <div className="item">
+
+      <h3 className="text">passion</h3>
       </div>
-    </div>
+      <div className="item">
+
+      <h3 className="text">passion</h3>
+      </div>
+      </div>
+   
+    
+    <Crea5/>
+    </>
   );
 };
-
 export default Crea4;

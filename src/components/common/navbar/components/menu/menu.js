@@ -3,29 +3,52 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { gsap } from "gsap";
 
 const Menu = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => {
-    setOpen(!open);
+  const [isDivDown, setIsDivDown] = useState(false);
+
+  const handleButtonClick = () => {
+    if (isDivDown) {
+      // Si la div est déjà en bas, remettez-la en haut
+      gsap.to(".animating-div", {
+        y: 0,
+        duration: 1,
+        ease: "power2.inOut",
+      });
+    } else {
+      // Sinon, faites-la descendre
+      gsap.to(".animating-div", {
+        y: 100,
+        duration: 1,
+        ease: "power2.inOut",
+      });
+    }
+
+    // Inversez la valeur de isDivDown
+    setIsDivDown(!isDivDown);
   };
-  const handleButtonMenu=()=>{
-    setOpen(false)
-  }
+
+ 
   return (
-    <div className="navbar-menu  flex flex-col items-start ">
-      <div className="navbar-menu-2 flex  justify-end ">
-        <ul className=" menu flex  items-start justify-end space-x-3">
-          <NavLink to="/">
-            <li>
-              <h5 className="move-line" onClick={handleButtonMenu}>Accueil</h5>
+    <div className="navbar-menu w-full  flex  items-start ">
+      <div className="navbar-menu-2 flex  w-full ">
+        <ul className=" menu w-full border flex flex-wrap justify-center ">
+          <NavLink to="/" className="w-1/2">
+            <li className=" flex justify-center items-center border">
+              <h5 className="move-line" >Accueil</h5>
             </li>
           </NavLink>
 
+          <NavLink to="/contact" className="w-1/2">
+            <li className=" flex justify-center items-center border">
+              <h5 className="move-line" >Contact</h5>
+            </li>
+          </NavLink>
   
-            <li >
+            <li className="w-full border flex justify-center items-center rounded-3xl bg-orange-300 p-4" >
               <div className="flex  dropdown relative  ">
-                <button onClick={handleOpen} className="flex" style={{ marginRight: "0", paddingRight: "5px",marginTop:".7rem" }}>
+                <button onClick={handleButtonClick} className="flex" style={{ marginRight: "0", paddingRight: "5px",marginTop:".7rem" }}>
                   <h5 >
                     Portfolio
                   </h5>
@@ -35,30 +58,25 @@ const Menu = () => {
                   />
                 </button>
               </div>
-              {open ? (
-                <div className="menu absolute  max-sm:-bottom-2 z-50 flex flex-col max-sm:w-5/12 rounded max-sm:px-0  ">
+             
+                <div className="menu animating-div   max-sm:-bottom-2 z-50 flex flex-col max-sm:w-5/12 rounded max-sm:px-0  ">
                   <NavLink to="/portfolio">
-                    <button onClick={handleButtonMenu} className="max-sm:ml-3 ">
+                    <button  className="max-sm:ml-3 ">
                     <h6  style={{marginBottom:"10px"}} className="move-line">Projets</h6>
 
                     </button>
                   </NavLink>
 
                   <NavLink to="/creation">
-                    <button onClick={handleButtonMenu} className="max-sm:ml-2 ">
+                    <button  className="max-sm:ml-2 ">
 
                     <h6 className="move-line">Gabarits</h6>
                     </button>
                   </NavLink>
                 </div>
-              ) : null}
+           
             </li>
       
-          <NavLink to="/contact">
-            <li>
-              <h5 className="move-line" onClick={handleButtonMenu}>Contact</h5>
-            </li>
-          </NavLink>
         </ul>
 
         <div className="button-circle"></div>
