@@ -875,6 +875,19 @@ textarea {
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
 
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Largeur de la barre de défilement */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent; /* Couleur de la barre de défilement */
+}
+
 html, body {
   min-height: 100%;
   padding: 0;

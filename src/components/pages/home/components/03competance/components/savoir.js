@@ -100,7 +100,7 @@ const Savoir=()=>{
 
             <div className="  border  mainBotao rounded-3xl  w-full h-full overflow-hidden bg-yellow-300 ">
 
-            <div className="image h-5/6 text-4xl text-justify border w-5/6 p-2  ">
+            <div className="image h-5/6 text-4xl text-justify border opacity-0 w-5/6 p-2  ">
                 <p className="text-5xl text-center">
                 Portfolio en ligne de Facundo Varas,
                 </p>
