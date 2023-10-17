@@ -1,13 +1,49 @@
 
 import React, { useEffect, useState } from "react";
-import { gsap } from "gsap";
+import  gsap  from "gsap";
 import Test from "./tests";
+import { Flip } from "gsap/Flip";
 
 
 
 const Crea5 = () => {
  
     useEffect(() => {
+
+        gsap.registerPlugin(Flip);
+
+        const box = document.querySelector(".bouge");
+        const contain = document.querySelector(".contain");
+        const newContain = document.querySelector(".recept");
+    
+        document.querySelector(".button").addEventListener("click", () => {
+          const state = Flip.getState(box);
+    
+          // Utilisez "contains" pour vérifier si un élément est déjà un enfant du conteneur
+          const currentContainer = box.parentNode;
+          const targetContainer = currentContainer === contain ? newContain : contain;
+    
+          if (!targetContainer.contains(box)) {
+            targetContainer.appendChild(box);
+          }
+    
+          Flip.from(state, {
+            duration: 1,
+            ease: "power1.inOut", // Correction de la valeur ease
+            scale: true,
+          });
+        });
+
+
+
+
+
+
+
+
+
+
+
         // Créez une animation GSAP pour l'effet d'overscroll vertical
         const triggerElement = document.querySelector('.js-scroll-list');
         const contentElement = document.querySelector('.js-scroll-content');
@@ -54,6 +90,31 @@ const Crea5 = () => {
           </div>
              
         </div>
+
+        <div className="flipy h-96 w-full  ">
+            <div className="flex flex-wrap w-full space-x-6">
+                <div className=" fli h-32 w-32 bg-teal-600"></div>
+                <div className=" fli h-32 w-32 bg-teal-200"></div>
+                <div className=" fli h-32 w-32 bg-teal-900"></div>
+                <div className=" fli h-32 w-32 bg-teal-300"></div>
+                <div className=" fli h-32 w-32 bg-teal-400"></div>
+            </div>
+            <div className="but">
+                <button>change</button>
+            </div>
+
+            <div>
+      <div className="bouge">Bouge moi</div>
+      <button className="button">Bouton</button>
+      <div className="contain">
+        
+      </div>
+      <div className="recept">Conteneur 2</div>
+    </div>
+             
+
+        </div>
+        
 
         <Test/>
         </>

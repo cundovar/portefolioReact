@@ -888,6 +888,10 @@ textarea {
   background: transparent; /* Couleur de la barre de défilement */
 }
 
+.flipContaine {
+  height: 70rem;
+}
+
 html, body {
   min-height: 100%;
   padding: 0;
@@ -939,10 +943,8 @@ body {
   position: relative;
 }
 
-.interieur {
-  height: 100%;
-  width: 100%;
-  align-self: self-end;
+.contact {
+  height: 60rem;
 }
 
 .light-text {
@@ -1030,11 +1032,6 @@ h6 {
   height: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  .interieur {
-    padding-bottom: 30rem;
-  }
-}
 @keyframes sticky-parallax-header-move-and-size {
   from {
     background-position: 50% 0;

@@ -25,9 +25,9 @@ const Design = () => {
   return (
     <>
       <Meta />
-      <section className="border w-full h-full border-black  sectionDesign">
+      <section className="border w-full h-full border-black contact sectionDesign">
   
-          <h1 className="title">Hoverrr over the cards</h1>
+          <h1 className="title">Gabarits</h1>
         <div className=" ">
           
           <div className="flex items-center justify-center space-x-6">
@@ -36,20 +36,19 @@ const Design = () => {
           <NavLink to ="/creation2">
             <CardCrea
               dataImage="/images/design-crea/Crea3.PNG" >
-              <h1 slot="header">Canyons</h1>
+              <h1 slot="header">page produit</h1>
            
               <p slot="content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               produit individuel, choix des photos, modal-carousel.Reponsive,taiwlind.
               </p>
             </CardCrea>
             </NavLink>
 
             <NavLink to ="/creation3">
             <CardCrea dataImage="/images/design-crea/Crea2.PNG">
-              <h1 slot="header">Beaches</h1>
+              <h1 slot="header">Page d'accueil</h1>
               <p slot="content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
+                Page d'accueil avec carousel, reponsive, taiwlind.              </p>
             
             </CardCrea>
 
@@ -57,9 +56,9 @@ const Design = () => {
 
             <NavLink to ="/creation1">
             <CardCrea dataImage="/images/design-crea/Crea1.PNG">
-              <h1 slot="header">Trees</h1>
+              <h1 slot="header">Divers</h1>
               <p slot="content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Multiples exemples de gabaris, créés avec tailwind.
               </p>
             </CardCrea>
 

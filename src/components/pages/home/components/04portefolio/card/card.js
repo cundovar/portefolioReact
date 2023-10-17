@@ -6,25 +6,9 @@ import CustomBoutonn from "../../../../../common/button";
 import { gsap } from "gsap";
 import { Avatar, Box, Flex, HoverCard, Strong, Text } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
+import { Flip } from "gsap/Flip";
 
 const CardPortfolio = () => {
-
-
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  // Fonction pour gérer le "flip" de l'élément
-  const flipElement = () => {
-    gsap.to(".checkbox-wrapper", {
-      scaleX: isFlipped ? 1 : -1, // Retournez l'élément horizontalement
-      duration: 0.5,
-      onComplete: () => {
-        setIsFlipped(!isFlipped); // Inversez l'état du "flip" après l'animation
-      },
-    });
-  };
-
-
-
 
 
   const { data: portfolioData, error: portfolioError } =
@@ -34,12 +18,46 @@ const CardPortfolio = () => {
   );
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [filteredProjects, setFilteredProjects]=useState([])
 
   useEffect(() => {
+
+    gsap.registerPlugin(Flip)
+  
+    
+    
     if (portfolioData) {
       setIsLoading(false);
     }
+    setFilteredProjects(portfolioData);// afficher tous les projets par defaut
+    
   }, [portfolioData]);
+  
+  useEffect(()=>{
+    const card = document.querySelectorAll(".cardPortfolio");
+    const state = Flip.getState(card);
+    
+    Flip.from(state, {
+      duration: 0.7,
+      scale: true,
+      absolute: true,
+      ease: "power1.inOut",
+      stagger: 0.08,
+      onEnter: (elements) =>gsap.fromTo( { opacity: 0, scale: 1 }, { opacity: 1, scale: 1, duration: 1 }),
+      onLeave: (elements) => gsap.fromTo(elements, { opacity: 0, scale: 0.5, duration: 1 }),
+    });
+  },[filteredProjects])
+
+  useEffect(() => {
+    // Filtrer les projets lorsque les types sélectionnés changent
+    const filteredProjects = portfolioData.filter(
+      (projet) =>
+        selectedTypes.length === 0 ||
+        projet.type.some((type) => selectedTypes.includes(type))
+    );
+     // Appliquer l'animation "flip" aux projets filtrés individuellement
+    setFilteredProjects(filteredProjects);
+  }, [selectedTypes,portfolioData]);
 
   if (portfolioError) {
     return <div>Une erreur est survenue lors du chargement des données.</div>;
@@ -53,13 +71,11 @@ const CardPortfolio = () => {
     } else {
       setSelectedTypes([...selectedTypes, typeName]);
     }
+   
+  
+  
   };
 
-  const filteredProjects = portfolioData.filter(
-    (projet) =>
-      selectedTypes.length === 0 ||
-      projet.type.some((type) => selectedTypes.includes(type))
-  );
 
   return (
     <>
@@ -68,7 +84,7 @@ const CardPortfolio = () => {
           <div
             key={index}
             style={{ color: items.color, backgroundColor: items.background }}
-            className=" flex flex-col items-center justify-center input-choice-tekno flex-wrap"
+            className=" flex flex-col items-center justify-center boutons input-choice-tekno flex-wrap"
           >
             <label className="checkbox-wrapper">
               <input
@@ -80,7 +96,7 @@ const CardPortfolio = () => {
                   color: items.color,
                   backgroundColor: items.background,
                 }}
-                onClick={flipElement}
+            
               />
               <span className="checkbox-tile">
                 <span className="checkbox-label max-sm:text-xl">
@@ -96,9 +112,9 @@ const CardPortfolio = () => {
         {filteredProjects.map((projet, index) => (
           
           <div
-            className={`cardPortfolio shadow-md shadow-neutral-500/50 space-y-5 ${
-              isFlipped ? "flipped" : ""
-            }`}
+            className="cardPortfolio shadow-md shadow-neutral-500/50 space-y-5 "
+             
+            
             key={index}
           >
             <div className="relative contain-img-text">

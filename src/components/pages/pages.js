@@ -23,11 +23,11 @@ const Pages=()=> {
 
         <>
         <Router>
-             <div  className="  h-full flex flex-col   font2">
+             <div  className="  h-full flex flex-col bg-red-300   font2">
 
              <Navbar/>
-                <div className="interieur border border-orange-300 flex  flex-col justify-center items-center w-full    ">
-                  <div className="interieur2 bg-stone-300  w-full   ">
+                <div className=" border border-orange-900 flex   flex-col justify-center items-center w-full    ">
+                  <div className=" bg-stone-300 border border-red-900  w-full h-full   ">
              <Routes>
 
                 <Route path="/" element={<Home />}/>

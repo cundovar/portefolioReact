@@ -11,7 +11,7 @@ const PortefolioPage=()=>{
             <Helmet>
                 <title> Page de mes realisations - Mon portfolio dévéloppeur web</title>
                 <meta
-                name=" Voici mon portafolio, on peut y trouver  les technologies web que j'utilise et quelques exemples de projets en tant que dévéloppeur ou intégrateur web"
+                name="description"
                 content="Bienvenue sur mon site Web. Découvrez mes services et réalisations.Voici mon portafolio, on peut y trouver  les technologie web que j'utilise et quelques exemples de projets en tant que dévéloppeur ou intégrateur web"/>
             </Helmet>
         </div>
@@ -21,7 +21,7 @@ const PortefolioPage=()=>{
     return(
         <>
         <Meta/>
-        <div className="w-full bg-stone-300 px-20 mt-52">
+        <div className="w-full bg-stone-300 px-20 flipContaine ">
             <div className="w-full border-b ">
                 <h3>Portfolio</h3>
             </div>

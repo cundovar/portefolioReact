@@ -34,7 +34,9 @@
   }
   
   
-  
+  .flipContaine{
+    height: 70rem;
+  }
   
   
   
@@ -103,14 +105,10 @@ html, body {
   
 }
 
-
-.interieur{
-   height: 100%;
-   width: 100%;
-    // padding-bottom: 19rem;
-    align-self:self-end ;
-    
+.contact{
+    height:60rem;
 }
+
 
 .light-text{
     color:rgb(129, 137, 153);
@@ -199,10 +197,7 @@ h6{
   
 }
 @media screen and ( max-width:1024px){
-    .interieur{
-    padding-bottom: 30rem;
-       
-    }
+   
         }
         @keyframes sticky-parallax-header-move-and-size {
             from {
