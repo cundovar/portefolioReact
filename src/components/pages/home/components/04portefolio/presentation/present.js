@@ -7,7 +7,7 @@ import { Tab, Tabs } from "./tabs";
 const Present = () => {
   return (
     <div className="w-full flex flex-col total-1 pb-5 ">
-      <div className=" responsiService ">
+      {/* <div className=" responsiService ">
         <nav className="w-full border-b mb-8 ">
           <h3>Service et prestation</h3>
         </nav>
@@ -45,20 +45,20 @@ const Present = () => {
             </Tab>
           </Tabs>
         </main>
-      </div>
+      </div> */}
       <div className="divRealisation w-full ">
         <div className="w-full border-b mb-8 flex items-end">
           <h3>Quelques réalisations</h3>
         </div>
+        <NavLink to="/portfolio">
+          <button className=" text-center xl:mb-5 ">
+            <CustomBoutonn text="voir le portfolio" icon={faArrowRight} alt="icon button"/>
+          </button>
+        </NavLink>
         <div className="w-full space-y-3 flex flex-col total-carousel">
           <Realisation />
         </div>
 
-        <NavLink to="/portfolio">
-          <button className=" text-center mt-5 ">
-            <CustomBoutonn text="voir le portfolio" icon={faArrowRight} alt="icon button"/>
-          </button>
-        </NavLink>
       </div>
     </div>
   );

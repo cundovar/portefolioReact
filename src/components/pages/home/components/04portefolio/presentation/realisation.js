@@ -46,7 +46,7 @@ const Realisation = () => {
   
        start:"center bottom",
        end:"center center",
-        markers: true,
+        // markers: true,
         scrub: false,
         triggerOnce: true,
       },
@@ -62,7 +62,7 @@ const Realisation = () => {
           <div key={index}>
             <div className="carousel-container relative h-96   " >
               <div className="carousel-item flex  lg:space-x-2  w-full max-lg:flex-col max-lg:space-y-2 ">
-                <div className="imgPortfolio absolute xl:w-2/3 2xl:h-full    max-lg:w-full  flex  rounded-2xl ">
+                <div className="imgPortfolio absolute xl:w-2/3 xl:h-full max-sm:relative   max-lg:w-full  flex  rounded-2xl ">
                   <button
                     id="preview"
                     className="absolute backdrop-blur-xl"
@@ -96,7 +96,7 @@ const Realisation = () => {
                   </button>
                 </div>
 
-                <div className="bg-neutral-400 triggerss ff h-96 responsiTitreDescrip xl:w-1/3 p-2 lg:w-3/6  max-lg:w-full 2xl:flex  " >
+                <div className="bg-pink-200 triggerss ff h-96 responsiTitreDescrip xl:w-1/3 p-2 lg:w-3/6  max-lg:w-full 2xl:flex  " >
                   <div className=" 2xl:w-2/3 2xl:border-r">
                     <div >
                       <h4>{item.titre01}</h4>

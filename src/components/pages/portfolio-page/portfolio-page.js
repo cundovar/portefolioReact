@@ -3,6 +3,7 @@ import CardPortfolio from "../home/components/04portefolio/card/card";
 import { Helmet } from "react-helmet";
 import Design from "../design/design";
 
+
 const PortefolioPage=()=>{
 
     const Meta=()=>{
@@ -21,7 +22,7 @@ const PortefolioPage=()=>{
     return(
         <>
         <Meta/>
-        <div className="w-full bg-stone-300 px-20 flipContaine ">
+        <div className="w-full bg-stone-300 px-20 max-sm:px-5 flipContaine ">
             <div className="w-full border-b ">
                 <h3>Portfolio</h3>
             </div>

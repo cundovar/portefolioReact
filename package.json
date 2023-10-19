@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
+    "react-text-transition": "^3.1.0",
     "scrollmagic": "^2.0.8",
     "slick-carousel": "^1.8.1",
     "smooth-scrollbar": "^8.8.4",

@@ -1,10 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap,Sine } from "gsap"
+
+import TextTransition from 'react-text-transition';
+
+
+
+
+
+
+
+
 
 
 const Savoir=()=>{
 
     useEffect(() => {
+      
         const trigger = document.querySelectorAll(".mainBotao");
     
         const animateOver = function () {
@@ -21,10 +32,11 @@ const Savoir=()=>{
     
           gsap.to(text, {
             duration: 1,
-            ease: Sine.easeOut,
-            autoRound: false,
-            x: 100,
-            y: 40,
+           
+            opacity:1,
+       
+            x: 0,
+            y: 0,
           });
     
           gsap.to(image, {
@@ -43,7 +55,7 @@ const Savoir=()=>{
         const animateOut = function () {
           const element = this.querySelector(".element");
           const text = this.querySelector(".text");
-          const image = this.querySelector(".image");
+          const image = this.querySelectorAll(".image");
           const imageBack = this.querySelector(".imageBack");
     
           gsap.to(element, {
@@ -54,18 +66,19 @@ const Savoir=()=>{
           });
     
           gsap.to(text, {
-            duration: 1,
-            ease: Sine.easeOut,
-            autoRound: false,
-            x: -100,
-            y: -100,
+            duration: 1.5,
+        
+   
+            x: 0,
+            y: 0,
+            opacity:0
           });
     
           gsap.to(image, {
             duration: 1,
             opacity: 0,
-            x:-10,
-            y:-10,
+            x:0,
+            y:0,
           });
     
           gsap.to(imageBack, {
@@ -90,29 +103,47 @@ const Savoir=()=>{
             el.removeEventListener("touchend", animateOut, false);
           });
         };
+
       }, []);
+   
+      const texts = [  ' Portfolio ','en ligne de', 'Facundo Varas'];
+      const [index, setIndex] = useState(0);
     
+      useEffect(() => {
+        const intervalId = setInterval(() => {
+          setIndex((index) => (index + 1) % texts.length);
+        }, 2000);
+    
+        return () => clearInterval(intervalId);
+      }, []);
 
 
     return(
 
         <div className="text_competence flex items-center justify-center  w-1/3">
 
-            <div className="  border  mainBotao rounded-3xl  w-full h-full overflow-hidden bg-yellow-300 ">
+            <div className="  border  mainBotao rounded-3xl   w-full h-full overflow-hidden   bg-pink-200  ">
 
-            <div className="image h-5/6 text-4xl text-justify border opacity-0 w-5/6 p-2  ">
-                <p className="text-5xl text-center">
-                Portfolio en ligne de Facundo Varas,
+            <div className=" h-5/6  w-full  p-2 border flex flex-col items-center justify-center ">
+            
+
+                <p className="text-5xl  image  text-justify border opacity-0"  style={{fontFamily: "Caveat, cursive"}} >
+               Artisant du web. je suis curieux et  passionné. 
                 </p>
-                <p className="text-5xl text-center">
-               artisant du web curieux et   passionné.
+          <div className=" ">
+                <p className="text-5xl  text  text-justify border opacity-0"  style={{fontFamily: "Caveat, cursive"}} >
+                  Un café et au boulot !
                 </p>
+
+              
+
+          </div>
           </div>
 
 
-            <div className="imageBack h-1/6">
+            <div className="imageBack h-1/6 flex items-end">
 
-            <h5 className=" self-end text-6xl  ">Passion</h5>
+            <h5 className=" text-6xl self-start " style={{fontFamily: "Caveat, cursive"}}>Passion</h5>
             </div>
 
             </div>

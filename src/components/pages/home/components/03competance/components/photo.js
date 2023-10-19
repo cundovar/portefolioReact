@@ -4,8 +4,8 @@ import CardCreaTof from "../../../../../hooks/CardCreaTof";
 
 const Photo = () => {
   return (
-    <div className="text_competence w-1/3 flex items-center justify-center max-lg:mt-3 lg:border lg:bg-neutral-300   ">
-      <div className="flex  max-lg:visible xl:hidden  items-center justify-center ">
+    <div className="text_competence w-1/3 flex items-center xl:items-end justify-center max-lg:mt-3    ">
+      <div className="flex  max-lg:visible xl:hidden  items-center  justify-center ">
         <div className="w-2/3 flex ima relative shadow-lg shadow-neutral-600  ">
           <a  
             href="https://github.com/cundovar"

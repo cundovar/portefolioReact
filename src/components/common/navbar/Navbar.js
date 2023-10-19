@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Menu from "./components/menu/menu";
-import Titre from "./components/tritre/titre";
+
 import { NavLink } from "react-router-dom";
 import Typewriter from "../../hooks/typewriter";
 
@@ -11,31 +11,36 @@ const Navbar = () => {
     // Démarre la machine à écrire après 2 secondes
     const timeout = setTimeout(() => {
       setStartTypewriter(true);
-    }, 6000);
+    }, 400);
 
     // Nettoie le timeout lorsque le composant est démonté
     return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <div className="z-50 flex w-full bg-stone-300  border border-slate-950 ">
-      <div className="w-2/3 flex items-center justify-center">
-        <div className="flex w-full border space-x-20 items-center border-stone-900">
-          <NavLink to="/">
-            <h1>Dev front-end</h1>
+    <div className="z-50 flex justify-start  max-sm:pt:10 max-sm:flex-col  max-sm:justify-center max-sm:items-center  border-gray-950  items-start w-full bg-stone-300 ">
+      <div className="w-2/3   flex flex-col max-sm:flex-col max-sm:w-full   max-sm:justify-center max-sm:items-center ">
+        <div className=" flex justify-start max-sm:justify-center max-sm:w-full max-sm:ml-0  ml-12 items-start mt-0">
+          <NavLink to="/" className="m-0 max-sm:w-full  max-sm:justify-center  ">
+            <h1 className="   max-sm:w-full   ">Dev front-end</h1>
           </NavLink>
-          <h3 className="flex space-x-20">Intégrateur web </h3>
+        </div>
+        <div className=" max-sm:w-full max-sm:justify-center max-sm:flex   max-sm:ml-0 ml-12 space-x-5">
+          <h3 className="max-sm:w-full max-sm:justify-center max-sm:flex  ">Intégrateur web </h3>
+        </div>
+        <div className="ml-12 ax-sm:w-full max-sm:justify-center max-sm:flex   max-sm:ml-0 ">
           <h4>
             {" "}
             {startTypewriter && <Typewriter text="Facundo Varas" delay={100} />}
           </h4>
+
         </div>
       </div>
 
-      <div className=" w-1/3 flex self-end border border-emerald-950 flex-col ml-7 justify-between pb-10 pt-5   ">
+      <div className=" w-1/3 flex max-sm:w-full flex-col ml-7 max-sm:ml-0 justify-between pb-10 pt-5   ">
         {/*  id="sticky-parallax-header" */}
 
-        <Titre />
+      
         <Menu />
       </div>
     </div>

@@ -295,6 +295,10 @@
     width: 100%;
   }
 }
+html, body {
+  min-height: 100%;
+}
+
 textarea {
   padding-left: 22px;
   padding-right: 10px;
@@ -893,53 +897,15 @@ textarea {
 }
 
 html, body {
-  min-height: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  border-color: aqua;
-  flex-grow: 1;
-}
-
-#root {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.font {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: "Jost", sans-serif;
-  flex-grow: 1;
-  position: relative;
-  height: calc(100% - 60px);
 }
 
 .radix-themes {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  position: relative;
-}
-
-.font2 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  flex-grow: 1;
-  height: calc(100% - 60px);
   position: relative;
 }
 
@@ -1024,37 +990,6 @@ h6 {
 * {
   box-sizing: border-box;
   font-size: 15px;
-}
-
-.home {
-  background-color: rgb(201, 199, 196);
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes sticky-parallax-header-move-and-size {
-  from {
-    background-position: 50% 0;
-    height: 100vh;
-    font-size: calc(4vw + 1em);
-    background-image: url(/public/images/header/terre.jpg);
-    background-size: cover;
-  }
-  to {
-    background-position: 50% 100%;
-    background-image: url(/public/images/header/terre.jpg);
-    background-size: cover;
-    height: 10vh;
-    font-size: 2em;
-  }
-}
-#sticky-parallax-header {
-  position: fixed;
-  top: 0;
-  z-index: 97;
-  animation: sticky-parallax-header-move-and-size linear forwards;
-  animation-timeline: scroll();
-  animation-range: 0vh 90vh;
 }
 
 /*# sourceMappingURL=index.css.map */

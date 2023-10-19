@@ -30,7 +30,7 @@ const Design = () => {
           <h1 className="title">Gabarits</h1>
         <div className=" ">
           
-          <div className="flex items-center justify-center space-x-6">
+          <div className="flex max-sm:flex-wrap items-center justify-center space-x-6">
 
 
           <NavLink to ="/creation2">

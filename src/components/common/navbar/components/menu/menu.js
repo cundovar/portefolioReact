@@ -13,53 +13,66 @@ const Menu = () => {
       // Si la div est déjà en bas, remettez-la en haut
       gsap.to(".animating-div", {
         y: 0,
-        duration: 1,
+        duration: 0.7,
         ease: "power2.inOut",
+        opacity:0,
+        display:"none"
       });
     } else {
       // Sinon, faites-la descendre
       gsap.to(".animating-div", {
         y: 100,
-        duration: 1,
+        duration:0.7,
         ease: "power2.inOut",
+        opacity:1,
+        display:"block"
       });
     }
 
     // Inversez la valeur de isDivDown
     setIsDivDown(!isDivDown);
   };
+  const fermeButtonClick=()=>{
+   if(isDivDown){
+    gsap.to(".animating-div", {
+      y: 0,
+      duration: 0.7,
+      ease: "power2.inOut",
+      opacity:0,
+      display:"none"
+    });
+
+   }
+  }
 
  
   return (
-    <div className="navbar-menu w-full  flex  items-start ">
+    <div className="navbar-menu w-full bg-stone-300 flex  items-start ">
       <div className="navbar-menu-2 flex  w-full ">
-        <ul className=" menu w-full border flex flex-wrap justify-center ">
-          <NavLink to="/" className="w-1/2">
-            <li className=" flex justify-center items-center border">
+        <ul className=" menu w-full  justify-center flex ">
+          <NavLink to="/" className=""
+           onClick={fermeButtonClick}
+          >
+            <li className=" flex justify-center items-center ">
               <h5 className="move-line" >Accueil</h5>
             </li>
           </NavLink>
 
-          <NavLink to="/contact" className="w-1/2">
-            <li className=" flex justify-center items-center border">
-              <h5 className="move-line" >Contact</h5>
-            </li>
-          </NavLink>
-  
-            <li className="w-full border flex justify-center items-center rounded-3xl bg-orange-300 p-4" >
+
+          <li className="  flex justify-center relative  items-center flex-col " >
               <div className="flex  dropdown relative  ">
-                <button onClick={handleButtonClick} className="flex" style={{ marginRight: "0", paddingRight: "5px",marginTop:".7rem" }}>
+                <button onClick={handleButtonClick} className="flex items-center justify-center" >
                   <h5 >
                     Portfolio
                   </h5>
                   <FontAwesomeIcon
                     icon={faCaretDown}
-                    style={{ color: "#e2e5e9", marginTop: ".4rem",marginLeft:"10px" }}
+                    style={{ color: "#e2e5e9",marginLeft:"10px" }}
                   />
                 </button>
               </div>
              
-                <div className="menu animating-div   max-sm:-bottom-2 z-50 flex flex-col max-sm:w-5/12 rounded max-sm:px-0  ">
+                <div className="menu animating-div opacity-0 flex absolute -top-14  max-sm:-bottom-2 z-50   max-sm:w-5/12  max-sm:px-0  ">
                   <NavLink to="/portfolio">
                     <button  className="max-sm:ml-3 ">
                     <h6  style={{marginBottom:"10px"}} className="move-line">Projets</h6>
@@ -76,6 +89,14 @@ const Menu = () => {
                 </div>
            
             </li>
+
+          <NavLink to="/contact" className="" onClick={fermeButtonClick}>
+            <li className=" flex justify-center items-center ">
+              <h5 className="move-line" >Contact</h5>
+            </li>
+          </NavLink>
+  
+       
       
         </ul>
 
