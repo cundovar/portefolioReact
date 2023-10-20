@@ -79,7 +79,7 @@ const CardPortfolio = () => {
 
   return (
     <>
-      <div className="flex w-2/3 max-sm:wfull choice-tekno flex-wrap ">
+      <div className="flex w-2/3 max-sm:wfull  choice-tekno flex-wrap ">
         {choiceInputData.map((items, index) => (
           <div
             key={index}

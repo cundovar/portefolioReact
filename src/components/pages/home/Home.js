@@ -1,8 +1,9 @@
 import React from "react";
 import Presentation from "./components/02presentation/presentation";
-import {Competance} from "./components/03competance/competance";
+
 import Portefolio from "./components/04portefolio/portefolio";
 import { Helmet } from "react-helmet";
+import { Competance } from "./components/03competance/components/competance";
 
 const Home =()=>{
 
@@ -28,11 +29,11 @@ const Home =()=>{
         <>
       <Meta/>
      
-        <div className="home bg-stone-300   relative  flex flex-col items-center justify-center space-y-5  max-lg:w-full max-lg:p-0 ">
+        <div className="home bg-stone-300 border  relative  flex flex-col items-center justify-center space-y-5  max-lg:w-full max-lg:p-0 ">
 
           
             <div className="w-full 2xl:w-5/6  flex flex-col items-center justify-center space-y-30 "> <Competance/></div>
-            <div className="w-full 2xl:w-5/6 max-lg:6/6 flex flex-col items-center justify-center "><Portefolio/></div>
+            <div className="w-full 2xl:w-5/6 max-lg:6/6 flex flex-col items-center justify-center  "><Portefolio/></div>
           
            
             

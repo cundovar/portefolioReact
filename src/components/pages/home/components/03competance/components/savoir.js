@@ -4,14 +4,6 @@ import { gsap,Sine } from "gsap"
 import TextTransition from 'react-text-transition';
 
 
-
-
-
-
-
-
-
-
 const Savoir=()=>{
 
     useEffect(() => {

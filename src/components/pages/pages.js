@@ -27,7 +27,7 @@ const Pages=()=> {
 
              <Navbar/>
                 <div className="  flex   flex-col justify-center items-center w-full    ">
-                  <div className=" bg-stone-300   w-full h-full   ">
+                  <div className=" bg-stone-300     w-full h-full   ">
              <Routes>
 
                 <Route path="/" element={<Home />}/>
@@ -42,7 +42,7 @@ const Pages=()=> {
              </Routes>
                   </div>
                 </div>
-             {/* <Footer/> */}
+             <Footer/>
              </div>
 
         </Router>

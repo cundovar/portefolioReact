@@ -1,33 +1,42 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import { gsap } from "gsap";
+import { useEffect, useRef } from 'react';
 const Footer = () => {
+
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+  //   const container = document.querySelectorAll('.tourne');
+
+    // Créez une animation GSAP pour faire tourner le conteneur
+  //   gsap.to(container, {
+  //     rotation: 360, // Rotation de 360 degrés (un cercle complet)
+  //     duration: 10, // Durée de l'animation (en secondes)
+  //     repeat: -1, // Répétez indéfiniment
+  //    ease:"none"
+  //   });
+
+  const text=document.querySelector
+  }, []);
+
+
   return (
-    <div className=" footer w-full sm:">
-      <div className="w-5/6 flex justify-center items-center footer-text-social">
-        <div className=" exp w-1/2">
-          <div className="w-1/3 flex justify-center itmes-center footer-text ">
-            <p className="text-justify ">
-              Portfolio en ligne de Facundo Varas, artisant du web curieux et
-              passionné.
-            </p>
-          </div>
+    <div className=" border footerr absolute flex  max-sm:justify-center max-sm:items-center  max-sm:flex-col-reverse  w-full ">
+   
+   <div className=" w-1/2 border max-sm:w-full  max-sm:justify-center max-sm:items-center  flex justify-start items-end">
+
+        <div className="  m-10 ml-20 flex max-sm:w-full max-sm:items-center  border  justify-center  ">
+
+
+<h6 className="max-sm:w-full m-auto">COPYRIGHT 2023</h6>
+
         </div>
-        <div className="w-1/2 flex space-x-3 justify-center itmes-center footer-social">
-          <p>Présence virtuel</p>
-          <div className="social-icon ">
-            <ul className="space-y-3">
-              <li> <a href="https://github.com/cundovar" className="move-line" target="_blank">Github</a>  </li>
-              <li><a href="https://www.linkedin.com/in/facundo-varas/" className="move-line" target="_blank">linkedin</a> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="flex  foot footer-menu pb-5 max-lg:flex-col-reverse items-center justify-center m-auto">
-        <div className="flex items-end justify-center pt-3 ">
-          <p>copyrirgth@2023</p>
-        </div>
-        <div className="flex w-full justify-end  footer-menu m-auto">
+   </div>
+
+    
+        <div className=" w-1/2  max-sm:w-full flex items-center border">
           <ul className=" flex space-x-3 m-auto ">
 
             <NavLink to="/">
@@ -43,10 +52,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div>
-        <selectlist></selectlist>
-      </div>
-    </div>
+     
+      
+    
   );
 };
 

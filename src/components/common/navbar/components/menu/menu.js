@@ -59,7 +59,7 @@ const Menu = () => {
           </NavLink>
 
 
-          <li className="  flex justify-center relative  items-center flex-col " >
+          <li className="  flex justify-center relative border items-center flex-col " >
               <div className="flex  dropdown relative  ">
                 <button onClick={handleButtonClick} className="flex items-center justify-center" >
                   <h5 >
@@ -72,7 +72,7 @@ const Menu = () => {
                 </button>
               </div>
              
-                <div className="menu animating-div opacity-0 flex absolute -top-14  max-sm:-bottom-2 z-50   max-sm:w-5/12  max-sm:px-0  ">
+                <div className="menu animating-div opacity-0 flex absolute max-sm:z-50 xl:-top-14 max-sm:flex max-sm:flex-col max-sm:-top-28 z-50   max-sm:w-5/12  max-sm:mt-10  ">
                   <NavLink to="/portfolio">
                     <button  className="max-sm:ml-3 ">
                     <h6  style={{marginBottom:"10px"}} className="move-line">Projets</h6>

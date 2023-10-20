@@ -20,6 +20,40 @@
 
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
+
+  
+  
+html, body {
+  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-height: 100%;
+    position: relative;
+
+
+
+
+   
+
+  }
+  .font{
+    max-height: 1000rem;
+  }
+
+  #root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-height: 100%;
+    position: relative;
+
+  }
+
+  .font2{
+    padding-bottom: 11rem;
+  }
+
 .custom-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
@@ -34,23 +68,9 @@
   }
   
   
-  .flipContaine{
-    height: 70rem;
-  }
-  
-  
-  
-  
-html, body {
-  
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 
-
-
-   
-  }
+  
+  
 
 
 
@@ -68,7 +88,8 @@ html, body {
 
 
 .contact{
-    height:60rem;
+    max-height: 100%;
+    padding-bottom: 15rem;
 }
 
 

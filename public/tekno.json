@@ -1,0 +1,77 @@
+{
+
+    "javascript":{
+        "titre":"javascript",
+        "l1":"Travail avec DOM (Document Object Model)",
+        "l2":"Fetch API ",
+        "l3":"Manipulation des tableaux et des objets  ",
+        "l4":"Gestion des événements",
+        "l5":"Asynchronisme et Promises ",
+        "l6":"",
+        "l7":"",
+        "l8":"",
+        "l9":"",
+        "bg":"",
+       " bgDiv":""
+
+    },
+
+
+    "css":{
+        "titre":"CSS",
+        "l1":"Maîtrise des sélecteurs CSS ",
+        "l2":"Mise en page flexible avec Flexbox et Grid",
+        "l3":"Responsive",
+        "l4":"Stylisation avancée",
+        "l5":"Préprocesseurs CSS (SCSS, Tailwind, Bootstrap)",
+        "l6":">Conformité aux normes et compatibilité entre navigateurs",
+        "l7":"",
+        "l8":"",
+        "l9":"",
+        "bg":"bg-gradient-to-r from-cyan-500 to-blue-900 ",
+        " bgDiv":""
+    },
+    "react":{
+        "titre":"REACT",
+        "l1":"Routage avec React Router",
+        "l2":"Utilisation de useState et useEffect",
+        "l3":"Gestion des props",
+        "l4":"Composants réutilisables",
+        "l5":"Veille technologique ",
+        "l6":"",
+        "l7":"",
+        "l8":"",
+        "l9":"",
+        "bg":"bg-gradient-to-r from-lime-300 to-teal-900 ",
+        " bgDiv":""
+    },
+    "symfony":{
+        "titre":"SYMPHONY",
+        "l1":"Création de contrôleurs et de routes",
+        "l2":"Accès à la base de données avec Doctrine",
+        "l3":"Création d'API REST ",
+        "l4":"Gestion des formulaires Symfony",
+        "l5":"TWIG",
+        "l6":"",
+        "l7":"",
+        "l8":"",
+        "l9":"",
+        "bg":"bg-gradient-to-r from-pink-500 to-blue-900",
+        " bgDiv":""
+    },
+    "wordpress":{
+        "titre":"WORDPRESS",
+        "l1":"Thèmes WordPress",
+        "l2":"Gestion de contenu",
+        "l3":"Utilisation d'ACF (Advanced Custom Fields) ",
+        "l4":"Intégration de WooCommerce",
+        "l5":"Gestion de base de données",
+        "l6":"PHP",
+        "l7":"",
+        "l8":"",
+        "l9":"",
+        "bg":"bg-gradient-to-r from-pink-400 to-blue-900",
+        " bgDiv":""
+    }
+  
+}

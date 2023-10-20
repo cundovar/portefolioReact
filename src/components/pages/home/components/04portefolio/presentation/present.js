@@ -6,7 +6,7 @@ import CustomBoutonn from "../../../../../common/button";
 import { Tab, Tabs } from "./tabs";
 const Present = () => {
   return (
-    <div className="w-full flex flex-col total-1 pb-5 ">
+    <div className="w-full  flex flex-col total-1 pb-5 ">
       {/* <div className=" responsiService ">
         <nav className="w-full border-b mb-8 ">
           <h3>Service et prestation</h3>

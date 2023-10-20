@@ -25,10 +25,13 @@ const Design = () => {
   return (
     <>
       <Meta />
-      <section className="border w-full h-full border-black contact sectionDesign">
-  
-          <h1 className="title">Gabarits</h1>
-        <div className=" ">
+      <section className=" w-full h-full flex flex-col items-center  contact ">
+
+        <div className=" w-5/6 ">
+
+
+          <h3 className=" w-full border-b m-20 max-sm:m-0  ">Gabarits</h3>
+        <div className=" flex flex-wrap items-center justify-center h-full ">
           
           <div className="flex max-sm:flex-wrap items-center justify-center space-x-6">
 
@@ -81,6 +84,8 @@ const Design = () => {
 
           <Crea1 />
         </div> */}
+        </div>
+  
       </section>
     </>
   );
