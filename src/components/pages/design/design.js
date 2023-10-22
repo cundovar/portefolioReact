@@ -25,13 +25,13 @@ const Design = () => {
   return (
     <>
       <Meta />
-      <section className=" w-full h-full flex flex-col items-center  contact ">
+      <section className=" w-full    flex flex-col items-center  contact ">
 
         <div className=" w-5/6 ">
 
 
-          <h3 className=" w-full border-b m-20 max-sm:m-0  ">Gabarits</h3>
-        <div className=" flex flex-wrap items-center justify-center h-full ">
+          <h3 className=" w-full border-b mt-10 max-sm:m-0  ">Gabarits</h3>
+        <div className=" flex flex-wrap items-center justify-center cardH h-96 ">
           
           <div className="flex max-sm:flex-wrap items-center justify-center space-x-6">
 

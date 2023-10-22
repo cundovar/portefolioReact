@@ -33,18 +33,18 @@ const Contact = () => {
     <>
     <Meta/>
     <div className="bg-stone-300 h-full contact mt-5">
-      <div className="w-full border-b mb-8 px-10 ">
+      <div className="w-full border-b mb-8 px-10 max-sm:p-1 ">
         <h3>Contact</h3>
       </div>
-      <div className="total-contact w-full flex px-10 ">
+      <div className="total-contact w-full flex px-10 max-sm:p-1 border ">
         <div className="contact-form w-full flex  ">
           <form
             className="w-full flex  items-center justify-center"
             action=""
             method="post"
           >
-            <div className="contact-identifiant w-1/3  flex flex-col items-center justify-center ">
-              <div className="w-3/4 space-y-5">
+            <div className="contact-identifiant w-1/3   flex flex-col items-center justify-center ">
+              <div className="w-3/4 max-sm:w-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center space-y-5">
                 <p className="relative">
        
                   <input
@@ -101,7 +101,7 @@ const Contact = () => {
                   * Les champs marqués d'une étoile sont obligatoires.
                 </p>
 
-                <div className="text-contact-fin ">
+                <div className="text-contact-fin max-sm:pb-5 ">
                   <p className="parag text-justify">
                     Pour me contacter vous pouvez également utiliser l'adresse :
                     varas.cundo@gmail.com

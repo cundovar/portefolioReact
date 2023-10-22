@@ -50,7 +50,7 @@ export const Competance = () => {
 
   return (
     <>
-      <div className="border-b w-full mt-20">
+      <div className="border-b w-full mt-10">
         <h3>savoir faire</h3>
       </div>
       <div className="competance flex flex-wrap 2xl:w-5/6 xl:w-full pt-4 xl:space-y-20">

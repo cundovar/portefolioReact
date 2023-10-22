@@ -79,7 +79,7 @@ const CardPortfolio = () => {
 
   return (
     <>
-      <div className="flex w-2/3 max-sm:wfull  choice-tekno flex-wrap ">
+      <div className="flex w-2/3 xl:w-full max-sm:wfull  choice-tekno flex-wrap ">
         {choiceInputData.map((items, index) => (
           <div
             key={index}
@@ -108,7 +108,7 @@ const CardPortfolio = () => {
         ))}
       </div>
 
-      <div className="w-full flex flex-wrap items-center justify-center ">
+      <div className="w-full flex flex-wrap  2xl:items-center cardHeight justify-center ">
         {filteredProjects.map((projet, index) => (
           
           <div

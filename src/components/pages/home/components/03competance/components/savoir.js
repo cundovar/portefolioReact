@@ -58,7 +58,7 @@ const Savoir=()=>{
           });
     
           gsap.to(text, {
-            duration: 1.5,
+            duration: 1,
         
    
             x: 0,
@@ -119,11 +119,11 @@ const Savoir=()=>{
             <div className=" h-5/6  w-full  p-2 border flex flex-col items-center justify-center ">
             
 
-                <p className="text-5xl  image  text-justify border opacity-0"  style={{fontFamily: "Caveat, cursive"}} >
+                <p className="text-5xl  image  text-justify border opacity-0 max-sm:block max-sm:opacity-1 "  style={{fontFamily: "Caveat, cursive"}} >
                Artisant du web. je suis curieux et  passionné. 
                 </p>
           <div className=" ">
-                <p className="text-5xl  text  text-justify border opacity-0"  style={{fontFamily: "Caveat, cursive"}} >
+                <p className="text-5xl  text  text-justify border opacity-0 max-sm:opacity-1"  style={{fontFamily: "Caveat, cursive"}} >
                   Un café et au boulot !
                 </p>
 

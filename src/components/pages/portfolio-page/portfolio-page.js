@@ -25,11 +25,14 @@ const PortefolioPage = () => {
     <>
       <Meta />
       <div className="w-full flex flex-col items-center justify-center">
-        <div className=" 2xl:w-5/6  bg-stone-300 px-20 max-sm:px-5 flipContaine ">
-          <div className="w-full border-b  mt-20 ">
+        <div className=" 2xl:w-5/6 xl:w-full  bg-stone-300  max-sm:px-5 flipContaine ">
+          <div className="w-full border-b  mt-10 ">
             <h3>Portfolio</h3>
           </div>
+          <div className="w-full border">
+
           <CardPortfolio />
+          </div>
         </div>
       </div>
     </>

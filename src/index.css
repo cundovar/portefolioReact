@@ -1029,4 +1029,10 @@ h6 {
   font-size: 15px;
 }
 
+.cardHeight {
+  min-height: 55rem;
+  border: 2px red solid;
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */
