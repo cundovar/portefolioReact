@@ -507,6 +507,13 @@ textarea {
   margin-top: 5rem;
 }
 
+.logoHomei {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0.2rem;
+}
+
 @media screen and (max-width: 800px) {
   .total-1 {
     flex-direction: column;

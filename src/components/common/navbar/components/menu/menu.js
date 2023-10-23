@@ -12,7 +12,7 @@ const Menu = () => {
     if (isDivDown) {
       // Si la div est déjà en bas, remettez-la en haut
       gsap.to(".animating-div", {
-        y: 0,
+        y: -50,
         duration: 0.7,
         ease: "power2.inOut",
         opacity:0,
@@ -21,7 +21,7 @@ const Menu = () => {
     } else {
       // Sinon, faites-la descendre
       gsap.to(".animating-div", {
-        y: 100,
+        y: 120,
         duration:0.7,
         ease: "power2.inOut",
         opacity:1,
@@ -72,18 +72,18 @@ const Menu = () => {
                 </button>
               </div>
              
-                <div className="menu animating-div opacity-0 flex absolute max-sm:z-50 xl:-top-14 max-sm:flex max-sm:flex-col max-sm:-top-28 z-50   max-sm:w-5/12  max-sm:mt-10  ">
+                <div className="menu animating-div opacity-0 max-sm:ml-10 flex absolute max-sm:z-50 xl:-top-14 max-sm:flex max-sm:flex-col max-sm:-top-36 z-50  max-sm:w-5/12  max-sm:mt-16 ">
                   <NavLink to="/portfolio">
-                    <button  className="max-sm:ml-3 ">
+                    <button  className=" ">
                     <h6  style={{marginBottom:"10px"}} className="move-line">Projets</h6>
 
                     </button>
                   </NavLink>
 
                   <NavLink to="/creation">
-                    <button  className="max-sm:ml-2 ">
+                    <button  className=" ">
 
-                    <h6 className="move-line">Gabarits</h6>
+                    <h6 className="move-line">Travaux</h6>
                     </button>
                   </NavLink>
                 </div>

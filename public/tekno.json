@@ -1,13 +1,13 @@
 {
 
     "javascript":{
-        "titre":"javascript",
+        "titre":"JAVASCRIPT",
         "l1":"Travail avec DOM (Document Object Model)",
         "l2":"Fetch API ",
         "l3":"Manipulation des tableaux et des objets  ",
         "l4":"Gestion des événements",
         "l5":"Asynchronisme et Promises ",
-        "l6":"",
+        "l6":"Frameworks et bibliothèques",
         "l7":"",
         "l8":"",
         "l9":"",
@@ -24,11 +24,11 @@
         "l3":"Responsive",
         "l4":"Stylisation avancée",
         "l5":"Préprocesseurs CSS (SCSS, Tailwind, Bootstrap)",
-        "l6":">Conformité aux normes et compatibilité entre navigateurs",
+        "l6":"Conformité aux normes et compatibilité entre navigateurs",
         "l7":"",
         "l8":"",
         "l9":"",
-        "bg":"bg-gradient-to-r from-cyan-500 to-blue-900 ",
+        "bg":" ",
         " bgDiv":""
     },
     "react":{
@@ -37,12 +37,12 @@
         "l2":"Utilisation de useState et useEffect",
         "l3":"Gestion des props",
         "l4":"Composants réutilisables",
-        "l5":"Veille technologique ",
-        "l6":"",
+        "l5":"Gestion des formulaires  ",
+        "l6":"Adaptabilité",
         "l7":"",
         "l8":"",
         "l9":"",
-        "bg":"bg-gradient-to-r from-lime-300 to-teal-900 ",
+        "bg":"",
         " bgDiv":""
     },
     "symfony":{
@@ -52,11 +52,11 @@
         "l3":"Création d'API REST ",
         "l4":"Gestion des formulaires Symfony",
         "l5":"TWIG",
-        "l6":"",
+        "l6":"Gestion des vues",
         "l7":"",
         "l8":"",
         "l9":"",
-        "bg":"bg-gradient-to-r from-pink-500 to-blue-900",
+        "bg":"",
         " bgDiv":""
     },
     "wordpress":{
@@ -70,7 +70,7 @@
         "l7":"",
         "l8":"",
         "l9":"",
-        "bg":"bg-gradient-to-r from-pink-400 to-blue-900",
+        "bg":"",
         " bgDiv":""
     }
   

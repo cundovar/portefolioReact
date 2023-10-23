@@ -96,33 +96,46 @@ const Realisation = () => {
                   </button>
                 </div>
 
-                <div className="bg-pink-200 triggerss ff h-96 responsiTitreDescrip xl:w-1/3 p-2 lg:w-3/6  max-lg:w-full 2xl:flex  " >
-                  <div className=" 2xl:w-2/3 2xl:border-r">
-                    <div >
+                <div className=" triggerss ff h-96 responsiTitreDescrip xl:w-1/3 p-2 lg:w-3/6  max-lg:w-full 2xl:flex  " >
+                  <div className=" 2xl:w-2/3">
+                    <div className="h-1/4 ">
                       <h4>{item.titre01}</h4>
                       <h5></h5>
                     </div>
-                    <div>
+                    <div className="w-full h-3/4  flex items-center justify-center">
+                    <div className="w-2/3  m-auto flex flex-col space-y-3 items-center justify-center mt-9 text-xl ">
                       <p className="text-justify mt-1 px-1">
                         {" "}
-                        {data.description01}
+                        {item.description01}
                       </p>
                       <p className="text-justify mt-1 px-1">
-                        {data.description02}
+                        {item.description02}
                       </p>
                     </div>
-                  </div>
-                  <div className="logoHome  2xl:w-1/3 border">
-                    <h3>technologies</h3>
-                    <div className="w-20">
-                      <img
-                        src="/images/logo/React.png"
-                        alt="/images/logo/React.png"
-                      />
+
                     </div>
                   </div>
+                  {Array.isArray(item.img) && item.img.length > 0 ? (
+                    <div className="logoHome flex flex-col f 2xl:w-1/3 ">
+                      <h3>technologies</h3>
+                    
+                      <div className="flex flex-wrap mt-10">
+                        {item.img.map((imgSrc, imgIndex) => (
+                          <img className="logoHomei" key={imgIndex} src={imgSrc} alt={`Image ${imgIndex}`} />
+                        ))}
+                    
+
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="logoHome 2xl:w-1/3 ">
+                      <h3>technologies</h3>
+                      <p>Aucune image disponible.</p>
+                    </div>
+                  )}
                 </div>
               </div>
+            
               <div className="carousel-buttons"></div>
             </div>
           </div>

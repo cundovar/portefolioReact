@@ -172,6 +172,7 @@ const CardPortfolio = () => {
                     icon={faArrowRight}
                     link={projet.lien}
                     text="visiter"
+                    target="_blank"
                   />
                 </li>
 
@@ -180,6 +181,7 @@ const CardPortfolio = () => {
                     icon={faCode}
                     link={projet.lienCode}
                     text="code"
+                    target="_blank"
                   />
                 </li>
               </ul>

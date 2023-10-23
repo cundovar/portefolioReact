@@ -4,20 +4,23 @@
         "titre01":"travail basé sur React",
         "titre02":"",
         "description01":"Sources  issues d'un fichier json. maquettes figma",
-        "description02":""
+        "description02":"Gestion des différents menus",
+        "img":["/images/logo/React.png","/images/logo/sass.png","/images/logo/Bootstrap.png"]
     },
     "02":{
         "imageSrc":"/images/magicieuse.PNG",
         "titre01":"travail basé sur WordPress",
         "titre02":"",
         "description01":"Refonte du site, changement de thème ",
-        "description02":"Personalisation du thème, création de thème enfant, changement du code PHP de WordPress"
+        "description02":"Personalisation du thème, création de thème enfant, changement du code PHP de WordPress",
+        "img":["/images/logo/wordpress.png","/images/logo/js.png","/images/logo/php.png","/images/logo/api platform.png"] 
     },
     "03":{
         "imageSrc":"/images/peinture.PNG",
         "titre01":"travail basé sur le framework symfony",
         "titre02":"",
         "description01":"Gestion de la base de donnée, gestion des stocks",
-        "description02":"Gestion du panier des utlisateurs"
+        "description02":"Gestion du panier des utlisateurs",
+        "img":["/images/logo/Bootstrap.png","/images/logo/js.png","/images/logo/php.png","/images/logo/api platform.png","/images/logo/symfony.png","/images/logo/logo-twig.png"] 
     }
 }

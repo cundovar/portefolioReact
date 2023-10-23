@@ -104,7 +104,7 @@ const Tekno = () => {
         </div>
          <div className="h-1/6 absolute bottom-0 left-0">
 
-        <h5 className=" tekno text-6xl  " style={{fontFamily: 'Orbitron, sans-serif'}}>tekno</h5>
+        <h5 className=" tekno text-6xl  " style={{fontFamily: 'Orbitron, sans-serif'}}>tekno :</h5>
          </div>
       </div>
       {/* 

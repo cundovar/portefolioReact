@@ -66,8 +66,8 @@ export const Competance = () => {
 
           <div className="w-full  relative   rounded-3xl text-justify  " >
         
-            <div className="  w-full flex 2xl:space-x-5 max-sm:flex-col h-full m-auto shadow-2xl" style={{minHeight:"55rem"}}>
-                <div className="w-1/2 max-sm:w-full relative shadow-2xl h-full  bg-orange-200 space-y-4 p-10  ">
+            <div className="  w-full flex 2xl:space-x-5 max-lg:flex-col h-full m-auto shadow-2xl" style={{minHeight:"55rem"}}>
+                <div className="w-1/2 max-lg:w-full  relative shadow-2xl h-full  bg-orange-200 space-y-4 p-10  ">
                  
                   <p className="text-3xl">
                     Je m’appelle Facundo et je suis intégrateur web, développeur
@@ -106,7 +106,7 @@ export const Competance = () => {
 
                
                 </div>
-                <div className="w-1/2 max-sm:w-full   relative"  >
+                <div className="w-1/2 max-lg:w-full   relative"  >
                      <div className="absolute z-50 right-0 m-10 ">
                         
                   <CustomBoutonn text="suivant" icon={faArrowRight} onclick={nextSlide} />

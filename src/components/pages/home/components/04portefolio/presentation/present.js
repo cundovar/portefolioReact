@@ -51,7 +51,7 @@ const Present = () => {
           <h3>Quelques réalisations</h3>
         </div>
         <NavLink to="/portfolio">
-          <button className=" text-center xl:mb-5 ">
+          <button className=" text-center xl:mb-5 max-sm:mb-5 ">
             <CustomBoutonn text="voir le portfolio" icon={faArrowRight} alt="icon button"/>
           </button>
         </NavLink>

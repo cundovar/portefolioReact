@@ -5,7 +5,7 @@ import { Button } from "@radix-ui/themes";
 
 
 
-const CustomBoutonn=({link,icon,text,id,className,type,onclick} )=>{
+const CustomBoutonn=({link,icon,text,id,className,type,onclick,target} )=>{
 
 
     return(
@@ -13,7 +13,7 @@ const CustomBoutonn=({link,icon,text,id,className,type,onclick} )=>{
                      
 
                    <Button color="crimson" variant="soft" type={type} onClick={onclick} className= {`${className}`} id={id}>
-                   <a href={link}>{text}</a>
+                   <a href={link} target={target}>{text}</a>
                    <span><FontAwesomeIcon icon={icon} /></span>
                    </Button>
         </>

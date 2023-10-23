@@ -27,10 +27,10 @@ const Footer = () => {
    
    <div className=" w-1/2  max-sm:w-full  max-sm:justify-center max-sm:items-center  flex justify-start items-end">
 
-        <div className="  m-10 ml-20 flex max-sm:w-full max-sm:items-center    justify-center  ">
+        <div className="  m-10 xl:ml-20 flex max-sm:w-full max-sm:items-center    justify-center  ">
 
 
-<h6 className="max-sm:w-full m-auto">COPYRIGHT 2023</h6>
+<h6 className="max-sm:w-full flex justify-center items-center">COPYRIGHT 2023</h6>
 
         </div>
    </div>

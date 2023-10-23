@@ -135,7 +135,7 @@ const Savoir=()=>{
 
             <div className="imageBack h-1/6 flex items-end">
 
-            <h5 className=" text-6xl self-start " style={{fontFamily: "Caveat, cursive"}}>Passion</h5>
+            <h5 className=" text-6xl self-start " style={{fontFamily: "Caveat, cursive"}}>Passion :</h5>
             </div>
 
             </div>
