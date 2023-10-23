@@ -114,16 +114,16 @@ const Savoir=()=>{
 
         <div className="text_competence flex items-center justify-center  w-1/3">
 
-            <div className="  border  mainBotao rounded-3xl   w-full h-full overflow-hidden   bg-pink-200  ">
+            <div className="    mainBotao rounded-3xl   w-full h-full overflow-hidden   bg-pink-200  ">
 
-            <div className=" h-5/6  w-full  p-2 border flex flex-col items-center justify-center ">
+            <div className=" h-5/6  w-full  p-2  flex flex-col items-center justify-center ">
             
 
-                <p className="text-5xl  image  text-justify border opacity-0 max-sm:block max-sm:opacity-1 "  style={{fontFamily: "Caveat, cursive"}} >
+                <p className="text-5xl  image  text-justify opacity-0 max-sm:block max-sm:opacity-1 "  style={{fontFamily: "Caveat, cursive"}} >
                Artisant du web. je suis curieux et  passionné. 
                 </p>
           <div className=" ">
-                <p className="text-5xl  text  text-justify border opacity-0 max-sm:opacity-1"  style={{fontFamily: "Caveat, cursive"}} >
+                <p className="text-5xl  text  text-justify  opacity-0 max-sm:opacity-1"  style={{fontFamily: "Caveat, cursive"}} >
                   Un café et au boulot !
                 </p>
 

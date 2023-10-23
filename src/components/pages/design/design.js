@@ -30,7 +30,7 @@ const Design = () => {
         <div className=" w-5/6 ">
 
 
-          <h3 className=" w-full border-b mt-10 max-sm:m-0  ">Gabarits</h3>
+          <h3 className=" w-full border-b mt-10 max-sm:m-0 mb-9 ">Gabarits</h3>
         <div className=" flex flex-wrap items-center justify-center cardH h-96 ">
           
           <div className="flex max-sm:flex-wrap items-center justify-center space-x-6">

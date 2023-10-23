@@ -55,16 +55,21 @@ html, body {
   }
 
 .custom-scrollbar {
-    scrollbar-width: thin;
+ overflow-x: hidden;
     scrollbar-color: transparent transparent;
   }
   
   .custom-scrollbar::-webkit-scrollbar {
-    width: 6px; /* Largeur de la barre de défilement */
+    width: 1px; /* Largeur de la barre de défilement */
+   
+    opacity: 0.1;
+ 
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: transparent; /* Couleur de la barre de défilement */
+    background: rgb(114, 205, 219);
+    border-radius: 50%;
+
   }
   
   
@@ -174,6 +179,6 @@ h6{
 }
 .cardHeight{
     min-height: 55rem;
-    border: 2px red solid ;
+   
     width: 100%;
 }

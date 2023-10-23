@@ -29,7 +29,7 @@ const PortefolioPage = () => {
           <div className="w-full border-b  mt-10 ">
             <h3>Portfolio</h3>
           </div>
-          <div className="w-full border">
+          <div className="w-full ">
 
           <CardPortfolio />
           </div>

@@ -65,9 +65,9 @@ const Realisation = () => {
                 <div className="imgPortfolio absolute xl:w-2/3 xl:h-full max-sm:relative   max-lg:w-full  flex  rounded-2xl ">
                   <button
                     id="preview"
-                    className="absolute backdrop-blur-xl"
+                    className="absolute backdrop-blur-xl cursor-pointer"
                     onClick={handlePrev}
-                    disabled={currentItem === 0}
+               
                   >
                     <FontAwesomeIcon
                       className="nextPre"

@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div className="z-50 flex justify-start  max-sm:pt:10 max-sm:flex-col  max-sm:justify-center max-sm:items-center    items-start w-full bg-stone-300 ">
       <div className="w-2/3   flex flex-col max-sm:flex-col max-sm:w-full   max-sm:justify-center max-sm:items-center ">
-        <div className=" w-1/3  flex flex-col max-sm:flex-col max-sm:w-full p-5 bg-rose-200 max-lg:w-2/3 justify-center max-sm:items-center ">
+        <div className=" w-1/3  flex flex-col max-sm:flex-col max-sm:w-full p-5 2xl:m-9 xl:ml-9 rounded-xl bg-pink-200 max-lg:w-2/3 justify-center max-sm:items-center ">
 
         <div className=" flex   justify-start max-sm:justify-center max-sm:w-full  max-sm:ml-0  items-start mt-0">
           <NavLink to="/" className="m-0 max-sm:w-full  max-sm:justify-center  ">

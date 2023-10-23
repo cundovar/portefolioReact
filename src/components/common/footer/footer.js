@@ -23,11 +23,11 @@ const Footer = () => {
 
 
   return (
-    <div className=" border footerr absolute flex  max-sm:justify-center max-sm:items-center  max-sm:flex-col-reverse  w-full ">
+    <div className="  footerr absolute flex  max-sm:justify-center max-sm:items-center  max-sm:flex-col-reverse  w-full ">
    
-   <div className=" w-1/2 border max-sm:w-full  max-sm:justify-center max-sm:items-center  flex justify-start items-end">
+   <div className=" w-1/2  max-sm:w-full  max-sm:justify-center max-sm:items-center  flex justify-start items-end">
 
-        <div className="  m-10 ml-20 flex max-sm:w-full max-sm:items-center  border  justify-center  ">
+        <div className="  m-10 ml-20 flex max-sm:w-full max-sm:items-center    justify-center  ">
 
 
 <h6 className="max-sm:w-full m-auto">COPYRIGHT 2023</h6>
@@ -36,7 +36,7 @@ const Footer = () => {
    </div>
 
     
-        <div className=" w-1/2  max-sm:w-full flex items-center border">
+        <div className=" w-1/2  max-sm:w-full flex items-center ">
           <ul className=" flex space-x-3 m-auto ">
 
             <NavLink to="/">

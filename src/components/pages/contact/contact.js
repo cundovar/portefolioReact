@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="w-full border-b mb-8 px-10 max-sm:p-1 ">
         <h3>Contact</h3>
       </div>
-      <div className="total-contact w-full flex px-10 max-sm:p-1 border ">
+      <div className="total-contact w-full flex px-10 max-sm:p-1  ">
         <div className="contact-form w-full flex  ">
           <form
             className="w-full flex  items-center justify-center"

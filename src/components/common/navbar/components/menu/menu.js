@@ -59,7 +59,7 @@ const Menu = () => {
           </NavLink>
 
 
-          <li className="  flex justify-center relative border items-center flex-col " >
+          <li className="  flex justify-center relative  items-center flex-col " >
               <div className="flex  dropdown relative  ">
                 <button onClick={handleButtonClick} className="flex items-center justify-center" >
                   <h5 >
