@@ -26,8 +26,8 @@ const PortefolioPage = () => {
       <Meta />
       <div className="w-full flex flex-col items-center justify-center">
         <div className=" 2xl:w-5/6 xl:w-full  bg-stone-300  max-sm:px-5 flipContaine ">
-          <div className="w-full border-b  mt-10 ">
-            <h3>Portfolio</h3>
+          <div className="w-5/6 m-auto border-b  mt-10 max-sm:mb-12">
+            <h3 className=" ">Portfolio</h3>
           </div>
           <div className="w-full ">
 

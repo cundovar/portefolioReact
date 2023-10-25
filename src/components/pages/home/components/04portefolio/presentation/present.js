@@ -48,13 +48,14 @@ const Present = () => {
       </div> */}
       <div className="divRealisation w-full ">
         <div className="w-full border-b mb-8 flex items-end">
-          <h3>Quelques réalisations</h3>
+          <h3 className="max-sm:ml-5">Quelques réalisations</h3>
         </div>
-        <NavLink to="/portfolio">
-          <button className=" text-center xl:mb-5 max-sm:mb-5 ">
-            <CustomBoutonn text="voir le portfolio" icon={faArrowRight} alt="icon button"/>
-          </button>
-        </NavLink>
+       
+            <div className="xl:mb-10 max-md:mb-5 lg:mb-7">
+
+            <CustomBoutonn  link ="https://portfolio2.2.varascundo.com/portfolio " text="voir le portfolio" icon={faArrowRight} alt="icon button"/>
+            </div>
+      
         <div className="w-full space-y-3 flex flex-col total-carousel">
           <Realisation />
         </div>

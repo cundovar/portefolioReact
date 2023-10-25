@@ -1,4 +1,49 @@
 {
+  "space": {
+    "type":["react","scss"],
+    "titre": "Mini-projet space-tourism",
+    "tekno": "javascript/react",
+    "lien": "https://espace.varascundo.com/" ,
+    "lienCode": "https://github.com/cundovar/tourism-spacial",
+    "description": "Projet react.Sources  issues d'un fichier json. maquettes figma",
+    "imageSrc":"/images/espace.PNG",
+    "titreHover":"",
+    "text1":"travail basé sur React",
+    "text2":"gestion des différentes page ",
+    "text3":" ",
+    "text4":"",
+    "alt":"image projet space react"
+  },
+  "magicieuse": {
+    "type":["wordpress","php"],
+    "titre": "maison edition",
+    "tekno": "php",
+    "lien": "https://la-magicieuse.varascundo.com/" ,
+    "lienCode": "",
+    "description": "refonte site wordpress de la maison edition la magicieuse",
+    "imageSrc":"/images/magicieuse.PNG",
+    "titreHover":"",
+    "text1":"travail basé sur WordPress",
+    "text2":"Refonte du site, changement de thème",
+    "text3":"Personalisation du thème, création de thème enfant, changement du code PHP de WordPress",
+    "text4":"Gestion de Woocommerce, ajout de code javascript",
+    "alt":"image maison édition wordpress"
+  },
+  "portfolio1": {
+    "type":["twig","bootstrap"],
+    "titre": "mon premier portfolio",
+    "tekno": "twig",
+    "lien": "https://portfolio.varascundo.com/" ,
+    "lienCode": "https://github.com/cundovar/portfolio",
+    "description": "mon premier portfolio",
+    "imageSrc":"/images/portofolio1.PNG",
+    "titreHover":"",
+    "text1":"travail basé sur twig/javascript",
+    "text2":"bootstrap",
+    "text3":"javascript",
+    "text4":" ",
+    "alt":"image portofolio1"
+  },
     "Etang": {
       "type":["wordpress","php"],
       "titre": "Asso d'artistes",
@@ -29,21 +74,7 @@
       "text4":"Gestion des commentaire en react",
       "alt":"image site de peinture php"
     },
-    "space": {
-      "type":["react","scss"],
-      "titre": "Mini-projet space-tourism",
-      "tekno": "javascript/react",
-      "lien": "https://espace.varascundo.com/" ,
-      "lienCode": "https://github.com/cundovar/tourism-spacial",
-      "description": "Projet react.Sources  issues d'un fichier json. maquettes figma",
-      "imageSrc":"/images/espace.PNG",
-      "titreHover":"",
-      "text1":"travail basé sur React",
-      "text2":"gestion des différentes page ",
-      "text3":" ",
-      "text4":"",
-      "alt":"image projet space react"
-    },
+    
     "dashboard": {
       "type":["react","scss"],
       "titre": "Tableau de bord",
@@ -59,27 +90,13 @@
       "text4":"Utilisation du pre-processeur SASS",
       "alt":"image dashboard en reactjs"
     },
-    "magicieuse": {
-        "type":["wordpress","php"],
-        "titre": "maison edition",
-        "tekno": "php",
-        "lien": "https://la-magicieuse.varascundo.com/" ,
-        "lienCode": "",
-        "description": "refonte site wordpress de la maison edition la magicieuse",
-        "imageSrc":"/images/magicieuse.PNG",
-        "titreHover":"",
-        "text1":"travail basé sur WordPress",
-        "text2":"Refonte du site, changement de thème",
-        "text3":"Personalisation du thème, création de thème enfant, changement du code PHP de WordPress",
-        "text4":"Gestion de Woocommerce, ajout de code javascript",
-        "alt":"image maison édition wordpress"
-      },
+  
 
       "portfolio2": {
         "type":["React","tailwind","scss"],
         "titre": "mon portfolio",
         "tekno": "React",
-        "lien": "http://3001/" ,
+        "lien": "https://portfolio2.2.varascundo.com/" ,
         "lienCode": "https://github.com/cundovar/portefolioReact",
         "description": "",
         "imageSrc":"/images/portfolio2.PNG",
@@ -90,21 +107,7 @@
         "text4":"Gestion de fichier json",
         "alt":"image portofolio2"
       },
-      "portfolio1": {
-        "type":["twig","bootstrap"],
-        "titre": "mon premier portfolio",
-        "tekno": "twig",
-        "lien": "https://portfolio.varascundo.com/" ,
-        "lienCode": "https://github.com/cundovar/portfolio",
-        "description": "mon premier portfolio",
-        "imageSrc":"/images/portofolio1.PNG",
-        "titreHover":"",
-        "text1":"travail basé sur twig/javascript",
-        "text2":"bootstrap",
-        "text3":"javascript",
-        "text4":" ",
-        "alt":"image portofolio1"
-      },
+
       "taxi": {
         "type":["javascript","bootstrap"],
         "titre": "page e-commerce",

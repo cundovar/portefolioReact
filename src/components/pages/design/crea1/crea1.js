@@ -5,12 +5,12 @@ import Crea3 from "../crea3/crea3";
 const Crea1 = () => {
   return (
 
-    <div className="fond-crea  bb  lg:flex flex-wrap   items-center justify-around p-6 custom-font ">
+    <div className="fond-crea    lg:flex flex-wrap  max-md:mt-10  items-center justify-around xl:p-2 custom-font ">
       
       
      
      
-      <div className="lg:w-3/6 md:w-full bg-neutral-300   ">
+      <div className="lg:w-3/6 max-md:w-full  bg-neutral-300   ">
         <div className="flex items-center justify-center mb-5 p-2">
           <div className="w-1/3">
             <h3 className="custom-font-title ">Innov</h3>
@@ -58,7 +58,7 @@ const Crea1 = () => {
         </div>
 
         <div className="w-full flex ">
-          <div className="xl:w-1/6 lg:w-2/6 md:1/3 p-10">intro</div>
+          <div className="xl:w-2/6 lg:w-2/6 md:1/3 p-10">intro</div>
           <div className="xl:w-2/6 lg:w-1/6 pt-12">
             <div className="border border-t border-gray-400 "></div>
           </div>
@@ -291,7 +291,7 @@ const Crea1 = () => {
                         <img
                           src="./images/crea/p1.jpg"
                           alt="image-portrait"
-                          className=" object-fill w-full h-full"
+                          className=" object-cover w-full h-full"
                         />
                       </div>
 

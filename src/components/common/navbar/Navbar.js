@@ -18,19 +18,19 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="z-50 flex justify-start  max-sm:pt:10 max-sm:flex-col  max-sm:justify-center max-sm:items-center    items-start w-full bg-stone-300 ">
-      <div className="w-2/3   flex flex-col max-sm:flex-col max-sm:w-full   max-sm:justify-center max-sm:items-center ">
-        <div className=" w-1/3  flex flex-col max-sm:flex-col max-sm:w-full p-5 2xl:m-9 xl:ml-9 rounded-xl bg-pink-200 max-lg:w-2/3 justify-center max-sm:items-center ">
+    <div className="z-50 flex justify-start  max-md:pt:10 max-md:flex-col  max-md:justify-center max-md:items-center    items-start w-full bg-stone-300 ">
+      <div className="w-2/3   flex flex-col max-md:flex-col max-md:w-full   max-md:justify-center max-md:items-center ">
+        <div className=" flex flex-col max-md:flex-col max-md:w-full p-5 2xl:m-9 xl:ml-9 rounded-xl bg-pink-200 xl:w-1/3  lg:w-2/3 justify-center max-sm:items-center ">
 
-        <div className=" flex   justify-start max-sm:justify-center max-sm:w-full  max-sm:ml-0  items-start mt-0">
-          <NavLink to="/" className="m-0 max-sm:w-full  max-sm:justify-center  ">
+        <div className=" flex   justify-start max-sm:justify-center max-md:w-full  max-md:ml-0  items-start mt-0">
+          <NavLink to="/" className="m-0 max-md:w-full  max-md:justify-center  ">
             <h1 className="   max-sm:w-full   ">Dev front-end</h1>
           </NavLink>
         </div>
-        <div className=" max-sm:w-full max-sm:justify-center max-sm:flex   max-sm:ml-0 space-x-5">
-          <h3 className="max-sm:w-full max-sm:justify-center max-sm:flex  ">Intégrateur web </h3>
+        <div className=" max-sm:w-full max-md:justify-center max-md:flex   max-md:ml-0 space-x-5">
+          <h3 className="max-sm:w-full max-md:justify-center max-md:flex  ">Intégrateur web </h3>
         </div>
-        <div className=" ax-sm:w-full max-sm:justify-center max-sm:flex   max-sm:ml-0 ">
+        <div className=" ax-sm:w-full max-md:justify-center max-md:flex   max-sm:ml-0 ">
           <h4>
             {" "}
             {startTypewriter && <Typewriter text="Facundo Varas" delay={100} />}

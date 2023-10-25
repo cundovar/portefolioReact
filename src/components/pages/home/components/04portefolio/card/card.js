@@ -36,15 +36,15 @@ const CardPortfolio = () => {
   useEffect(()=>{
     const card = document.querySelectorAll(".cardPortfolio");
     const state = Flip.getState(card);
-    
+    console.log('CardPortfolio is re-rendered.');
     Flip.from(state, {
       duration: 0.7,
       scale: true,
       absolute: true,
       ease: "power1.inOut",
       stagger: 0.08,
-      onEnter: (elements) =>gsap.fromTo( { opacity: 0, scale: 1 }, { opacity: 1, scale: 1, duration: 1 }),
-      onLeave: (elements) => gsap.fromTo(elements, { opacity: 0, scale: 0.5, duration: 1 }),
+      onEnter: (elements) =>gsap.to(elements, { opacity: 1, duration: 1 }),
+      onLeave: (elements) => gsap.to(elements, { opacity: 0, duration: 1 }),
     });
   },[filteredProjects])
 
@@ -79,7 +79,7 @@ const CardPortfolio = () => {
 
   return (
     <>
-      <div className="flex w-2/3 xl:w-full max-sm:wfull  choice-tekno flex-wrap ">
+      <div className="flex max-sm:hidden w-2/3 xl:w-full max-sm:wfull  choice-tekno flex-wrap ">
         {choiceInputData.map((items, index) => (
           <div
             key={index}
@@ -108,7 +108,7 @@ const CardPortfolio = () => {
         ))}
       </div>
 
-      <div className="w-full flex flex-wrap  2xl:items-center cardHeight justify-center ">
+      <div className="w-full flex flex-wrap  cardHeight justify-center ">
         {filteredProjects.map((projet, index) => (
           
           <div

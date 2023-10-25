@@ -1,5 +1,5 @@
 import React from "react";
-import Presentation from "./components/02presentation/presentation";
+
 
 import Portefolio from "./components/04portefolio/portefolio";
 import { Helmet } from "react-helmet";

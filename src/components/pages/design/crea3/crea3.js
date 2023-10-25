@@ -29,7 +29,7 @@ const Crea3 = () => {
   };
 
   return (
-    <section className="w-full pl-3 pr-3 mr-10 relative">
+    <section className="w-full pl-3 pr-3 mr-10 relative 2xl:p-5 xl:p-16 max-md:mt-10">
       <div className=" relative   ">
         <Slider {...settings} ref={sliderRef}>
           {crea3Data.map((item, index) => (
@@ -113,8 +113,8 @@ const Crea3 = () => {
           <div className="w-full flex flex-col jusfy-center items-center">
             <h2 className="font-bold">About our furniture</h2>
           </div>
-          <div>
-            <p className="text-stone-500 ">
+          <div className="pr-5 pl-5">
+            <p className="text-stone-500  ">
               {" "}
               Our multifunctional collection blends design and function to suit
               your individual taste. Make each room unique, or pick a cohesive

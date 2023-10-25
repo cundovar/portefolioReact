@@ -61,8 +61,8 @@ const Realisation = () => {
         {data.map((item, index) => (
           <div key={index}>
             <div className="carousel-container relative h-96   " >
-              <div className="carousel-item flex  lg:space-x-2  w-full max-lg:flex-col max-lg:space-y-2 ">
-                <div className="imgPortfolio absolute xl:w-2/3 xl:h-full max-sm:relative   max-lg:w-full  flex  rounded-2xl ">
+              <div className="carousel-item flex  lg:space-x-2  w-full max-sm:flex-col max-lg:space-y-2 ">
+                <div className="imgPortfolio absolute md:h-96 lg:w-2/3 lg:h-full xl:h-full max-sm:relative   max-lg:w-full  flex  rounded-2xl ">
                   <button
                     id="preview"
                     className="absolute backdrop-blur-xl cursor-pointer"
@@ -96,14 +96,14 @@ const Realisation = () => {
                   </button>
                 </div>
 
-                <div className=" triggerss ff h-96 responsiTitreDescrip xl:w-1/3 p-2 lg:w-3/6  max-lg:w-full 2xl:flex  " >
+                <div className=" triggerss ff max-md:hidden h-96 responsiTitreDescrip lg:w-1/3 p-2   2xl:flex  " >
                   <div className=" 2xl:w-2/3">
                     <div className="h-1/4 ">
                       <h4>{item.titre01}</h4>
                       <h5></h5>
                     </div>
-                    <div className="w-full h-3/4  flex items-center justify-center">
-                    <div className="w-2/3  m-auto flex flex-col space-y-3 items-center justify-center mt-9 text-xl ">
+                    <div className="w-full h-3/4  flex">
+                    <div className="w-2/3  flex flex-col space-y-3   mt-9 text-xl ">
                       <p className="text-justify mt-1 px-1">
                         {" "}
                         {item.description01}

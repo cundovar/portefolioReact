@@ -51,24 +51,24 @@ export const Competance = () => {
   return (
     <>
       <div className="border-b w-full mt-10">
-        <h3>savoir faire</h3>
+        <h3 className="max-sm:ml-5">savoir faire</h3>
       </div>
       <div className="competance flex flex-wrap 2xl:w-5/6 xl:w-full pt-4 xl:space-y-20">
         <Savoir className="w-1/3 " />
         <Tekno className="w-1/3" />
-        <Photo className="w-1/3 change" />
+        <Photo className="w-1/3 max-sm:w-full " />
 </div>
         <div className="w-full relative">
         <div className="border-b mt-20 mb-6 w-full">
-        <h3>Présentation </h3>
+        <h3 className="max-sm:ml-5">Présentation </h3>
       </div>
-      <div className="competance flex flex-wrap  xl:w-full pt-4 xl:space-y-20" >
+      <div className="competance border  flex flex-wrap  xl:w-full pt-4 xl:space-y-20" >
 
-          <div className="w-full  relative   rounded-3xl text-justify  " >
+          <div className="w-full    relative   rounded-3xl text-justify  " >
         
-            <div className="  w-full flex 2xl:space-x-5 max-lg:flex-col h-full m-auto shadow-2xl" style={{minHeight:"55rem"}}>
-                <div className="w-1/2 max-lg:w-full  relative shadow-2xl h-full  bg-orange-200 space-y-4 p-10  ">
-                 
+            <div className="  w-full flex 2xl:space-x-5 max-lg:flex-col h-full   m-auto shadow-2xl" style={{minHeight:"55rem"}}>
+                <div className="w-1/2 max-lg:w-full  relative shadow-2xl h-full md:p-12 bg-gray-300 space-y-4 p-10  ">
+
                   <p className="text-3xl">
                     Je m’appelle Facundo et je suis intégrateur web, développeur
                     front-end.
@@ -79,7 +79,7 @@ export const Competance = () => {
                   </p>
                   <p className="2xl:text-2xl xl:text-xl">
                     {" "}
-                    Mais cela fait deux que je développe sur divers langages en
+                    Mais cela fait deux ans que je développe sur divers langages en
                     autodidacte.
                   </p>
                   <p className="2xl:text-2xl xl:text-xl">
@@ -94,10 +94,10 @@ export const Competance = () => {
                     Je prends un soin particulier pour le responsive ( tablette
                     et mobile ou écran extra-large) et le SEO.
                   </p>
-                  <p className="2xl:text-2xl xl:text-xl">
+                  {/* <p className="2xl:text-2xl xl:text-xl">
                     Je ne connais pas tout mais j’ai comme ami un nommé Chat et
                     Google est mon chat de compagnie.
-                  </p>
+                  </p> */}
                   <p className="2xl:text-2xl xl:text-xl">
                     Je me tiens régulièrement informé sur les nouvelles
                     technologies en faisant une veille régulière.
@@ -127,7 +127,7 @@ export const Competance = () => {
 
         </div>
 
-        <div className="border border-zinc-500 p-2 w-4/6 max-sm:w-full max-sm:p-1  xl-5">
+        <div className="border border-zinc-500 p-2 w-4/6xl:w-full max-sm:w-full max-sm:p-1  xl-5">
         <div className=" border border-zinc-500 p-2 ggdd m-auto  "  >
             <ul className="xl:space-y-10 p-5 text-gray-400 max-sm:space-y-3">
               <div className="flex  items-center space-x-3">

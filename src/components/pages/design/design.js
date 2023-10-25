@@ -25,15 +25,15 @@ const Design = () => {
   return (
     <>
       <Meta />
-      <section className=" w-full    flex flex-col items-center  contact ">
+      <section className=" w-full h-full   flex flex-col items-center  contact ">
 
-        <div className=" w-5/6 ">
+        <div className=" w-5/6 max-sm:mt-7 ">
 
 
-          <h3 className=" w-full border-b mt-10 max-sm:m-0 mb-9 ">Travaux</h3>
-        <div className=" flex flex-wrap items-center justify-center cardH h-96 ">
+          <h3 className=" w-full border-b mt-10 max-sm:m-0 mb-9 max-sm:mb-12 ">Travaux</h3>
+        <div className=" flex flex-wrap items-center justify-center cardH xl:h-96 max-sm:h-full ">
           
-          <div className="flex max-sm:flex-wrap items-center justify-center space-x-6">
+          <div className="flex max-sm:flex-wrap items-center justify-center lg:space-x-6">
 
 
           <NavLink to ="/creation2">
@@ -61,7 +61,7 @@ const Design = () => {
             <CardCrea dataImage="/images/design-crea/Crea1.PNG">
               <h1 slot="header">Divers</h1>
               <p slot="content">
-                Multiples exemples de gabaris, créés avec tailwind.
+                Multiples exemples traveaux, créés avec tailwind.
               </p>
             </CardCrea>
 
