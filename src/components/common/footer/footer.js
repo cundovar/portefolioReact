@@ -40,14 +40,13 @@ const Footer = () => {
           <ul className=" flex space-x-3 m-auto ">
 
             <NavLink to="/">
-              <li className="move-line">accueil</li>
+              <li className="move-line">Accueil</li>
             </NavLink>
             <NavLink to="/portfolio">
               <li className="move-line">Portfolio</li>
             </NavLink>
-            <NavLink to="/contact">
-              <li className="move-line">contact</li>
-            </NavLink>
+     
+           
 
           </ul>
         </div>

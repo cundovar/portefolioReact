@@ -24,7 +24,7 @@ const Design = () => {
 
   return (
     <>
-      <Meta />
+      {/* <Meta /> */}
       <section className=" w-full h-full   flex flex-col items-center  contact ">
 
         <div className=" w-5/6 max-sm:mt-7 ">
@@ -50,8 +50,7 @@ const Design = () => {
             <NavLink to ="/creation3">
             <CardCrea dataImage="/images/design-crea/Crea2.PNG">
               <h1 slot="header">Page d'accueil</h1>
-              <p slot="content">
-                Page d'accueil avec carousel, reponsive, taiwlind.              </p>
+              <p slot="content">Page d'accueil avec carousel, reponsive, taiwlind.              </p>
             
             </CardCrea>
 

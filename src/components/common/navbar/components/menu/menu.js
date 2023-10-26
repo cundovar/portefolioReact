@@ -6,81 +6,91 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 
 const Menu = () => {
-  const [isDivDown, setIsDivDown] = useState(false);
-  const dropdownRef = useRef(null);
+  // const [isDivDown, setIsDivDown] = useState(false);
+  // const dropdownRef = useRef(null);
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        // Clic en dehors du dropdown, remettez-le en haut
-        if (isDivDown) {
-          gsap.to(".animating-div", {
-            y: 0,
-            duration: 0.7,
-            ease: "power2.inOut",
-            opacity: 0,
-            display: "none"
-          });
-          setIsDivDown(false);
-        }
-      }
-    }
+  // useEffect(() => {
+  //   function handleClickOutside(event) {
+  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+  //       // Clic en dehors du dropdown, remettez-le en haut
+  //       if (isDivDown) {
+  //         gsap.to(".animating-div", {
+  //           y: 0,
+  //           duration: 0.7,
+  //           ease: "power2.inOut",
+  //           opacity: 0,
+  //           display: "none"
+  //         });
+  //         setIsDivDown(false);
+  //       }
+  //     }
+  //   }
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isDivDown]);
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [isDivDown]);
 
-  const handleButtonClick = () => {
-    if (isDivDown) {
-      // Si la div est déjà en bas, remettez-la en haut
-      gsap.to(".animating-div", {
-        y: 0,
-        duration: 0.7,
-        ease: "power2.inOut",
-        opacity: 0,
-        display: "none"
-      });
-    } else {
-      // Sinon, faites-la descendre
-      gsap.to(".animating-div", {
-        y: 120,
-        duration: 0.7,
-        ease: "power2.inOut",
-        opacity: 1,
-        display: "block"
-      });
-    }
+  // const handleButtonClick = () => {
+  //   if (isDivDown) {
+  //     // Si la div est déjà en bas, remettez-la en haut
+  //     gsap.to(".animating-div", {
+  //       y: 0,
+  //       duration: 0.7,
+  //       ease: "power2.inOut",
+  //       opacity: 0,
+  //       display: "none"
+  //     });
+  //   } else {
+  //     // Sinon, faites-la descendre
+  //     gsap.to(".animating-div", {
+  //       y: 120,
+  //       duration: 0.7,
+  //       ease: "power2.inOut",
+  //       opacity: 1,
+  //       display: "block"
+  //     });
+  //   }
 
-    // Inversez la valeur de isDivDown
-    setIsDivDown(!isDivDown);
-  };
+  //   // Inversez la valeur de isDivDown
+  //   setIsDivDown(!isDivDown);
+  // };
 
-  const fermeButtonClick = () => {
-    if (isDivDown) {
-      gsap.to(".animating-div", {
-        y: 0,
-        duration: 0.7,
-        ease: "power2.inOut",
-        opacity: 0,
-        display: "none"
-      });
-      setIsDivDown(false);
-    }
-  };
+  // const fermeButtonClick = () => {
+  //   if (isDivDown) {
+  //     gsap.to(".animating-div", {
+  //       y: 0,
+  //       duration: 0.7,
+  //       ease: "power2.inOut",
+  //       opacity: 0,
+  //       display: "none"
+  //     });
+  //     setIsDivDown(false);
+  //   }
+  // };
 
   return (
-    <div className="navbar-menu w-full bg-stone-300 flex items-start">
+    
       <div className="navbar-menu-2 flex w-full">
-        <ul className="menu w-full justify-center flex">
-          <NavLink to="/" className="" onClick={fermeButtonClick}>
+        <ul className="menu w-full  max-sm:justify-around  flex">
+          <NavLink to="/" className="">
             <li className="flex justify-center items-center">
               <h5 className="move-line">Accueil</h5>
             </li>
           </NavLink>
+          <NavLink to="/portfolio" className="" >
+            <li className="flex justify-center items-center">
+              <h5 className="move-line">Portolio</h5>
+            </li>
+          </NavLink>
+          {/* <NavLink to="/ #contact" >
+            <li className="flex justify-center items-center">
+              <h5 className="move-line">Contact</h5>
+            </li>
+          </NavLink> */}
 
-          <li className="flex justify-center relative items-center flex-col">
+          {/* <li className="flex justify-center relative items-center flex-col">
             <div className="flex dropdown relative" ref={dropdownRef}>
               <button onClick={handleButtonClick} className="flex items-center justify-center">
                 <h5>Portfolio</h5>
@@ -103,18 +113,16 @@ const Menu = () => {
                 </button>
               </NavLink>
             </div>
-          </li>
+          </li> */}
 
-          <NavLink to="/contact" className="" onClick={fermeButtonClick}>
-            <li className="flex justify-center items-center">
-              <h5 className="move-line">Contact</h5>
-            </li>
-          </NavLink>
+     
+          
+         
         </ul>
 
         <div className="button-circle"></div>
       </div>
-    </div>
+
   );
 };
 // EXPLICATION CLIC EN DEHORS BOUTON PORTOFOLIO

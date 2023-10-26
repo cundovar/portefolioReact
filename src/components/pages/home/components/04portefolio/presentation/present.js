@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import CustomBoutonn from "../../../../../common/button";
 import { Tab, Tabs } from "./tabs";
+
 const Present = () => {
   return (
     <div className="w-full  flex flex-col total-1 pb-5 ">
@@ -61,6 +62,7 @@ const Present = () => {
         </div>
 
       </div>
+     
     </div>
   );
 };

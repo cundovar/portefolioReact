@@ -52,7 +52,7 @@ const Contact = () => {
                     name="chp_author"
                     type="text"
                     title="Votre nom *"
-                    className="required border bg-gray-300 relative"
+                    className="required border relative"
                     placeholder="Votre nom*"
                   />
                   <span className="absolute left-1">
@@ -64,7 +64,7 @@ const Contact = () => {
                     name="chp_author"
                     type="email"
                     title="Votre mail *"
-                    className="required relative border bg-gray-300"
+                    className="required relative border b"
                     placeholder="Votre mail*"
                   />
                   <span className="absolute left-1">

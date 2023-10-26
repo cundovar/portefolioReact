@@ -95,7 +95,7 @@ function App() {
         {/* </div> */}
      
       {/* </div> */}
-      <div className=" font bg-stone-300">
+      <div className=" font ">
         <Pages />
       </div>
     </Theme>

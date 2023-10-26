@@ -18,9 +18,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="z-50 flex justify-start  max-md:pt:10 max-md:flex-col  max-md:justify-center max-md:items-center    items-start w-full bg-stone-300 ">
-      <div className="w-2/3   flex flex-col max-md:flex-col max-md:w-full   max-md:justify-center max-md:items-center ">
-        <div className=" flex flex-col max-md:flex-col max-md:w-full p-5 2xl:m-9 xl:ml-9 rounded-xl bg-pink-200 xl:w-1/3  lg:w-2/3 justify-center max-sm:items-center ">
+    <div className="z-50 flex justify-start items-center max-md:pt:10 max-md:flex-col    max-md:justify-center max-md:items-center     w-full">
+      <div className="w-1/3   flex flex-col max-md:flex-col max-md:w-full  max-md:justify-center max-md:items-center ">
+        <div className=" flex flex-col max-md:flex-col max-md:w-full p-5 rounded-xl bg-pink-200 xl:w-full  lg:w-full justify-center max-sm:items-center ">
 
         <div className=" flex   justify-start max-sm:justify-center max-md:w-full  max-md:ml-0  items-start mt-0">
           <NavLink to="/" className="m-0 max-md:w-full  max-md:justify-center  ">
@@ -35,13 +35,17 @@ const Navbar = () => {
             {" "}
             {startTypewriter && <Typewriter text="Facundo Varas" delay={100} />}
           </h4>
+          <div className="max-md:hidden ">
+          <Menu/>
+
+          </div>
 
         </div>
         </div>
       </div>
 
-      <div className=" w-1/3 flex max-sm:w-full flex-col ml-7 max-sm:ml-0 justify-between pb-10 pt-5   ">
-        {/*  id="sticky-parallax-header" */}
+      <div className=" w-1/3  hidden max-md:block  max-sm:w-full flex-col  max-sm:ml-0 justify-center items-center pb-10 pt-5   ">
+     
 
       
         <Menu />

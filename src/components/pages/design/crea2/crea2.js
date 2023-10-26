@@ -142,18 +142,18 @@ const Crea2 = () => {
               <div className="panier flex  space-x-1 w-2/3 max-sm:w-full justify-center items-center max-sm:flex-col max-sm:space-y-3 max-sm:pt-10 ">
                 <div className="cursor w-1/3 flex max-sm:w-full ">
                   <div
-                    className="  w-1/3 border rounded-xl bg-stone-300  flex items-center justify-center p-4 text-3xl max-sm:p-2 text-orange-600   "
+                    className="  w-1/3 border rounded-xl  flex items-center justify-center p-4 text-3xl max-sm:p-2 text-orange-600   "
                     onClick={incrementCount}
                   >
                     +
                   </div>
-                  <div className="w-1/3 border  rounded-xl bg-stone-300 flex items-center justify-center p-4 text-3xl max-sm:p-2 ">
+                  <div className="w-1/3 border  rounded-xl flex items-center justify-center p-4 text-3xl max-sm:p-2 ">
                     {" "}
                     {count}{" "}
                   </div>
 
                   <div
-                    className="w-1/3 border rounded-xl bg-stone-300  flex items-center justify-center p-4 text-3xl max-sm:p-2  text-orange-600  "
+                    className="w-1/3 border rounded-xl  flex items-center justify-center p-4 text-3xl max-sm:p-2  text-orange-600  "
                     onClick={decrementCount}
                   >
                     -

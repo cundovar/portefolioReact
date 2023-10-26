@@ -12,6 +12,7 @@ const Photo = () => {
           <a  
             href="https://github.com/cundovar"
             target="_blank"
+            rel="noopener noreferrer"
             className="  iconGit h-6 w-6 flex items-center justify-center max-lg:-top-9 max-lg:left-40  max-sm:-top-7 max-sm:left-40"
           >
             <i className="fa-brands pink fa-github fa-xl  "></i>
@@ -22,6 +23,7 @@ const Photo = () => {
           <a
             href="https://www.linkedin.com/in/facundo-varas/ "
             target="_blank"
+            rel="noopener noreferrer"
             className=" iconLinke h-6 w-6 flex items-center justify-center max-lg:-top-9 max-lg:left-12 max-sm:-top-7 max-sm:left-28"
           >
             <i className="fa-brands pink  fa-linkedin fa-xl" ></i>
@@ -38,6 +40,7 @@ const Photo = () => {
        
             className=" iconGit z-50  "
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fa-brands pink fa-github fa-xl pt-20 "></i>
           </a>
@@ -46,6 +49,7 @@ const Photo = () => {
           <a
             href="https://www.linkedin.com/in/facundo-varas/ "
             target="_blank"
+            rel="noopener noreferrer"
             className="ml-10"
           
           >

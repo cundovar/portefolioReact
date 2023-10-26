@@ -173,6 +173,7 @@ const CardPortfolio = () => {
                     link={projet.lien}
                     text="visiter"
                     target="_blank"
+                    rel="noopener noreferrer"
                   />
                 </li>
 
@@ -182,6 +183,7 @@ const CardPortfolio = () => {
                     link={projet.lienCode}
                     text="code"
                     target="_blank"
+                    rel="noopener noreferrer"
                   />
                 </li>
               </ul>
