@@ -30,21 +30,21 @@ const Navbar = () => {
         <div className=" max-sm:w-full max-md:justify-center max-md:flex   max-md:ml-0 space-x-5">
           <h3 className="max-sm:w-full max-md:justify-center max-md:flex  ">Intégrateur web </h3>
         </div>
-        <div className=" ax-sm:w-full max-md:justify-center max-md:flex   max-sm:ml-0 ">
+        <div className=" max-sm:w-full max-md:justify-center max-md:flex   max-sm:ml-0 ">
           <h4>
             {" "}
             {startTypewriter && <Typewriter text="Facundo Varas" delay={100} />}
           </h4>
-          <div className="max-md:hidden ">
+        </div>
+          <div className=" max-md:hidden  ">
           <Menu/>
 
           </div>
 
         </div>
-        </div>
       </div>
 
-      <div className=" w-1/3  hidden max-md:block  max-sm:w-full flex-col  max-sm:ml-0 justify-center items-center pb-10 pt-5   ">
+      <div className=" w-1/3 hidden max-md:block  max-sm:w-full flex-col  max-sm:ml-0 justify-center items-center pb-10 pt-5   ">
      
 
       

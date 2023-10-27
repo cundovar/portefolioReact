@@ -176,6 +176,17 @@ const CardPortfolio = () => {
                     rel="noopener noreferrer"
                   />
                 </li>
+              {projet.lienCode==="" ? (
+                <li className="hidden">
+                <CustomBoutonn
+                  icon={faCode}
+                  link={projet.lienCode}
+                  text="code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              </li>
+              ) : (
 
                 <li>
                   <CustomBoutonn
@@ -186,6 +197,7 @@ const CardPortfolio = () => {
                     rel="noopener noreferrer"
                   />
                 </li>
+              )}
               </ul>
             </div>
           </div>

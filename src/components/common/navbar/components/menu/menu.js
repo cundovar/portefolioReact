@@ -72,8 +72,8 @@ const Menu = () => {
 
   return (
     
-      <div className="navbar-menu-2 flex w-full">
-        <ul className="menu w-full  max-sm:justify-around  flex">
+      <div className="navbar-menu-2flex w-full">
+        <ul className="menu w-full  max-sm:justify-around   lg:justify-end lg:items-center flex">
           <NavLink to="/" className="">
             <li className="flex justify-center items-center">
               <h5 className="move-line">Accueil</h5>

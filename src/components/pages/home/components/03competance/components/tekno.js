@@ -101,7 +101,7 @@ const Tekno = () => {
           <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-yellow-700">WordPress</div>
           <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-blue-600">Bootstrap</div>
           <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-pink-500">PHP</div>
-          <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-red-900">Symfony</div>
+          {/* <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-red-900">Symfony</div> */}
         </div>
          <div className="h-1/6 absolute bottom-0 left-0">
 
@@ -117,7 +117,7 @@ const Tekno = () => {
           <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-yellow-700">WordPress</div>
            <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-blue-600">Bootstrap</div>
           <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-pink-500">PHP</div>
-          <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-red-900">Symfony</div>
+          {/* <div className="h-1/2 flex items-center justify-center titre_scroll text-4xl text-red-900">Symfony</div> */}
         </div>
          <div className="h-1/6 absolute bottom-0 left-0">
 
