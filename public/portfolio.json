@@ -20,7 +20,7 @@
     "tekno": "php",
     "lien": "https://la-magicieuse.varascundo.com/" ,
     "lienCode": "",
-    "description": "refonte site wordpress de la maison edition la magicieuse",
+    "description": "refonte site WordPress de la maison edition la magicieuse",
     "imageSrc":"/images/magicieuse.PNG",
     "titreHover":"",
     "text1":"travail basé sur WordPress",
@@ -65,7 +65,7 @@
       "tekno": "php",
       "lien": "https://varascundo.com/",
       "lienCode": "https://github.com/cundovar/peintureFacundo",
-      "description": "projet pour examen pour le diplôme de developpeur we je me suis concentré essentiellement sur le back-end ",
+      "description": "projet pour l'examen pour le diplôme de developpeur Front je me suis concentré essentiellement sur le back-end ",
       "imageSrc":"/images/peinture.PNG",
       "titreHover":"",
       "text1":"travail basé sur le framework symfony",
@@ -98,7 +98,7 @@
         "tekno": "React",
         "lien": "https://portfolio2.2.varascundo.com/" ,
         "lienCode": "https://github.com/cundovar/portefolioReact",
-        "description": "",
+        "description": "Vous etez ICI",
         "imageSrc":"/images/portfolio2.PNG",
         "titreHover":"",
         "text1":"travail basé sur React",
@@ -108,21 +108,6 @@
         "alt":"image portofolio2"
       },
 
-      "taxi": {
-        "type":["javascript","bootstrap"],
-        "titre": "page e-commerce",
-        "tekno": "twig",
-        "lien": "https://portfolio.varascundo.com/main2/violet" ,
-        "lienCode": "",
-        "description": "",
-        "imageSrc":"/images/taxi.PNG",
-        "titreHover":"",
-        "text1":"travail basé sur twig/javascript",
-        "text2":"bootstrap",
-        "text3":"javascript",
-        "text4":" ",
-        "alt":"image ecommerce"
-      },
       "carte": {
         "type":["javascript","bootstrap"],
         "titre": "page e-commerce",

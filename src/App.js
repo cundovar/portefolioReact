@@ -33,72 +33,19 @@ function App() {
   //   })
   // }
   return (
-    <Theme>
-      {/* <div className="pageLoader absolute flex items-center h-full justify-center 
-        ">
-        <div className="rond relative">
+ 
+   
+        
+
+<>
+
+<Pages />
+
+</>
 
 
-        <div className="carre absolute  flex flex-wrap">
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          <div className="  fenetre2"></div>
-          
-        </div>
-        <div className="rectangle2 absolute flex flex-wrap">
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-          <div className="fenetre"></div>
-        </div>
-
-        <div className="rectangle absolute">
-          <h1>CONSTRuCT</h1>
-        </div> */}
-
-
-
-        {/* </div> */}
-     
-      {/* </div> */}
-      <div className=" font ">
-        <Pages />
-      </div>
-    </Theme>
+  
+  
   );
 }
 

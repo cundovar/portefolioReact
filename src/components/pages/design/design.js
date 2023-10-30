@@ -8,23 +8,11 @@ import CardCrea from "./cardCrea";
 import { NavLink } from "react-router-dom";
 
 const Design = () => {
-  const Meta = () => {
-    return (
-      <div>
-        <Helmet>
-          <title> Page exercice - Mon portfolio dévéloppeur web</title>
-          <meta
-            name="accueil de mon portafolio, on peut y trouver mes compétences en dévéloppememts web, les technologie web que j'utilise et quelques exemples de projets en tant que dévéloppeur ou intégrateur web"
-            content="Bienvenue sur sur ma page web de gabarit d'exemples. Découvrez mes services et réalisations.page d'accueil de mon portafolio, on peut y trouver mes compétences en dévéloppememts web, les technologie web que j'utilise et quelques exemples de projets en tant que dévéloppeur ou intégrateur web"
-          />
-        </Helmet>
-      </div>
-    );
-  };
+
 
   return (
     <>
-      {/* <Meta /> */}
+    
       <section className=" w-full h-full   flex flex-col items-center  contact ">
 
         <div className=" w-5/6 max-sm:mt-7 ">
@@ -36,7 +24,7 @@ const Design = () => {
           <div className="flex max-sm:flex-wrap items-center justify-center lg:space-x-6">
 
 
-          <NavLink to ="/creation2">
+          <NavLink to ="/portfolio/crea2">
             <CardCrea
               dataImage="/images/design-crea/Crea3.PNG" >
               <h1 slot="header">page produit</h1>
@@ -47,16 +35,18 @@ const Design = () => {
             </CardCrea>
             </NavLink>
 
-            <NavLink to ="/creation3">
+            <NavLink to ="/portfolio/crea3">
             <CardCrea dataImage="/images/design-crea/Crea2.PNG">
               <h1 slot="header">Page d'accueil</h1>
-              <p slot="content">Page d'accueil avec carousel, reponsive, taiwlind.              </p>
+              <p slot="content">Page d'accueil avec carousel,</p>
+              <p slot="content"> reponsive, </p>
+              <p slot="content">  taiwlind.</p>
             
             </CardCrea>
 
             </NavLink>
 
-            <NavLink to ="/creation1">
+            <NavLink to ="/portfolio/crea1">
             <CardCrea dataImage="/images/design-crea/Crea1.PNG">
               <h1 slot="header">Divers</h1>
               <p slot="content">
@@ -65,24 +55,34 @@ const Design = () => {
             </CardCrea>
 
             </NavLink>
-            {/* <NavLink to ="/creation3">
+           <a href="https://portfolio.varascundo.com/main2/violet"  target="_blank" rel="noopener noreferrer">
 
-            <CardCrea dataImage="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
-              <h1 slot="header">Lakes</h1>
+            <CardCrea dataImage="/images/taxi.PNG">
+              <h1 slot="header">Page e-commerce</h1>
               <p slot="content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             HTML5,
+              </p>
+              <p slot="content">
+             BOOTSTRAP,
+              </p>
+              <p slot="content">
+             JAVASCRIPT
               </p>
             </CardCrea>
-            </NavLink> */}
+
+           </a>
+       
+
+        
+        
+
+
+       
           </div>
         </div>
 
-        {/* <div className="flex flex-col items-center justify-center">
-          <Crea2 />
-          <Crea3 />
-
-          <Crea1 />
-        </div> */}
+  
+ 
         </div>
   
       </section>

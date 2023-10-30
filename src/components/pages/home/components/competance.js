@@ -1,26 +1,23 @@
 import React from "react";
 
-import { gsap } from "gsap";
-import { Flip } from "gsap/Flip";
-import { useEffect } from "react";
-import { useState } from "react";
-import TextTransition, { presets } from "react-text-transition";
-import CustomBoutonn from "../../../../../common/button";
+
+
+import CustomBoutonn from "../../../common/button";
 import { useRef } from "react";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import Tecnologie from "./tecnologie";
-import Photo from "./photo";
-import UseFetch from "../../../../../hooks/useFetch";
+
+import Photo from "./03competance/components/photo";
+import UseFetch from "../../../hooks/useFetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Tekno from "./tekno";
-import Savoir from "./savoir";
+import Tekno from "./03competance/components/tekno";
+import Savoir from "./03competance/components/savoir";
 import { NavLink } from "react-router-dom";
 
-const Texts = [" Portfolio ", "en ligne de", "Facundo Varas"];
+
 
 export const Competance = () => {
   const jsonUrl = "/tekno.json";

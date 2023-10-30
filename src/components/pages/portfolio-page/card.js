@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import UseFetch from "../../../../../hooks/useFetch";
+import UseFetch from "../../hooks/useFetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCode } from "@fortawesome/free-solid-svg-icons";
-import CustomBoutonn from "../../../../../common/button";
+import CustomBoutonn from "../../common/button";
 import { gsap } from "gsap";
 import { Avatar, Box, Flex, HoverCard, Strong, Text } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
@@ -36,7 +36,7 @@ const CardPortfolio = () => {
   useEffect(()=>{
     const card = document.querySelectorAll(".cardPortfolio");
     const state = Flip.getState(card);
-    console.log('CardPortfolio is re-rendered.');
+ 
     Flip.from(state, {
       duration: 0.7,
       scale: true,

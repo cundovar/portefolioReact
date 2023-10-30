@@ -1,7 +1,6 @@
-import { Flex, ScrollArea, Box, Text } from "@radix-ui/themes";
+import {  ScrollArea, Box, Text } from "@radix-ui/themes";
 import React from "react";
-import Crea2 from "../crea2/crea2";
-import Crea3 from "../crea3/crea3";
+
 const Crea1 = () => {
   return (
 

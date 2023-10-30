@@ -1,9 +1,10 @@
 import React from "react";
 
+import { Helmet,HelmetProvider } from "react-helmet-async";
 
-import Portefolio from "./components/04portefolio/portefolio";
-import { Helmet } from "react-helmet";
-import { Competance } from "./components/03competance/components/competance";
+
+
+import { Competance } from "./components/competance";
 
 const Home =()=>{
 
@@ -12,6 +13,8 @@ const Home =()=>{
     const Meta=()=>{
         return(
             <div>
+                <HelmetProvider>
+
                 <Helmet>
                     <title> Paged'accueil - Mon portfolio dévéloppeur web</title>
                     <meta
@@ -19,6 +22,7 @@ const Home =()=>{
                     content="Bienvenue sur notre site Web. Découvrez mes services et réalisations.page d'accueil de mon portafolio, on peut y trouver mes compétences en dévéloppememts web, les technologie web que j'utilise et quelques exemples de projets en tant que dévéloppeur ou intégrateur web"
                     />
                 </Helmet>
+                </HelmetProvider>
             </div>
 
         )
@@ -29,7 +33,7 @@ const Home =()=>{
         <>
       <Meta/>
      
-        <div className="home   relative  flex flex-col items-center justify-center space-y-5  max-lg:w-full max-lg:p-0 ">
+        <section className="home   relative  flex flex-col items-center justify-center space-y-5  max-lg:w-full max-lg:p-0 ">
 
           
             <div className="w-full 2xl:w-5/6  flex flex-col items-center justify-center space-y-30 "> <Competance/></div>
@@ -44,7 +48,7 @@ const Home =()=>{
 
 
 
-        </div>
+        </section>
         </>
 
 

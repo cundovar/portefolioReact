@@ -1,7 +1,6 @@
 import React from "react";
 import UseFetch from "../../../hooks/useFetch";
-import { useState } from "react";
-import { useEffect } from "react";
+
 import Slider from "react-slick";
 import { useRef } from "react";
 
