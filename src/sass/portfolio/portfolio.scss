@@ -8,6 +8,21 @@
 }
 
 .cardPortfolio{
+	--anchor-name:--develop;
+}
+.hovver:has(p:hover){
+--anchor:--develop
+--active:1;
+}
+.hovver::after{
+	inset:
+	anchor(var(--anchor)top)
+	anchor(var(--anchor)right);
+	opacity: var(--acrtive,0);
+	transition: opacity 0.2s,
+}
+
+.cardPortfolio{
     padding: .5rem;
     padding-top:0 ;
 
