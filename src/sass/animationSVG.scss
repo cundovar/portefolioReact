@@ -1,0 +1,139 @@
+
+  #done-animation {
+    width:15rem;
+    margin: 0 auto;
+    position: relative;
+   
+    text-align: center;
+  }
+  
+
+  
+  #room {
+    width: 390px;
+    z-index: -1;
+    position: absolute;
+    top: -10px;
+    animation: fade-in 1s ease-in;
+    margin: 0 auto;
+    display: block;
+    filter: blur(2px);
+  }
+
+  #rainbow {
+    path {
+      stroke-dasharray: 600;
+      stroke-dashoffset: 0;
+      opacity: 0;
+      animation: rainbow 750ms ease-out 0.4s forwards;
+    }
+  }
+  #face {
+    width: 5rem;
+    margin: 0 auto;
+    display: block;
+    top: -80px;
+    position: relative;
+    animation: face 1s ease-in-out,
+               fade-in 0.5s ease-in-out,
+               float 1s ease-in-out 1s infinite alternate;
+  }
+  #stars {
+    width: 7rem;
+    margin: 0 auto;
+    display: block;
+    top: 1rem;
+    left: 70px;
+    position: absolute;
+    .a, .a1 {
+      transform-origin: center center;
+    }
+    .a {
+          animation: fade-in 1s ease-in-out,
+                 scale 1s ease-in-out infinite alternate-reverse;
+    }
+    .a1 {
+          animation: fade-in 1s ease-in-out,
+                 scale 1.2s ease-in-out infinite alternate;
+    }
+  }
+  #shadow {
+    width: 100px;
+    height: 12px;
+  
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -65px; 
+    z-index: -1;
+    animation: fade-in 1s ease-in,
+               scale 2s ease-in-out infinite alternate-reverse;
+  }
+  #thumbup {
+    width:2.5rem;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+    animation: face 1s ease-in-out,
+               fade-in 0.5s ease-in-out,
+               float-soft 1s ease-in-out 1s infinite alternate;
+  }
+  
+  @keyframes shadow {
+    
+  }
+  @keyframes rainbow {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: -500;
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes face {
+    0% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  @keyframes fade-in {
+    0% {
+     opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes float {
+    from {
+      transform:translateY(0px);
+    }
+    to {
+      transform:translateY(5px);
+    }
+  }
+  @keyframes float-soft {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(10deg);
+    }
+  }
+  @keyframes scale {
+    from {transform: scale(0.8);    filter: blur(1.5px);}
+     50% {transform: scale(1.0);    filter: blur(5px);}
+     to {transform: scale(0.8);     filter: blur(1.5px);}   
+  }

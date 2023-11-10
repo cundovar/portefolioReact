@@ -16,6 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tekno from "./03competance/components/tekno";
 import Savoir from "./03competance/components/savoir";
 import { NavLink } from "react-router-dom";
+import AnimationSVG from "./animationSVG";
 
 
 
@@ -80,10 +81,21 @@ export const Competance = () => {
                 <p className="2xl:text-2xl xl:text-xl">
                   Tous les jours je code et découvre de nouvelles choses et
                   monte en compétence, dans ce portfolio vous pourrez explorer
-                  mes travaux sur WORDPRESS REACT SYMFONY ou le LOWCODE.
+                  mes travaux sur 
+                  <span className="2xl:text-2xl xl:text-xl font-semibold" >  WORDPRESS   </span>
+
+                  <span className="2xl:text-2xl xl:text-xl font-semibold" > REACT  </span>
+                  <span className="2xl:text-2xl xl:text-xl font-semibold" >SYMFONY  </span>
+                 ou le
+                 
+                  <span className="2xl:text-2xl xl:text-xl font-semibold" > LOWCODE </span>
+                 .
                 </p>
                 <p className="2xl:text-2xl xl:text-xl">
-                  Et pour le CSS : TAILWIND et BOOTSTRAP, SCSS
+                  Et pour le CSS :
+                  <span className="2xl:text-2xl xl:text-xl font-semibold" >TAILWIND</span>  et 
+                  <span className="2xl:text-2xl xl:text-xl font-semibold" > BOOTSTRAP</span>,
+                  <span className="2xl:text-2xl xl:text-xl font-semibold" >SCSS</span> 
                 </p>
                 <p className="2xl:text-2xl xl:text-xl">
                   Je prends un soin particulier pour le responsive ( tablette et
@@ -97,6 +109,8 @@ export const Competance = () => {
                   Je me tiens régulièrement informé sur les nouvelles
                   technologies en faisant une veille régulière.
                 </p>
+
+                <AnimationSVG/>
               </div>
               <div className="w-1/2 max-lg:w-full   relative">
                 <div className="absolute z-50 right-0 m-10 ">
