@@ -1,0 +1,52 @@
+$bleu: #67C5DD;
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.animSVGnav{
+    right:-50rem
+    
+}
+.bg-animation {
+  height: 100rem;
+  width: 100rem;
+  position: relative;
+  @media screen and (min-width:900px) and (max-width:1400px) {
+    height: 80rem;
+    width: 80rem;
+  }
+
+  overflow: hidden;
+  & svg {
+    @include center;
+    width: 90%;
+    animation: orbit 30s linear infinite;
+    & path {
+      fill: rgba($bleu, 0.2);
+    }
+    &:nth-child(2) {
+      width: 80%;
+      animation: orbit 20s linear infinite;
+    }
+    &:nth-child(3) {
+      width: 60%;
+      animation: orbit 25s linear infinite;
+    }
+    &:nth-child(4) {
+      width: 30%;
+      animation: orbit 18s linear infinite;
+    }
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%)rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%)rotate(360deg);
+  }
+}

@@ -26,7 +26,7 @@ const Pages=()=> {
              <div  className="  h-full flex flex-col    font2">
 
              <Navbar/>
-                <main className="  flex   flex-col justify-center items-center w-full    ">
+                <main className=" z-50 flex   flex-col justify-center items-center w-full    ">
                   <div className="    w-full h-full   ">
              <Routes>
 

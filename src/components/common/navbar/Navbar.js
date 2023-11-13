@@ -3,6 +3,7 @@ import Menu from "./components/menu/menu";
 
 import { NavLink } from "react-router-dom";
 import Typewriter from "../../hooks/typewriter";
+import AnimationSVGnav from "../SVG/AnimationSVGnav";
 
 const Navbar = () => {
   const [startTypewriter, setStartTypewriter] = useState(false);
@@ -18,11 +19,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="z-50 flex justify-start items-center max-md:pt:10 max-md:flex-col    max-md:justify-center max-md:items-center     w-full">
-      <div className="w-1/3   flex flex-col max-md:flex-col max-md:w-full  max-md:justify-center max-md:items-center ">
+    <div className="z-50 flex    items-center max-md:pt:10 max-md:flex-col    max-md:justify-center max-md:items-center     w-full">
+      <div className="fixed animSVGnav  z-10">
+      <AnimationSVGnav/>
+      </div>
+      <div className="w-1/3 z-50  flex flex-col max-md:flex-col max-md:w-full  max-md:justify-center max-md:items-center ">
         <div className=" flex flex-col max-md:flex-col max-md:w-full p-5 rounded-xl bg-pink-200 xl:w-full  lg:w-full justify-center max-sm:items-center ">
 
-        <div className=" flex   justify-start max-sm:justify-center max-md:w-full  max-md:ml-0  items-start mt-0">
+        <div className=" flex z-20  justify-start max-sm:justify-center max-md:w-full  max-md:ml-0  items-start mt-0">
           <NavLink to="/" className="m-0 max-md:w-full  max-md:justify-center  ">
             <h1 className="   max-sm:w-full   ">Dev front-end</h1>
           </NavLink>
@@ -50,6 +54,7 @@ const Navbar = () => {
       
         <Menu />
       </div>
+
     </div>
   );
 };

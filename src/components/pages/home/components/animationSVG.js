@@ -65,7 +65,7 @@ import REACTeact from "react"
       );
       
       const AnimationSVG = () => (
-        <div id="done-animation" >
+        <div id="done-animation" className="  pt-5 max-xl:pt-5 " >
           <Rainbow />
           <Face />
           <Stars />
