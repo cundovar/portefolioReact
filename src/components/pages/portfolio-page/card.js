@@ -136,10 +136,10 @@ const CardPortfolio = () => {
               <div className=" w-5/6 mt-2 text-center p-1">
                 <Flex gap="4">
                   <HoverCard.Root>
-                    <HoverCard.Trigger>
+                    <HoverCard.Trigger >
                       <Link href="#"> {projet.titre} </Link>
                     </HoverCard.Trigger>
-                    <HoverCard.Content size="1">
+                    <HoverCard.Content size="1"style={{opacity:1}} >
                       <Flex gap="3" size="1" style={{ maxWidth: 325 }}>
                         <Avatar
                           size="2"
@@ -147,7 +147,7 @@ const CardPortfolio = () => {
                           fallback="R"
                           src={projet.imageSrc}
                         />
-                        <Box>
+                      <Box style={{opacity:1}}>
                           <Text>
                             <Strong>{projet.titreHover} </Strong>
                           </Text>

@@ -23,7 +23,7 @@ const Footer = () => {
 
 
   return (
-    <div className="  footerr absolute flex  max-sm:justify-center max-sm:items-center  max-sm:flex-col-reverse  w-full ">
+  <footer className=" z-50 footerr absolute flex  max-sm:justify-center max-sm:items-center  max-sm:flex-col-reverse  w-full ">
    
    <div className=" w-1/2  max-sm:w-full  max-sm:justify-center max-sm:items-center  flex justify-start items-end">
 
@@ -50,7 +50,7 @@ const Footer = () => {
 
           </ul>
         </div>
-      </div>
+      </footer>
      
       
     

@@ -64,7 +64,7 @@ export const Competance = () => {
               className="  w-full flex 2xl:space-x-5 max-lg:flex-col h-full   m-auto shadow-2xl"
               style={{ minHeight: "55rem" }}
             >
-              <div className="w-1/2 max-lg:w-full  relative shadow-2xl h-full md:p-12 space-y-4   ">
+              <div className="w-1/2 max-lg:w-full  relative shadow-2xl h-full md:p-12 space-y-4 max-md:p-3  ">
                 <p className="text-3xl">
                   Je m’appelle Facundo et je suis intégrateur web, développeur
                   front-end.

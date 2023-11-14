@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="z-50 flex    items-center max-md:pt:10 max-md:flex-col    max-md:justify-center max-md:items-center     w-full">
+    <header className="z-50 flex    items-center max-md:pt:10 max-md:flex-col    max-md:justify-center max-md:items-center     w-full">
       <div className="fixed animSVGnav  z-10">
       <AnimationSVGnav/>
       </div>
@@ -40,7 +40,7 @@ const Navbar = () => {
             {startTypewriter && <Typewriter text="Facundo Varas" delay={100} />}
           </h4>
         </div>
-          <div className=" max-md:hidden  ">
+          <div className=" max-md:hidden z-50   ">
           <Menu/>
 
           </div>
@@ -48,14 +48,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className=" w-1/3 hidden max-md:block  max-sm:w-full flex-col  max-sm:ml-0 justify-center items-center pb-10 pt-5   ">
+      <div className=" w-1/3 hidden max-md:block  z-50 max-sm:w-full flex-col  max-sm:ml-0 justify-center items-center pb-10 pt-5   ">
      
 
       
         <Menu />
       </div>
 
-    </div>
+    </header>
   );
 };
 

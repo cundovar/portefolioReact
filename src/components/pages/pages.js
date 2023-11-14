@@ -9,6 +9,7 @@ import PortefolioPage from "./portfolio-page/portfolio-page";
 import Crea3 from "./design/crea3/crea3";
 import Crea1 from "./design/crea1/crea1";
 import Crea2 from "./design/crea2/crea2";
+import Header from "./design/headerBoot/heuder";
 
 
 
@@ -37,6 +38,7 @@ const Pages=()=> {
                 <Route path="/portfolio/crea3" element={<Crea3/>} exact/>
                 <Route path="/portfolio/crea1" element={<Crea1/>} exact/>
                 <Route path="/portfolio/crea2" element={<Crea2/>} exact/>
+                <Route path="/portfolio/crea4" element={<Header/>} exact/>
            
                
              </Routes>
