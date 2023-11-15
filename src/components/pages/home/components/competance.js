@@ -50,8 +50,8 @@ export const Competance = () => {
         <h3 className="max-sm:ml-5">savoir faire</h3>
       </div>
       <div className="competance flex flex-wrap 2xl:w-5/6 xl:w-full pt-4 xl:space-y-20">
-        <Savoir className="w-1/3 " />
         <Tekno className="w-1/3" />
+        <Savoir className="w-1/3 " />
         <Photo className="w-1/3 max-sm:w-full " />
       </div>
       <div className="w-full relative">
@@ -65,22 +65,15 @@ export const Competance = () => {
               style={{ minHeight: "55rem" }}
             >
               <div className="w-1/2 max-lg:w-full  relative shadow-2xl h-full md:p-12 space-y-4 max-md:p-3  ">
-                <p className="text-3xl">
-                  Je m’appelle Facundo et je suis intégrateur web, développeur
-                  front-end.
+                <p className="text-2xl">
+                Enthousiaste et passionné par le monde du développement web, je suis Facundo, un intégrateur web et développeur front-end. Mon parcours a débuté avec un bootcamp, une première étape qui a déclenché ma passion pour le code.
                 </p>
-                <p className="2xl:text-2xl xl:text-xl">Après un bootcamp…. </p>
-                <p className="2xl:text-2xl xl:text-xl">
-                  Oui je sais qu'on ne devient pas développeur en 6 mois…
+                <p className="2xl:text-xl xl:text-xl">Je suis conscient que devenir un développeur accompli ne se fait pas en un claquement de doigts, mais cela fait déjà deux ans que je me plonge intensément dans le monde du développement, explorant divers langages de manière autodidacte. </p>
+                <p className="2xl:text-xl xl:text-xl">
+                Au fil de mes journées, je me lance constamment des défis, découvrant de nouvelles technologies et perfectionnant mes compétences.
                 </p>
-                <p className="2xl:text-2xl xl:text-xl">
-                  {" "}
-                  Mais cela fait deux ans que je développe sur divers langages
-                  en autodidacte.
-                </p>
-                <p className="2xl:text-2xl xl:text-xl">
-                  Tous les jours je code et découvre de nouvelles choses et
-                  monte en compétence, dans ce portfolio vous pourrez explorer
+                <p className="2xl:text-xl xl:text-xl">
+                Dans ce portfolio vous pourrez explorer
                   mes travaux sur 
                   <span className="2xl:text-2xl xl:text-xl font-semibold" >  WORDPRESS   </span>
 
@@ -91,28 +84,27 @@ export const Competance = () => {
                   <span className="2xl:text-2xl xl:text-xl font-semibold" > LOWCODE </span>
                  .
                 </p>
-                <p className="2xl:text-2xl xl:text-xl">
+                <p className="2xl:text-xl xl:text-xl">
+                  
+                </p>
+                <p className="2xl:text-xl xl:text-xl">
                   Et pour le CSS :
                   <span className="2xl:text-2xl xl:text-xl font-semibold" >TAILWIND</span>  et 
                   <span className="2xl:text-2xl xl:text-xl font-semibold" > BOOTSTRAP</span>,
                   <span className="2xl:text-2xl xl:text-xl font-semibold" >SCSS</span> 
                 </p>
-                <p className="2xl:text-2xl xl:text-xl">
-                  Je prends un soin particulier pour le responsive ( tablette et
-                  mobile ou écran extra-large) et le SEO.
+                <p className="2xl:text-xl xl:text-xl">
+                Au-delà de mes compétences techniques, ma curiosité m'incite à rester constamment à jour sur les dernières avancées technologiques, effectuant une veille régulière pour rester à la pointe de mon domaine. 
                 </p>
                 {/* <p className="2xl:text-2xl xl:text-xl">
                     Je ne connais pas tout mais j’ai comme ami un nommé Chat et
                     Google est mon chat de compagnie.
                   </p> */}
-                <p className="2xl:text-2xl xl:text-xl">
-                  Je me tiens régulièrement informé sur les nouvelles
-                  technologies en faisant une veille régulière.
-                </p>
+            
 
                 <AnimationSVG/>
               </div>
-              <div className="w-1/2 max-lg:w-full   relative">
+              <div className="w-1/2 max-lg:w-full bg-gray-900    relative">
                 <div className="absolute z-50 right-0 m-10 ">
                   <CustomBoutonn
                     text="suivant"
@@ -224,7 +216,7 @@ export const Competance = () => {
               <div className="hover:text-slate-400">
 
               <NavLink to="/">
-                <p>https://portfolio2.2.varascundo.com/</p>
+                <p>https://pix.varascundo.com/</p>
               </NavLink>
               </div>
               <p className="text-xl">Paris 20</p>

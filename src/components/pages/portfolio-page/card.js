@@ -132,22 +132,22 @@ const CardPortfolio = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between cursor-pointer items-center ">
+            <div className="flex flex-col justify-between  cursor-pointer items-center ">
               <div className=" w-5/6 mt-2 text-center p-1">
                 <Flex gap="4">
-                  <HoverCard.Root>
+                  <HoverCard.Root  >
                     <HoverCard.Trigger >
                       <Link href="#"> {projet.titre} </Link>
                     </HoverCard.Trigger>
-                    <HoverCard.Content size="1"style={{opacity:1}} >
-                      <Flex gap="3" size="1" style={{ maxWidth: 325 }}>
+                    <HoverCard.Content  size="1"style={{opacity:1, zIndex:1000}} >
+                      <Flex gap="3" size="1" style={{ maxWidth: 325, zIndex:100 }}>
                         <Avatar
                           size="2"
                           radius="full"
                           fallback="R"
                           src={projet.imageSrc}
                         />
-                      <Box style={{opacity:1}}>
+                      <Box style={{opacity:1, zIndex:100}}>
                           <Text>
                             <Strong>{projet.titreHover} </Strong>
                           </Text>

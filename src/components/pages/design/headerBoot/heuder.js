@@ -1,13 +1,21 @@
 import React from "react";
 import UseFetch from "../../../hooks/useFetch";
+import styled from "styled-components";
 import { Button, Stack } from "react-bootstrap";
-
 
 
 const Header =()=>{
    const {data:articleData, error:erreur}= UseFetch('https://fakestoreapi.com/products/category/electronics')
     
+   const StyledHeaderContainer = styled.div`
+   padding: 20px;
+   background-color: #f8f9fa;
+   border-bottom: 1px solid #dee2e6;
+`;
 
+const StyledHeaderTitle = styled.h1`
+   color: #007bff;
+`;
 
     return(
         <>
@@ -36,6 +44,21 @@ const Header =()=>{
   </Button>
 </Stack>;
         </div>
+
+
+        <StyledHeaderContainer>
+            <StyledHeaderTitle>Ma Page avec Bootstrap</StyledHeaderTitle>
+            <button className="btn btn-danger">Bouton Bootstrap</button>
+            <div className="row">
+
+                <div>hgjkgkg</div>
+                <div>hgjkgkg</div>
+                <div>hgjkgkg</div>
+                <div>hgjkgkg</div>
+            </div>
+            {/* Autres éléments spécifiques à Bootstrap */}
+        </StyledHeaderContainer>
+    
         </>
     )
 }
