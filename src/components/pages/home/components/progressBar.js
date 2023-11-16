@@ -114,6 +114,45 @@ const languageData={
 
 }
 
+const diversData={
+    labels,
+    datasets:[
+
+        {
+            label:'clean code',
+            data:[, , 0,30],
+            borderColor: 'rgb(72, 201, 176)',
+            backgroundColor: 'rgb(72, 201, 176)',
+            tension: 0.8
+        },
+        {
+            label:'accessibilité',
+            data:[, , 0,15],
+            borderColor: 'rgb(255, 160, 122)',
+            backgroundColor: 'rgb(255, 160, 122)',
+            tension: 0.8
+        },
+        {
+            label:'SEO',
+            data:[, , 0,20],
+            borderColor: 'rgb(93, 109, 126 )',
+            backgroundColor: 'rgb(93, 109, 126 )',
+            tension: 0.8
+        },
+        {
+            label:'',
+            data:[, , 0,100],
+            borderColor: 'rgb( 255, 255, 255)',
+            backgroundColor: 'rgb( 255, 255, 255)',
+            tension: 0.8
+        },
+
+    ]
+
+
+
+}
+
 
 export function ProgressBar(){
 
@@ -125,6 +164,10 @@ export function ProgressBar(){
  
    const handleButtonLanguage=()=>{
     setCurrentData(languageData)
+   }
+
+   const handleButtonDivers=()=>{
+    setCurrentData(diversData)
    }
     return(
         <>
@@ -140,6 +183,11 @@ export function ProgressBar(){
                     text="Languages"
                  
                     onclick={handleButtonLanguage}
+                  />
+        <CustomBoutonn
+                    text="Divers"
+                 
+                    onclick={handleButtonDivers}
                   />
        
      
