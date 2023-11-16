@@ -17,6 +17,7 @@ import Tekno from "./03competance/components/tekno";
 import Savoir from "./03competance/components/savoir";
 import { NavLink } from "react-router-dom";
 import AnimationSVG from "./animationSVG";
+import { ProgressBar } from "./progressBar";
 
 
 
@@ -196,6 +197,15 @@ export const Competance = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="max-sm:hidden">
+      <div className="border-b w-full mt-20">
+        <h3 className="max-sm:ml-5">compétences</h3>
+      </div>
+      <div className="w-1/2 max-md:w-full mt-20">
+        <ProgressBar className="w-full"/>
+      </div>
+
       </div>
 
       <div className="w-full mt-10 pb-96  " id="contact">
