@@ -93,7 +93,7 @@
   
 
       "portfolio2": {
-        "type":["React","tailwind","scss"],
+        "type":["react","tailwind","scss"],
         "titre": "mon portfolio",
         "tekno": "React",
         "lien": "https://portfolio2.2.varascundo.com/" ,

@@ -16,6 +16,7 @@ import Savoir from "./03competance/components/savoir";
 import { NavLink } from "react-router-dom";
 import AnimationSVG from "./animationSVG";
 import { ProgressBar } from "./progressBar";
+import EnsavoirPlus from "./enSavoirplus/enSavoirPlus";
 
 export const Competance = () => {
   const jsonUrl = "/tekno.json";
@@ -235,6 +236,14 @@ export const Competance = () => {
           <ProgressBar className="w-full" />
         </div>
 
+        </div>
+        <div className="flex justify-center mt-10">
+        <div>
+ <div className="w-full">
+     <EnsavoirPlus/>
+
+ </div>
+        </div>
         </div>
       </div>
 

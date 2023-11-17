@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/violet.css';
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @tailwind base;
@@ -1093,7 +1096,7 @@ textarea {
 @media screen and (min-width: 900px) and (max-width: 1400px) {
   .bg-animation {
     height: 80rem;
-    width: 80rem;
+    width: 100rem;
   }
 }
 .bg-animation svg {
@@ -1126,6 +1129,104 @@ textarea {
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.AccordionRoot {
+  width: 100vh;
+}
+
+.AccordionItem {
+  overflow: hidden;
+  margin-top: 1px;
+}
+
+.AccordionItem:first-child {
+  margin-top: 0;
+}
+
+.AccordionItem:focus-within {
+  position: relative;
+  z-index: 1;
+}
+
+.AccordionHeader {
+  display: flex;
+  width: 20%;
+  margin: auto;
+}
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+  .AccordionHeader {
+    width: 40%;
+  }
+}
+
+.AccordionTrigger {
+  background-color: transparent;
+  padding: 0 20px;
+  height: 45px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 100;
+  line-height: 1;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.AccordionTrigger:hover {
+  background-color: rgb(215, 240, 245);
+}
+
+.AccordionContent {
+  overflow: hidden;
+  font-size: 15px;
+  color: var(--mauve-11);
+  width: 50%;
+  margin: auto;
+}
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+  .AccordionContent {
+    width: 60%;
+  }
+}
+
+.AccordionContent[data-state=open] {
+  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.AccordionContent[data-state=closed] {
+  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.AccordionContentText {
+  padding: 15px 20px;
+}
+
+.AccordionChevron {
+  color: var(--violet-10);
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.AccordionTrigger[data-state=open] > .AccordionChevron {
+  transform: rotate(180deg);
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
   }
 }
 @media screen and (prefers-reduced-motion: no-preference) {
