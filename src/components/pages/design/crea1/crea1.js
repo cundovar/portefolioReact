@@ -1,10 +1,33 @@
 import {  ScrollArea, Box, Text } from "@radix-ui/themes";
 import React from "react";
-
+import { Helmet,HelmetProvider } from "react-helmet-async";
 const Crea1 = () => {
-  return (
 
-    <div className="fond-crea    lg:flex flex-wrap  max-md:mt-10  items-center justify-around xl:p-2 custom-font ">
+  const Meta=()=>{
+    return(
+        <div>
+            <HelmetProvider>
+
+            <Helmet>
+                <title> Page creation 1 </title>
+                <meta
+                name="crea1"
+                content="Bienvenue sur notre site Web de FACUNDO VARAS. CEci est un page de creation créé en react et stylisée tailwind. C'est une page d'exemple de mes capacités en intégration  "
+                />
+            </Helmet>
+            </HelmetProvider>
+        </div>
+
+    )
+}
+
+  return (
+    <>
+    
+    <Meta/>
+    
+   
+    <section className="fond-crea    lg:flex flex-wrap  max-md:mt-10  items-center justify-around xl:p-2 custom-font ">
       
       
      
@@ -313,8 +336,10 @@ const Crea1 = () => {
           </Box>
         </ScrollArea>
       </div>
-    </div>
+    </section>
+    </>
   );
 };
+
 
 export default Crea1;

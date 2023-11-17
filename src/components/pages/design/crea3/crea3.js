@@ -1,10 +1,32 @@
 import React from "react";
 import UseFetch from "../../../hooks/useFetch";
-
+import { Helmet,HelmetProvider } from "react-helmet-async";
 import Slider from "react-slick";
 import { useRef } from "react";
 
 const Crea3 = () => {
+
+  const Meta=()=>{
+    return(
+        <div>
+            <HelmetProvider>
+
+            <Helmet>
+                <title> Page crea3 - Mon portfolio dévéloppeur web</title>
+                <meta
+                name="intégration crea3"
+                content="Bienvenue sur notre site Web. Découvrez les services et réalisations de Varas Facundo. Page ou vous pourrez voir à loisir mes capacitées en intégration web en react et taiwind et utilisant divers bibliothèques javascript. En tant qu'intégrateur web je suis au pixel près!!!"
+                />
+            </Helmet>
+            </HelmetProvider>
+        </div>
+
+    )
+}
+
+
+
+
   const jsonUrl = "/creatrois.json";
   const { data: crea3Data, error: creaError } = UseFetch(jsonUrl);
 
@@ -28,6 +50,11 @@ const Crea3 = () => {
   };
 
   return (
+
+
+    
+
+
     <section className="w-full pl-3 pr-3 mr-10 relative 2xl:p-5 xl:p-16 max-md:mt-10">
       <div className=" relative   ">
         <Slider {...settings} ref={sliderRef}>

@@ -1,10 +1,34 @@
 import React, { useState } from "react";
 import Modal from "./modal";
-
+import { Helmet,HelmetProvider } from "react-helmet-async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Crea2 = () => {
+
+
+  
+  const Meta=()=>{
+    return(
+        <div>
+            <HelmetProvider>
+
+            <Helmet>
+                <title> Page crea2 - Mon portfolio dévéloppeur web</title>
+                <meta
+                name="création2"
+                content="Bienvenue sur notre site Web. Découvrez les services et réalisations de Varas Facundo. Page ou vous pourrez voir à loisir mes capacitées en intégration web en react et taiwind et utilisant divers bibliothèques javascript"
+                />
+            </Helmet>
+            </HelmetProvider>
+        </div>
+
+    )
+}
+
+
+
+
   const [imagePrincipal, setImagePrincipal] = useState(
     "/images/crea2/image-product-1.jpg"
   );
@@ -30,6 +54,8 @@ const Crea2 = () => {
 
   return (
     <>
+
+    <Meta/>
       <div className="max-sm:w-full max-md:mt-10">
         <section className="bg-stone-100 max-sm:pb-10 p-10  w-full  max-sm:w-full  flex items-center space-x-5  justify-center  max-sm:flex-col">
           <div className="left w-1/2 max-sm:w-full    flex flex-col   justify-center items-center">

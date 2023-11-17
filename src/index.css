@@ -1154,7 +1154,7 @@ textarea {
   width: 20%;
   margin: auto;
 }
-@media screen and (min-width: 800px) and (max-width: 1400px) {
+@media screen and (min-width: 600px) and (max-width: 1400px) {
   .AccordionHeader {
     width: 40%;
   }
@@ -1186,9 +1186,9 @@ textarea {
   width: 50%;
   margin: auto;
 }
-@media screen and (min-width: 800px) and (max-width: 1400px) {
+@media screen and (min-width: 600px) and (max-width: 1400px) {
   .AccordionContent {
-    width: 60%;
+    width: 100%;
   }
 }
 

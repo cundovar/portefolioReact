@@ -16,7 +16,7 @@ const Home =()=>{
                 <HelmetProvider>
 
                 <Helmet>
-                    <title> Paged'accueil - Mon portfolio dévéloppeur web</title>
+                    <title> Page d'accueil - Mon portfolio dévéloppeur web</title>
                     <meta
                     name="accueil de mon portafolio, on peut y trouver mes compétences en dévéloppememts web, les technologie web que j'utilise et quelques exemples de projets en tant que dévéloppeur ou intégrateur web"
                     content="Bienvenue sur notre site Web. Découvrez mes services et réalisations.page d'accueil de mon portafolio, on peut y trouver mes compétences en dévéloppememts web, les technologie web que j'utilise et quelques exemples de projets en tant que dévéloppeur ou intégrateur web"

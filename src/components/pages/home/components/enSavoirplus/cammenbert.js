@@ -17,11 +17,11 @@ export const options={
     }
 }
 export const data = {
-  labels: ['code', 'veille', 'apprentissage'],
+  labels: ['code', 'veille', 'apprentissage','travail alimentaire'],
   datasets: [
     {
      
-      data: [50, 10, 40],
+      data: [35, 10, 25,15],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
