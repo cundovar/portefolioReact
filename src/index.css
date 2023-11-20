@@ -837,11 +837,14 @@ textarea {
   justify-content: center;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .card-wrap {
   margin: 10px;
   transform: perspective(800px);
   transform-style: preserve-3d;
-  cursor: pointer;
 }
 .card-wrap:hover .card-info, .card-wrap:hover .card-icon {
   transform: translateY(0);

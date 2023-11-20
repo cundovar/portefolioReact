@@ -54,8 +54,9 @@ const Crea3 = () => {
 
     
 
-
-    <section className="w-full pl-3 pr-3 mr-10 relative 2xl:p-5 xl:p-16 max-md:mt-10">
+<>
+<Meta/>
+<section className="w-full pl-3 pr-3 mr-10 relative 2xl:p-5 xl:p-16 max-md:mt-10">
       <div className=" relative   ">
         <Slider {...settings} ref={sliderRef}>
           {crea3Data.map((item, index) => (
@@ -156,6 +157,9 @@ const Crea3 = () => {
         </div>
       </div>
     </section>
+
+</>
+    
   );
 };
 

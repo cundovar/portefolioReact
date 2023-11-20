@@ -25,12 +25,14 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.cursor{
+  cursor: pointer;
+}
 .card-wrap {
   margin: 10px;
   transform: perspective(800px);
   transform-style: preserve-3d;
-  cursor: pointer;
+
   // background-color: #fff;
   
   &:hover {

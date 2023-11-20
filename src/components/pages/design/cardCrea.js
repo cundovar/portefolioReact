@@ -67,7 +67,7 @@ class CardCrea extends Component {
 
     return (
       <div
-        className="card-wrap"
+        className="card-wrap cursor"
         onMouseMove={this.handleMouseMove}
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
