@@ -239,10 +239,10 @@ export const Competance = () => {
         </div>
         <div className="flex justify-center mt-10">
         <div>
- <div className="w-full">
+ {/* <div className="w-full">
      <EnsavoirPlus/>
 
- </div>
+ </div> */}
         </div>
         </div>
       </div>

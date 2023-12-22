@@ -141,8 +141,8 @@ const diversData = {
     {
       label: "",
       data: [, , 0, 100],
-      borderColor: "rgb( 255, 255, 255)",
-      backgroundColor: "rgb( 255, 255, 255)",
+      borderColor: "rgb( 255, 255, 255,0)",
+      backgroundColor: "rgb( 255, 255, 255,0)",
       tension: 0.8,
     },
   ],

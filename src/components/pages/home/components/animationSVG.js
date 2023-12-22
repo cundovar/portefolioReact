@@ -65,8 +65,8 @@ import REACTeact from "react"
       );
       
       const AnimationSVG = () => (
-        <div id="done-animation" className="  pt-5 max-xl:pt-5 " >
-          <Rainbow />
+        <div id="done-animation" className=" bg-sky-100 rounded-full pt-5 max-xl:pt-5 " >
+          {/* <Rainbow /> */}
           <Face />
           <Stars />
           {/* <Room /> */}

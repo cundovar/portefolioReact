@@ -979,7 +979,7 @@ textarea {
   width: 5rem;
   margin: 0 auto;
   display: block;
-  top: -80px;
+  top: 0;
   position: relative;
   animation: face 1s ease-in-out, fade-in 0.5s ease-in-out, float 1s ease-in-out 1s infinite alternate;
 }
@@ -989,7 +989,7 @@ textarea {
   margin: 0 auto;
   display: block;
   top: 1rem;
-  left: 70px;
+  left: 50px;
   position: absolute;
 }
 #stars .a, #stars .a1 {
@@ -1008,8 +1008,8 @@ textarea {
   margin: 0 auto;
   display: block;
   position: relative;
-  top: -65px;
-  z-index: -1;
+  top: 20px;
+  z-index: 1;
   animation: fade-in 1s ease-in, scale 2s ease-in-out infinite alternate-reverse;
 }
 
